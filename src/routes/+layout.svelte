@@ -1,30 +1,32 @@
 <script lang="ts">
 	import '../app.css';
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import { roster } from '$lib/data/roster';
 
 	let { children } = $props();
 
 	const links = [
-		{ href: '/', label: 'Accueil' },
-		{ href: '/revision', label: 'Révision' },
-		{ href: '/quiz', label: 'Quiz' }
+		{ href: `${base}/`, path: '/', label: 'Accueil' },
+		{ href: `${base}/revision`, path: '/revision', label: 'Révision' },
+		{ href: `${base}/quiz`, path: '/quiz', label: 'Quiz' }
 	];
 
-	function isActive(href: string, path: string): boolean {
-		return href === '/' ? path === '/' : path.startsWith(href);
+	function isActive(path: string, routeId: string | null): boolean {
+		if (!routeId) return false;
+		return path === '/' ? routeId === '/' : routeId === path || routeId.startsWith(`${path}/`);
 	}
 </script>
 
 <div class="shell">
 	<header class="navbar">
-		<a class="brand" href="/">
+		<a class="brand" href={`${base}/`}>
 			<span class="ball" aria-hidden="true"></span>
 			<span class="brand-text">Pokémon Type Training</span>
 		</a>
 		<nav>
-			{#each links as link (link.href)}
-				<a href={link.href} class:active={isActive(link.href, $page.url.pathname)}>
+			{#each links as link (link.path)}
+				<a href={link.href} class:active={isActive(link.path, $page.route.id)}>
 					{link.label}
 				</a>
 			{/each}

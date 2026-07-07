@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { roster } from '$lib/data/roster';
 	import { TYPES_SANS_STELLAR } from '$lib/data/typeNames';
 
@@ -14,12 +15,12 @@
 	<p class="subtitle">Apprends les types Pokémon avec le roster VGC ({roster.length} Pokémon &amp; formes)</p>
 
 	<div class="cards">
-		<a class="card revision" href="/revision">
+		<a class="card revision" href={`${base}/revision`}>
 			<span class="ico">📚</span>
 			<span class="card-title">Feuilles de révision</span>
 			<span class="card-desc">Table 18×18, fiches par type, calculateur dual et roster complet.</span>
 		</a>
-		<a class="card quiz" href="/quiz">
+		<a class="card quiz" href={`${base}/quiz`}>
 			<span class="ico">🎮</span>
 			<span class="card-title">Quiz interactif</span>
 			<span class="card-desc">Glisse-dépose les types, mode single/dual, 4 modes de jeu.</span>
