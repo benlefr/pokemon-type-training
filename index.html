@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Type Training</title>
+  <style>
+    :root {
+      --bg: #0f0f23;
+      --panel: #1a1b36;
+      --panel-soft: rgba(255, 255, 255, 0.05);
+      --text: #f4f4ff;
+      --muted: #aab0d6;
+      --ok: #35d07f;
+      --ko: #ff4e6a;
+      --accent: #5f73ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #1f2052 0%, var(--bg) 45%);
+      color: var(--text);
+    }
+
+    .app {
+      width: min(1100px, 100%);
+      margin: 0 auto;
+      padding: 16px 14px 28px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .mode-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--panel-soft);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      user-select: none;
+    }
+
+    .mode-toggle input {
+      transform: scale(1.2);
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .score-badge {
+      background: linear-gradient(135deg, #2f8bf9, #5f73ff);
+      color: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      min-width: 118px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(25, 95, 255, 0.35);
+    }
+
+    .target-card {
+      background: linear-gradient(145deg, #242557 0%, #171836 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 18px 12px;
+      text-align: center;
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+    }
+
+    .target-label {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .target-emoji {
+      font-size: 64px;
+      line-height: 1;
+    }
+
+    .target-name {
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .target-hint {
+      color: var(--muted);
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .zones {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr;
+    }
+
+    .drop-zone {
+      background: rgba(255, 255, 255, 0.03);
+      border: 2px dashed rgba(255, 255, 255, 0.25);
+      border-radius: 14px;
+      min-height: 150px;
+      padding: 12px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 10px;
+      transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+    }
+
+    .drop-zone.active {
+      border-color: var(--accent);
+      background: rgba(95, 115, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .drop-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .drop-subtitle {
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 500;
+    }
+
+    .zone-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      gap: 8px;
+    }
+
+    .badge-section {
+      background: var(--panel-soft);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .badge-title {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .badges-pool {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      min-height: 44px;
+    }
+
+    .type-badge {
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 7px 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: grab;
+      user-select: none;
+      white-space: nowrap;
+      box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22);
+      transition: transform 0.12s ease, filter 0.12s ease, outline-color 0.15s ease;
+      outline: 2px solid transparent;
+    }
+
+    .type-badge:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.06);
+    }
+
+    .type-badge:active {
+      cursor: grabbing;
+      transform: scale(0.98);
+    }
+
+    .type-badge.selected {
+      outline-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(95, 115, 255, 0.65);
+    }
+
+    .type-badge.placed {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.95;
+    }
+
+    .type-badge.correct {
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      animation: pulseOk 0.5s ease;
+    }
+
+    .type-badge.wrong {
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      animation: shakeKo 0.35s ease;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button.action {
+      border: none;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-weight: 700;
+      font-size: 0.97rem;
+      cursor: pointer;
+      color: #fff;
+      transition: transform 0.12s ease, filter 0.12s ease;
+    }
+
+    button.action:hover:not(:disabled) {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+
+    button.action:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    #validateBtn {
+      background: linear-gradient(135deg, #24a76f, #1cb663);
+    }
+
+    #nextBtn {
+      background: linear-gradient(135deg, #3d7bff, #5565ff);
+      display: none;
+    }
+
+    .result {
+      text-align: center;
+      min-height: 1.4em;
+      font-weight: 600;
+      color: #d6ddff;
+    }
+
+    .help-mobile {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+      text-align: center;
+    }
+
+    @keyframes pulseOk {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(53, 208, 127, 0.6); }
+      45% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(53, 208, 127, 0); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes shakeKo {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-4px); }
+      100% { transform: translateX(0); }
+    }
+
+    @media (min-width: 860px) {
+      .app {
+        padding: 22px 24px 30px;
+      }
+
+      .zones {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .drop-zone {
+        min-height: 250px;
+      }
+
+      .target-card {
+        padding: 24px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <div class="top-bar">
+      <label class="mode-toggle" for="dualToggle">
+        <input id="dualToggle" type="checkbox" />
+        Mode Dual
+      </label>
+      <div id="scoreBadge" class="score-badge">Score: 0</div>
+    </div>
+
+    <section class="target-card">
+      <p class="target-label">Type cible</p>
+      <div id="targetEmoji" class="target-emoji">⚪</div>
+      <h1 id="targetName" class="target-name">Normal</h1>
+      <p id="targetHint" class="target-hint">Glisse les types dans la bonne zone</p>
+    </section>
+
+    <section class="zones">
+      <article id="weakZone" class="drop-zone" data-zone="weak">
+        <h2 class="drop-title">
+          Faible contre
+          <span class="drop-subtitle">Types super efficaces contre la cible</span>
+        </h2>
+        <div class="zone-content"></div>
+      </article>
+
+      <article id="strongZone" class="drop-zone" data-zone="strong">
+        <h2 class="drop-title">
+          Fort contre
+          <span class="drop-subtitle">Types battus par la cible</span>
+        </h2>
+        <div class="zone-content"></div>
+      </article>
+    </section>
+
+    <section class="badge-section">
+      <h3 class="badge-title">Types à placer</h3>
+      <div id="badgesPool" class="badges-pool"></div>
+      <p class="help-mobile">Mobile : touche un badge puis touche une zone.</p>
+    </section>
+
+    <div class="controls">
+      <button id="validateBtn" class="action" disabled>Valider</button>
+      <button id="nextBtn" class="action">Type suivant</button>
+    </div>
+
+    <p id="resultText" class="result"></p>
+  </main>
+
+  <script>
+    const TYPES = [
+      { name: "Normal", emoji: "⚪", color: "#A8A878", beats: [], beatenBy: ["Combat"] },
+      { name: "Feu", emoji: "🔥", color: "#F08030", beats: ["Plante", "Glace", "Insecte", "Acier"], beatenBy: ["Eau", "Sol", "Roche"] },
+      { name: "Eau", emoji: "💧", color: "#6890F0", beats: ["Feu", "Sol", "Roche"], beatenBy: ["Électrik", "Plante"] },
+      { name: "Électrik", emoji: "⚡", color: "#F8D030", beats: ["Eau", "Vol"], beatenBy: ["Sol"] },
+      { name: "Plante", emoji: "🌿", color: "#78C850", beats: ["Eau", "Sol", "Roche"], beatenBy: ["Feu", "Glace", "Poison", "Vol", "Insecte"] },
+      { name: "Glace", emoji: "🧊", color: "#98D8D8", beats: ["Plante", "Sol", "Vol", "Dragon"], beatenBy: ["Feu", "Combat", "Roche", "Acier"] },
+      { name: "Combat", emoji: "🥊", color: "#C03028", beats: ["Normal", "Glace", "Roche", "Ténèbres", "Acier"], beatenBy: ["Vol", "Psy", "Fée"] },
+      { name: "Poison", emoji: "☠️", color: "#A040A0", beats: ["Plante", "Fée"], beatenBy: ["Sol", "Psy"] },
+      { name: "Sol", emoji: "🌍", color: "#E0C068", beats: ["Feu", "Électrik", "Poison", "Roche", "Acier"], beatenBy: ["Eau", "Plante", "Glace"] },
+      { name: "Vol", emoji: "🪶", color: "#A890F0", beats: ["Plante", "Combat", "Insecte"], beatenBy: ["Électrik", "Glace", "Roche"] },
+      { name: "Psy", emoji: "🔮", color: "#F85888", beats: ["Combat", "Poison"], beatenBy: ["Insecte", "Spectre", "Ténèbres"] },
+      { name: "Insecte", emoji: "🐛", color: "#A8B820", beats: ["Plante", "Psy", "Ténèbres"], beatenBy: ["Feu", "Vol", "Roche"] },
+      { name: "Roche", emoji: "🪨", color: "#B8A038", beats: ["Feu", "Glace", "Vol", "Insecte"], beatenBy: ["Eau", "Plante", "Combat", "Sol", "Acier"] },
+      { name: "Spectre", emoji: "👻", color: "#705898", beats: ["Psy", "Spectre"], beatenBy: ["Spectre", "Ténèbres"] },
+      { name: "Dragon", emoji: "🐉", color: "#7038F8", beats: ["Dragon"], beatenBy: ["Glace", "Dragon", "Fée"] },
+      { name: "Ténèbres", emoji: "🌑", color: "#705848", beats: ["Psy", "Spectre"], beatenBy: ["Combat", "Insecte", "Fée"] },
+      { name: "Acier", emoji: "⚙️", color: "#B8B8D0", beats: ["Glace", "Fée"], beatenBy: ["Feu", "Combat", "Sol"] },
+      { name: "Fée", emoji: "🧚", color: "#EE99AC", beats: ["Combat", "Dragon", "Ténèbres"], beatenBy: ["Poison", "Acier"] }
+    ];
+
+    const typeByName = new Map(TYPES.map((type) => [type.name, type]));
+    const TYPE_NAMES = TYPES.map((t) => t.name);
+
+    const scoreBadge = document.getElementById("scoreBadge");
+    const targetEmoji = document.getElementById("targetEmoji");
+    const targetName = document.getElementById("targetName");
+    const targetHint = document.getElementById("targetHint");
+    const weakZone = document.getElementById("weakZone");
+    const strongZone = document.getElementById("strongZone");
+    const badgesPool = document.getElementById("badgesPool");
+    const validateBtn = document.getElementById("validateBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const resultText = document.getElementById("resultText");
+    const dualToggle = document.getElementById("dualToggle");
+
+    const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+
+    let totalScore = 0;
+    let currentTarget = [];
+    let selectedBadgeName = null;
+    let placements = new Map();
+    let answered = false;
+
+    function baseMultiplier(attackerName, defenderName) {
+      if (attackerName === "Spectre" && defenderName === "Normal") {
+        return 0;
+      }
+      const attacker = typeByName.get(attackerName);
+      if (!attacker) return 1;
+      if (attacker.beats.includes(defenderName)) return 2;
+      return 1;
+    }
+
+    function effectivenessAgainst(attackerName, defenders) {
+      return defenders.reduce((mult, defenderName) => mult * baseMultiplier(attackerName, defenderName), 1);
+    }
+
+    function effectivenessFromTarget(targetTypes, defenderName) {
+      return targetTypes.reduce((mult, targetType) => mult * baseMultiplier(targetType, defenderName), 1);
+    }
+
+    function shuffle(array) {
+      const arr = [...array];
+      for (let i = arr.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function pickTarget() {
+      if (!dualToggle.checked) {
+        const one = TYPES[Math.floor(Math.random() * TYPES.length)];
+        return [one.name];
+      }
+
+      const first = TYPES[Math.floor(Math.random() * TYPES.length)];
+      let second = TYPES[Math.floor(Math.random() * TYPES.length)];
+      while (second.name === first.name) {
+        second = TYPES[Math.floor(Math.random() * TYPES.length)];
+      }
+      return [first.name, second.name];
+    }
+
+    function createBadge(typeName) {
+      const type = typeByName.get(typeName);
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "type-badge";
+      btn.draggable = true;
+      btn.dataset.type = type.name;
+      btn.style.background = type.color;
+      btn.innerHTML = `<span>${type.emoji}</span><span>${type.name}</span>`;
+      btn.addEventListener("dragstart", onDragStart);
+      btn.addEventListener("click", onBadgeTapSelect);
+      return btn;
+    }
+
+    function renderBadges() {
+      badgesPool.innerHTML = "";
+      const randomized = shuffle(TYPE_NAMES);
+      randomized.forEach((typeName) => {
+        badgesPool.appendChild(createBadge(typeName));
+      });
+    }
+
+    function updateTargetUI() {
+      const targetTypes = currentTarget.map((name) => typeByName.get(name));
+      targetEmoji.textContent = targetTypes.map((t) => t.emoji).join(" ");
+      targetName.textContent = targetTypes.map((t) => t.name).join(" / ");
+      targetHint.textContent = dualToggle.checked
+        ? "Mode dual actif : efficacité combinée (>= x2)."
+        : "Mode single : efficacité classique (>= x2).";
+    }
+
+    function updateScoreUI() {
+      scoreBadge.textContent = `Score: ${totalScore}`;
+    }
+
+    function expectedSide(attackTypeName) {
+      const weakMult = effectivenessAgainst(attackTypeName, currentTarget);
+      if (weakMult >= 2) return "weak";
+
+      const strongMult = effectivenessFromTarget(currentTarget, attackTypeName);
+      if (strongMult >= 2) return "strong";
+
+      return null;
+    }
+
+    function lockBadgeVisual(badge, isCorrect) {
+      badge.classList.add("placed");
+      badge.classList.remove("selected");
+      badge.classList.add(isCorrect ? "correct" : "wrong");
+      badge.style.background = isCorrect ? "var(--ok)" : "var(--ko)";
+      badge.draggable = false;
+      badge.setAttribute("aria-disabled", "true");
+    }
+
+    function onDropType(typeName, zone, sourceBadge) {
+      if (answered || placements.has(typeName)) return;
+      const expected = expectedSide(typeName);
+      const isCorrect = expected === zone;
+      placements.set(typeName, { zone, correct: isCorrect });
+
+      const badge = sourceBadge || document.querySelector(`.type-badge[data-type="${CSS.escape(typeName)}"]`);
+      if (!badge) return;
+      lockBadgeVisual(badge, isCorrect);
+
+      const zoneContent = zone === "weak"
+        ? weakZone.querySelector(".zone-content")
+        : strongZone.querySelector(".zone-content");
+
+      zoneContent.appendChild(badge);
+      selectedBadgeName = null;
+
+      updateValidateState();
+    }
+
+    function updateValidateState() {
+      const done = placements.size === TYPE_NAMES.length;
+      validateBtn.disabled = !done || answered;
+    }
+
+    function onDragStart(event) {
+      const badge = event.currentTarget;
+      if (!badge || badge.classList.contains("placed")) {
+        event.preventDefault();
+        return;
+      }
+      event.dataTransfer.setData("text/plain", badge.dataset.type || "");
+      event.dataTransfer.effectAllowed = "move";
+    }
+
+    function activateZoneHighlight(zoneEl, active) {
+      zoneEl.classList.toggle("active", active);
+    }
+
+    function setupDropZone(zoneEl) {
+      zoneEl.addEventListener("dragover", (event) => {
+        if (answered) return;
+        event.preventDefault();
+        activateZoneHighlight(zoneEl, true);
+      });
+
+      zoneEl.addEventListener("dragleave", () => activateZoneHighlight(zoneEl, false));
+
+      zoneEl.addEventListener("drop", (event) => {
+        if (answered) return;
+        event.preventDefault();
+        activateZoneHighlight(zoneEl, false);
+        const typeName = event.dataTransfer.getData("text/plain");
+        if (!typeName) return;
+        onDropType(typeName, zoneEl.dataset.zone);
+      });
+
+      zoneEl.addEventListener("click", () => {
+        if (!isTouchDevice || !selectedBadgeName || answered) return;
+        onDropType(selectedBadgeName, zoneEl.dataset.zone);
+      });
+    }
+
+    function onBadgeTapSelect(event) {
+      const badge = event.currentTarget;
+      if (!isTouchDevice || !badge || badge.classList.contains("placed") || answered) return;
+
+      const typeName = badge.dataset.type;
+      document.querySelectorAll(".type-badge.selected").forEach((b) => b.classList.remove("selected"));
+
+      if (selectedBadgeName === typeName) {
+        selectedBadgeName = null;
+        return;
+      }
+
+      selectedBadgeName = typeName;
+      badge.classList.add("selected");
+    }
+
+    function validateRound() {
+      if (answered || placements.size !== TYPE_NAMES.length) return;
+      answered = true;
+
+      const roundScore = [...placements.values()].reduce((sum, item) => sum + (item.correct ? 1 : 0), 0);
+      totalScore += roundScore;
+      updateScoreUI();
+
+      const maxScore = TYPE_NAMES.length;
+      resultText.textContent = `Round: ${roundScore}/${maxScore} corrects. Score cumulé: ${totalScore}.`;
+      validateBtn.disabled = true;
+      nextBtn.style.display = "inline-block";
+    }
+
+    function resetZonesAndState() {
+      weakZone.querySelector(".zone-content").innerHTML = "";
+      strongZone.querySelector(".zone-content").innerHTML = "";
+      placements = new Map();
+      selectedBadgeName = null;
+      answered = false;
+      resultText.textContent = "";
+      validateBtn.disabled = true;
+      nextBtn.style.display = "none";
+    }
+
+    function startRound() {
+      resetZonesAndState();
+      currentTarget = pickTarget();
+      updateTargetUI();
+      renderBadges();
+    }
+
+    validateBtn.addEventListener("click", validateRound);
+    nextBtn.addEventListener("click", startRound);
+    dualToggle.addEventListener("change", startRound);
+
+    setupDropZone(weakZone);
+    setupDropZone(strongZone);
+    updateScoreUI();
+    startRound();
+  </script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+================================================================
+POKEMON TYPE TRAINING - PLAN COMPLET POUR CLAUDE CODE
+================================================================
+
+RESUME
+------
+Creer une webapp SvelteKit pour apprendre les types Pokemon.
+Deux pages : Feuilles de revision et Quiz interactif.
+Dataset : Pokemon Champions 2026 (258 Pokemon, matrice 18x18).
+Mobile + Web responsive.
+
+================================================================
+ETAPE 1 : INITIALIZATION DU PROJET
+================================================================
+
+Commandes a executer dans l'ordre :
+
+  cd E:\PokemonTableTypeTraining
+  npm create svelte@latest . -- --template skeleton
+  npm install
+  npm install -D tailwindcss @tailwindcss/vite
+
+Le repertoire doit etre vide au demarrage.
+Si SvelteKit demande des options, choisir :
+  - TypeScript : Oui
+  - ESLint : Oui
+  - Prettier : Oui
+  - Playwright : Non
+  - Vitest : Non
+
+================================================================
+ETAPE 2 : TELECHARGER LE DATASET POKEMON CHAMPIONS
+================================================================
+
+Cloner ou telecharger le repo :
+  https://github.com/otterlyclueless/pokemon-champions-data
+
+Copier ces fichiers dans src/lib/data/ :
+  - type-chart/effectiveness.json  → src/lib/data/effectiveness.json
+  - pokemon/roster.json            → src/lib/data/roster.json
+
+Ne garder QUE ces deux fichiers JSON. Tout le reste du repo
+n'est pas necessaire.
+
+Le fichier effectiveness.json contient :
+  - chart[attackingType][defendingType] = multiplicateur (0, 0.5, 1, 2)
+  - Types : Bug, Dark, Dragon, Electric, Fairy, Fighting, Fire,
+    Flying, Ghost, Grass, Ground, Ice, Normal, Poison, Psychic,
+    Rock, Steel, Stellar, Water
+  - Aussi des cles de statuts (brn, frz, par, psn, tox...) a IGNORER
+
+Le fichier roster.json contient 258 Pokemon avec :
+  - name, dexNumber, types[], form, abilities
+
+================================================================
+ETAPE 3 : CREER LE FICHIER DE MAPPING DES TYPES
+================================================================
+
+Fichier : src/lib/data/typeNames.ts
+
+Ce fichier mappe chaque type anglais vers :
+  - nom francais
+  - emoji representatif
+  - couleur hex
+
+Voici le mapping complet :
+
+  Normal   → Normal   → ⚪ → #A8A878
+  Fire     → Feu      → 🔥 → #F08030
+  Water    → Eau      → 💧 → #6890F0
+  Electric → Electrik → ⚡ → #F8D030
+  Grass    → Plante   → 🌿 → #78C850
+  Ice      → Glace    → 🧊 → #98D8D8
+  Fighting → Combat   → 🥊 → #C03028
+  Poison   → Poison   → ☠️  → #A040A0
+  Ground   → Sol      → 🌍 → #E0C068
+  Flying   → Vol      → 🪶 → #A890F0
+  Psychic  → Psy      → 🔮 → #F85888
+  Bug      → Insecte  → 🐛 → #A8B820
+  Rock     → Roche    → 🪨 → #B8A038
+  Ghost    → Spectre  → 👻 → #705898
+  Dragon   → Dragon   → 🐉 → #7038F8
+  Dark     → Tenèbres → 🌑 → #705848
+  Steel    → Acier    → ⚙️  → #B8B8D0
+  Fairy    → Fee      → 🧚 → #EE99AC
+  Stellar  → Stellaire→ ✨ → #4A90D9
+
+Exporter aussi un tableau TYPE_KEYS = ["Normal", "Fire", "Water", ...]
+et un tableau TYPES_SANS_STELLAR sans le type Stellar.
+
+================================================================
+ETAPE 4 : CREER LES FONCTIONS DE CALCUL D'EFFICACITE
+================================================================
+
+Fichier : src/lib/data/typeChart.ts
+
+Fonctions a implementer :
+
+1. getEffectiveness(attackingType: string, defendingType: string): number
+   - Retourne chart[attackingType][defendingType]
+   - Gere les erreurs (type inexistant → retourne 1)
+
+2. getDualEffectiveness(attackingType: string, defType1: string, defType2: string): number
+   - Retourne chart[attackingType][defType1] * chart[attackingType][defType2]
+   - Si defType2 est vide/null, retourne getEffectiveness(attackingType, defType1)
+
+3. getWeakTo(type: string): string[]
+   - Retourne les types dont le multiplicateur est > 1 contre ce type
+   - Ex: getWeakTo("Fairy") → ["Poison", "Steel"]
+
+4. getWeakToDual(type1: string, type2: string): { type: string; multiplier: number }[]
+   - Pour chaque type d'attaque, calcule le multiplicateur combiné
+   - Filtre ceux avec multiplier > 1
+   - Trie par multiplier decroissant (x4 d'abord, puis x2)
+   - Ex: getWeakToDual("Fairy", "Flying") → [{ type: "Steel", multiplier: 4 }, { type: "Poison", multiplier: 2 }]
+
+5. getStrongAgainst(type: string): string[]
+   - Retourne les types que ce type bat (multiplicateur > 1)
+   - Ex: getStrongAgainst("Fairy") → ["Fighting", "Dragon", "Dark"]
+
+6. getStrongAgainstDual(type1: string, type2: string): { type: string; multiplier: number }[]
+   - Meme logique que getWeakToDual mais pour les types que le dual type bat
+
+7. getResistances(type: string): string[]
+   - Types avec multiplicateur < 1 (mais > 0) contre ce type
+
+8. getImmunities(type: string): string[]
+   - Types avec multiplicateur = 0 contre ce type
+
+IMPORTANT : Les types de statuts du JSON (brn, frz, par, psn, tox,
+hail, powder, prankster, sandstorm, trapped) doivent etre IGNORES.
+Seuls les 18 types de combat sont utilises.
+
+Le type Stellar est present dans les donnees mais sera optionnel
+dans l'app (toggle pour l'inclure ou non).
+
+================================================================
+ETAPE 5 : CONFIGURATION TAILWIND ET GLOBAL STYLES
+================================================================
+
+Fichier : tailwind.config.ts
+  - Activer dark mode (classe "dark")
+  - Ajouter les couleurs des types comme utilities si utile
+
+Fichier : src/app.css
+  - Importer Tailwind
+  - Definir le theme sombre par defaut (body bg-[#0f0f23] text-white)
+  - Police : system-ui ou Inter si disponible
+
+Fichier : src/app.html
+  - Titre : "Pokemon Type Training"
+  - Meta viewport pour mobile
+  - Favicon optionnel
+
+================================================================
+ETAPE 6 : CREER LES COMPOSANTS REUTILISABLES
+================================================================
+
+Dossier : src/lib/components/
+
+--- TypeBadge.svelte ---
+Props : type (string), size ("sm" | "md" | "lg"), placed (boolean), result ("correct" | "incorrect" | null)
+Affiche un pill arrondi avec emoji + nom, colore par type
+Au clic : emet l'evenement "select"
+Animation pulse si result="correct", shake si result="incorrect"
+Cursor pointer, tabindex pour accessibilite
+
+--- TypeChart.svelte ---
+Tableau interactif 18x18
+Lignes = types attaquants, Colonnes = types defenseurs
+Cellules colorees :
+  0x → rouge fonce (#7f1d1d)
+  0.5x → orange (#f97316)
+  1x → gris (#374151)
+  2x → vert (#22c55e)
+Au clic sur une cellule : tooltip avec explication
+Toggle "Vue offensive" / "Vue defensive"
+Scroll horizontal sur mobile
+Sticky headers
+
+--- QuizCard.svelte ---
+Carte centrale du quiz
+Affiche le type cible (grand emoji + nom FR + nom EN)
+Mode single ou dual (toggle)
+Pour dual : affiche les deux types cote a cote avec un " / "
+Fond colore selon le type dominant
+
+--- DropZone.svelte ---
+Props : label (string), acceptedTypes (string[])
+Zone de reception pour drag and drop
+Bordure pointillée, fond semi-transparent
+Au dragover : highlight (bordure solide, fond plus clair)
+Au drop : emet l'evenement "drop" avec le type
+Au clic sur un badge place : emet "remove" avec le type
+Affiche les badges places dans la zone
+
+--- ScoreBar.svelte ---
+Props : score (number), total (number), streak (number)
+Barre en haut avec score fraction (ex: "7/18")
+Affiche le streak si > 0
+Animation de remplissage
+
+--- DifficultyToggle.svelte ---
+Props : mode ("single" | "dual"), disabled (boolean)
+Toggle switch entre Single Type et Dual Type
+Desactive pendant un round en cours
+
+--- PokemonSelector.svelte ---
+Props : roster (array), onSelect (function)
+Recherche par nom
+Affiche les Pokemon avec leur types
+Selection pour le quiz avancé
+
+================================================================
+ETAPE 7 : CREER LE LAYOUT PRINCIPAL
+================================================================
+
+Fichier : src/routes/+layout.svelte
+
+Structure :
+  - Navbar en haut :
+    - Logo/Titre "Pokemon Type Training"
+    - Liens : Revision | Quiz
+    - Score cumulé (optionnel)
+  - Slot pour le contenu
+  - Style : fond sombre, police blanche
+
+Fichier : src/routes/+layout.ts
+  - Importer les donnees JSON
+  - Les passer via load function si necessaire
+
+================================================================
+ETAPE 8 : PAGE D'ACCUEIL
+================================================================
+
+Fichier : src/routes/+page.svelte
+
+Contenu :
+  - Grand titre "Pokemon Type Training"
+  - Sous-titre "Apprends les types Pokemon avec le dataset Champions 2026"
+  - Deux boutons cards :
+    - "Feuilles de revision" → /revision
+    - "Quiz interactif" → /quiz
+  - Card avec les stats : "258 Pokemon | 18 Types | 324 Matchups"
+  - Design Pokemon : fond sombre, couleurs type
+
+================================================================
+ETAPE 9 : PAGE DE REVISION
+================================================================
+
+Fichier : src/routes/revision/+page.svelte
+
+Section 1 : Tableau 18x18
+  - Component TypeChart
+  - Filtre pour masquer les neutres (x1)
+  - Toggle offensive/defensive
+
+Section 2 : Fiche par type
+  - 18 cartes cliquables (une par type)
+  - Au clic : modale/expand avec :
+    - Emoji + nom FR + nom EN
+    - "Battu par" : liste avec multiplicateurs
+    - "Bat" : liste avec multiplicateurs
+    - "Resiste a" : liste
+    - "Immunite contre" : liste (si applicable)
+    - Top 5 Pokemon du roster Champions de ce type
+
+Section 3 : Dual Type Calculator
+  - Deux selecteurs de type
+  - En temps reel, affiche :
+    - x4 (quadruple weak) → rouge vif
+    - x2 (super efficace) → rouge
+    - x1 (neutre) → gris
+    - x0.5 (resiste) → orange
+    - x0.25 (double resist) → orange fonce
+    - x0 (immunite) → noir
+  - Pour chaque type d'attaque, affiche le multiplicateur
+
+Section 4 : Browse le roster Champions
+  - Liste de tous les 258 Pokemon
+  - Filtre par type
+  - Filtre par forme (Base, Mega, Regional)
+  - Au clic sur un Pokemon :
+    - Types, stats, abilities
+    - Matchups defensifs (ce qui le bat en x2 et x4)
+
+================================================================
+ETAPE 10 : PAGE DE QUIZ
+================================================================
+
+Fichier : src/routes/quiz/+page.svelte
+
+--- Etat du quiz ---
+  - currentRound : number (1, 2, 3...)
+  - currentType : string ou [string, string] pour dual
+  - quizMode : "weakTo" | "strongAgainst" | "matchup" | "pokemonQuiz"
+  - difficultyMode : "single" | "dual"
+  - placedTypes : string[] (types dans la zone de reponse)
+  - availableTypes : string[] (types restants a placer)
+  - score : number
+  - totalRounds : number
+  - streak : number
+  - showResult : boolean
+
+--- Interface du quiz ---
+  - En haut : ScoreBar (score, total, streak)
+  - Toggle DifficultyToggle (single/dual)
+  - Toggle quiz mode :
+    - "Qui le bat ?" (weakTo)
+    - "Qu'est-ce qu'il bat ?" (strongAgainst)
+    - "Matchup" (devine le multiplicateur)
+    - "Pokemon Champions" (quiz sur un Pokemon)
+  - Centre : QuizCard (type cible)
+  - Milieu : DropZone (zone de reponse)
+  - Bas : grille de 18 TypeBadge cliquables/draggeables
+
+--- Gameplay quiz "Qui le bat ?" ---
+  1. Selectionner un type aleatoire (single ou dual)
+  2. Afficher le type dans QuizCard
+  3. Le joueur place les types dans DropZone
+  4. Feedback instantane : vert si correct, rouge si incorrect
+  5. Quand tous les types attendus sont places OU bouton "Valider"
+  6. Calculer le score du round
+  7. Afficher ResultOverlay
+
+--- Gameplay quiz "Qu'est-ce qu'il bat ?" ---
+  Meme logique mais inverse : le joueur place les types que le type
+  affiché bat.
+
+--- Gameplay quiz "Matchup" ---
+  1. Afficher type attaquant + type defenseur
+  2. 4 boutons : x0 | x0.5 | x1 | x2
+  3. Le joueur choisit
+  4. Feedback vert/rouge
+
+--- Gameplay quiz "Pokemon Champions" ---
+  1. Selectionner un Pokemon aleatoire du roster
+  2. Afficher son nom + types
+  3. Question : "Quel type est super efficace contre ce Pokemon ?"
+  4. Le joueur choisit parmi les 18 types
+  5. Feedback
+
+--- ResultOverlay ---
+  - Score du round (ex: "14/18")
+  - Message : "Parfait !" (18/18), "Excellent !" (>=15), "Pas mal !" (>=10), "Continue !" (<10)
+  - Liste des erreurs avec les bonnes reponses
+  - Bouton "Type suivant"
+
+--- Selection du type cible ---
+  - Pour single : tirer au hasard dans TYPES_SANS_STELLAR
+  - Pour dual : tirer au hasard une combinaison de 2 types differents
+  - Utiliser le roster pour le mode "Pokemon Champions"
+
+--- Gestion du drag & drop ---
+  - HTML5 Drag & Drop API pour desktop
+  - Touch events (touchstart/touchmove/touchend) pour mobile
+  - Ou alternative : mode clic (tap sur badge → tap sur zone)
+  - Les deux modes doivent fonctionner
+
+--- Validation ---
+  - Pour "Qui le bat ?" : comparer placedTypes avec getWeakTo(type)
+    ou getWeakToDual(type1, type2)
+  - Pour "Qu'est-ce qu'il bat ?" : comparer avec getStrongAgainst(type)
+    ou getStrongAgainstDual(type1, type2)
+  - Un type est correct si il est dans la liste attendue
+  - Un type est incorrect si il n'est PAS dans la liste attendue
+  - Les types manquants (pas places mais attendus) comptent comme erreurs
+
+================================================================
+ETAPE 11 : GESTION DU MOBILE
+================================================================
+
+Pour mobile (pas de HTML5 drag & drop natif sur touch) :
+  - Implementer un mode "tap to select"
+  - Tap sur un TypeBadge → il est selectionne (highlight)
+  - Tap sur la DropZone → le type selectionne est deplace
+  - Ou : tap sur badge → popup choix zone (Gauche/Droite)
+
+Pour desktop :
+  - HTML5 Drag & Drop natif
+  - dragstart sur TypeBadge
+  - dragover + drop sur DropZone
+
+Les deux modes doivent coexister (detecter si device est touch ou non).
+
+================================================================
+ETAPE 12 : ANIMATIONS ET MICRO-INTERACTIONS
+================================================================
+
+CSS animations a implementer :
+
+@keyframes pulse-green {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(34,197,94,0.5); }
+}
+
+@keyframes shake-red {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+Appliquer :
+  - pulse-green sur les badges correctement places
+  - shake-red sur les badges mal places
+  - fadeIn sur les overlays de resultat
+  - bounce sur les badges au drag
+
+================================================================
+ETAPE 13 : STRUCTURE FINALE DES FICHIERS
+================================================================
+
+pokemon-type-training/
+├── src/
+│   ├── app.html
+│   ├── app.css
+│   ├── routes/
+│   │   ├── +layout.svelte
+│   │   ├── +layout.ts
+│   │   ├── +page.svelte                    (accueil)
+│   │   ├── revision/
+│   │   │   └── +page.svelte                (feuilles revision)
+│   │   └── quiz/
+│   │       └── +page.svelte                (quiz interactif)
+│   └── lib/
+│       ├── data/
+│       │   ├── effectiveness.json          (copie du dataset)
+│       │   ├── roster.json                 (copie du dataset)
+│       │   ├── typeNames.ts                (mapping FR/emoji/couleur)
+│       │   └── typeChart.ts                (fonctions calcul)
+│       └── components/
+│           ├── TypeBadge.svelte
+│           ├── TypeChart.svelte
+│           ├── QuizCard.svelte
+│           ├── DropZone.svelte
+│           ├── ScoreBar.svelte
+│           ├── DifficultyToggle.svelte
+│           └── PokemonSelector.svelte
+├── static/
+├── package.json
+├── svelte.config.js
+├── vite.config.ts
+├── tailwind.config.ts
+└── tsconfig.json
+
+================================================================
+ETAPE 14 : COMMANDES DE LANCEMENT
+================================================================
+
+  npm run dev
+
+Le serveur doit demarrer sur http://localhost:5173
+Verifier que tout fonctionne :
+  - La page d'accueil s'affiche
+  - Le tableau 18x18 est complet et interactif
+  - Le quiz fonctionne en mode single
+  - Le quiz fonctionne en mode dual
+  - Le drag & drop fonctionne sur desktop
+  - Le mode tap fonctionne sur mobile
+  - Les scores sont calcules correctement
+  - Le dataset complet est charge (258 Pokemon)
+
+================================================================
+ETAPE 15 : VERIFICATIONS FINALES
+================================================================
+
+Apres implementation, verifier :
+
+1. Le fichier effectiveness.json contient bien 18 types de combat
+   (pas les statuts) + Stellar
+2. Les multiplicateurs sont corrects :
+   - Fairy est weak a Poison (x2) et Steel (x2)
+   - Fairy bat Fighting (x2), Dragon (x2), Dark (x2)
+   - Normal est immune a Ghost (0x)
+   - Dragon est immune a Fairy (0x)
+3. Les dual types calculent les bons multiplicateurs combines
+4. Le roster affiche bien les 258 Pokemon
+5. Le quiz ne propose pas le meme type deux fois de suite
+6. Le score est correctement cumule
+7. Le responsive fonctionne sur mobile (375px minimum)
+8. Pas d'erreurs TypeScript
+9. Pas d'erreurs ESLint
+10. Le theme sombre est applique partout
+
+================================================================
+FIN DU PLAN
+================================================================

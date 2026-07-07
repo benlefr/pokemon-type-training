@@ -1,0 +1,5422 @@
+[
+	{
+		"name": "Venusaur",
+		"nameFr": "Florizarre",
+		"dexNumber": 3,
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Chlorophyll"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 82,
+			"Defense": 83,
+			"Sp. Attack": 100,
+			"Sp. Defense": 100,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/venusaur.png"
+	},
+	{
+		"name": "Charizard",
+		"nameFr": "Dracaufeu",
+		"dexNumber": 6,
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Solar Power"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 84,
+			"Defense": 78,
+			"Sp. Attack": 109,
+			"Sp. Defense": 85,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/charizard.png"
+	},
+	{
+		"name": "Blastoise",
+		"nameFr": "Tortank",
+		"dexNumber": 9,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Rain Dish"
+		],
+		"base": {
+			"HP": 79,
+			"Attack": 83,
+			"Defense": 100,
+			"Sp. Attack": 85,
+			"Sp. Defense": 105,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/blastoise.png"
+	},
+	{
+		"name": "Beedrill",
+		"nameFr": "Dardargnan",
+		"dexNumber": 15,
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Swarm",
+			"Sniper"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 40,
+			"Sp. Attack": 45,
+			"Sp. Defense": 80,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/beedrill.png"
+	},
+	{
+		"name": "Pidgeot",
+		"nameFr": "Roucarnage",
+		"dexNumber": 18,
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Tangled Feet",
+			"Big Pecks"
+		],
+		"base": {
+			"HP": 83,
+			"Attack": 80,
+			"Defense": 75,
+			"Sp. Attack": 70,
+			"Sp. Defense": 70,
+			"Speed": 101
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pidgeot.png"
+	},
+	{
+		"name": "Arbok",
+		"nameFr": "Arbok",
+		"dexNumber": 24,
+		"types": [
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Shed Skin",
+			"Unnerve"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 95,
+			"Defense": 69,
+			"Sp. Attack": 65,
+			"Sp. Defense": 79,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/arbok.png"
+	},
+	{
+		"name": "Pikachu",
+		"nameFr": "Pikachu",
+		"dexNumber": 25,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Static",
+			"Lightning Rod"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 55,
+			"Defense": 40,
+			"Sp. Attack": 50,
+			"Sp. Defense": 50,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pikachu.png"
+	},
+	{
+		"name": "Alolan Raichu",
+		"nameFr": "Raichu d'Alola",
+		"dexNumber": 26,
+		"types": [
+			"Electric",
+			"Psychic"
+		],
+		"form": "Alola",
+		"abilities": [
+			"Surge Surfer"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 85,
+			"Defense": 50,
+			"Sp. Attack": 95,
+			"Sp. Defense": 85,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/raichu-alola.png"
+	},
+	{
+		"name": "Raichu",
+		"nameFr": "Raichu",
+		"dexNumber": 26,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Static",
+			"Lightning Rod"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 90,
+			"Defense": 55,
+			"Sp. Attack": 90,
+			"Sp. Defense": 80,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/raichu.png"
+	},
+	{
+		"name": "Clefable",
+		"nameFr": "Mélodelfe",
+		"dexNumber": 36,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Cute Charm",
+			"Magic Guard",
+			"Unaware"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 70,
+			"Defense": 73,
+			"Sp. Attack": 95,
+			"Sp. Defense": 90,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/clefable.png"
+	},
+	{
+		"name": "Alolan Ninetales",
+		"nameFr": "Feunard d'Alola",
+		"dexNumber": 38,
+		"types": [
+			"Ice",
+			"Fairy"
+		],
+		"form": "Alola",
+		"abilities": [
+			"Snow Cloak",
+			"Snow Warning"
+		],
+		"base": {
+			"HP": 73,
+			"Attack": 67,
+			"Defense": 75,
+			"Sp. Attack": 81,
+			"Sp. Defense": 100,
+			"Speed": 109
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ninetales-alola.png"
+	},
+	{
+		"name": "Ninetales",
+		"nameFr": "Feunard",
+		"dexNumber": 38,
+		"types": [
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flash Fire",
+			"Drought"
+		],
+		"base": {
+			"HP": 73,
+			"Attack": 76,
+			"Defense": 75,
+			"Sp. Attack": 81,
+			"Sp. Defense": 100,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ninetales.png"
+	},
+	{
+		"name": "Vileplume",
+		"nameFr": "Rafflesia",
+		"dexNumber": 45,
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Chlorophyll",
+			"Effect Spore"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 80,
+			"Defense": 85,
+			"Sp. Attack": 110,
+			"Sp. Defense": 90,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/vileplume.png"
+	},
+	{
+		"name": "Arcanine",
+		"nameFr": "Arcanin",
+		"dexNumber": 59,
+		"types": [
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Flash Fire",
+			"Justified"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 110,
+			"Defense": 80,
+			"Sp. Attack": 100,
+			"Sp. Defense": 80,
+			"Speed": 95
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/arcanine.png"
+	},
+	{
+		"name": "Hisuian Arcanine",
+		"nameFr": "Arcanin de Hisui",
+		"dexNumber": 59,
+		"types": [
+			"Fire",
+			"Rock"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Intimidate",
+			"Flash Fire",
+			"Rock Head"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 115,
+			"Defense": 80,
+			"Sp. Attack": 95,
+			"Sp. Defense": 80,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/arcanine-hisui.png"
+	},
+	{
+		"name": "Alakazam",
+		"nameFr": "Alakazam",
+		"dexNumber": 65,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Synchronize",
+			"Inner Focus",
+			"Magic Guard"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 50,
+			"Defense": 45,
+			"Sp. Attack": 135,
+			"Sp. Defense": 95,
+			"Speed": 120
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/alakazam.png"
+	},
+	{
+		"name": "Machamp",
+		"nameFr": "Mackogneur",
+		"dexNumber": 68,
+		"types": [
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Guts",
+			"No Guard",
+			"Steadfast"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 130,
+			"Defense": 80,
+			"Sp. Attack": 65,
+			"Sp. Defense": 85,
+			"Speed": 55
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/machamp.png"
+	},
+	{
+		"name": "Victreebel",
+		"nameFr": "Empiflor",
+		"dexNumber": 71,
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Chlorophyll",
+			"Gluttony"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 105,
+			"Defense": 65,
+			"Sp. Attack": 100,
+			"Sp. Defense": 70,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/victreebel.png"
+	},
+	{
+		"name": "Galarian Slowbro",
+		"nameFr": "Flagadoss de Galar",
+		"dexNumber": 80,
+		"types": [
+			"Poison",
+			"Psychic"
+		],
+		"form": "Galar",
+		"abilities": [
+			"Quick Draw",
+			"Own Tempo",
+			"Regenerator"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 100,
+			"Defense": 95,
+			"Sp. Attack": 100,
+			"Sp. Defense": 70,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slowbro-galar.png"
+	},
+	{
+		"name": "Slowbro",
+		"nameFr": "Flagadoss",
+		"dexNumber": 80,
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Oblivious",
+			"Own Tempo",
+			"Regenerator"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 75,
+			"Defense": 110,
+			"Sp. Attack": 100,
+			"Sp. Defense": 80,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slowbro.png"
+	},
+	{
+		"name": "Gengar",
+		"nameFr": "Ectoplasma",
+		"dexNumber": 94,
+		"types": [
+			"Ghost",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Cursed Body"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 130,
+			"Sp. Defense": 75,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gengar.png"
+	},
+	{
+		"name": "Kangaskhan",
+		"nameFr": "Kangourex",
+		"dexNumber": 115,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Early Bird",
+			"Scrappy",
+			"Inner Focus"
+		],
+		"base": {
+			"HP": 105,
+			"Attack": 95,
+			"Defense": 80,
+			"Sp. Attack": 40,
+			"Sp. Defense": 80,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/kangaskhan.png"
+	},
+	{
+		"name": "Starmie",
+		"nameFr": "Staross",
+		"dexNumber": 121,
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Illuminate",
+			"Natural Cure",
+			"Analytic"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 75,
+			"Defense": 85,
+			"Sp. Attack": 100,
+			"Sp. Defense": 85,
+			"Speed": 115
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/starmie.png"
+	},
+	{
+		"name": "Pinsir",
+		"nameFr": "Scarabrute",
+		"dexNumber": 127,
+		"types": [
+			"Bug"
+		],
+		"form": "Base",
+		"abilities": [
+			"Hyper Cutter",
+			"Mold Breaker",
+			"Moxie"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 125,
+			"Defense": 100,
+			"Sp. Attack": 55,
+			"Sp. Defense": 70,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pinsir.png"
+	},
+	{
+		"name": "Paldean Tauros Aqua Breed",
+		"nameFr": "Tauros de Paldea",
+		"dexNumber": 128,
+		"types": [
+			"Fighting",
+			"Water"
+		],
+		"form": "Paldea-Aqua",
+		"abilities": [
+			"Intimidate",
+			"Anger Point",
+			"Cud Chew"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 110,
+			"Defense": 105,
+			"Sp. Attack": 30,
+			"Sp. Defense": 70,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeaaqua.png"
+	},
+	{
+		"name": "Paldean Tauros Blaze Breed",
+		"nameFr": "Tauros de Paldea",
+		"dexNumber": 128,
+		"types": [
+			"Fighting",
+			"Fire"
+		],
+		"form": "Paldea-Blaze",
+		"abilities": [
+			"Intimidate",
+			"Anger Point",
+			"Cud Chew"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 110,
+			"Defense": 105,
+			"Sp. Attack": 30,
+			"Sp. Defense": 70,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeablaze.png"
+	},
+	{
+		"name": "Paldean Tauros Combat Breed",
+		"nameFr": "Tauros de Paldea",
+		"dexNumber": 128,
+		"types": [
+			"Fighting"
+		],
+		"form": "Paldea-Combat",
+		"abilities": [
+			"Intimidate",
+			"Anger Point",
+			"Cud Chew"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 110,
+			"Defense": 105,
+			"Sp. Attack": 30,
+			"Sp. Defense": 70,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeacombat.png"
+	},
+	{
+		"name": "Tauros",
+		"nameFr": "Tauros",
+		"dexNumber": 128,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Anger Point",
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 100,
+			"Defense": 95,
+			"Sp. Attack": 40,
+			"Sp. Defense": 70,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tauros.png"
+	},
+	{
+		"name": "Gyarados",
+		"nameFr": "Léviator",
+		"dexNumber": 130,
+		"types": [
+			"Water",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Moxie"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 125,
+			"Defense": 79,
+			"Sp. Attack": 60,
+			"Sp. Defense": 100,
+			"Speed": 81
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gyarados.png"
+	},
+	{
+		"name": "Ditto",
+		"nameFr": "Métamorph",
+		"dexNumber": 132,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Limber",
+			"Imposter"
+		],
+		"base": {
+			"HP": 48,
+			"Attack": 48,
+			"Defense": 48,
+			"Sp. Attack": 48,
+			"Sp. Defense": 48,
+			"Speed": 48
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ditto.png"
+	},
+	{
+		"name": "Vaporeon",
+		"nameFr": "Aquali",
+		"dexNumber": 134,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Water Absorb",
+			"Hydration"
+		],
+		"base": {
+			"HP": 130,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 110,
+			"Sp. Defense": 95,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/vaporeon.png"
+	},
+	{
+		"name": "Jolteon",
+		"nameFr": "Voltali",
+		"dexNumber": 135,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Volt Absorb",
+			"Quick Feet"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 110,
+			"Sp. Defense": 95,
+			"Speed": 130
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/jolteon.png"
+	},
+	{
+		"name": "Flareon",
+		"nameFr": "Pyroli",
+		"dexNumber": 136,
+		"types": [
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flash Fire",
+			"Guts"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 130,
+			"Defense": 60,
+			"Sp. Attack": 95,
+			"Sp. Defense": 110,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/flareon.png"
+	},
+	{
+		"name": "Aerodactyl",
+		"nameFr": "Ptéra",
+		"dexNumber": 142,
+		"types": [
+			"Rock",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Rock Head",
+			"Pressure",
+			"Unnerve"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 105,
+			"Defense": 65,
+			"Sp. Attack": 60,
+			"Sp. Defense": 75,
+			"Speed": 130
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aerodactyl.png"
+	},
+	{
+		"name": "Snorlax",
+		"nameFr": "Ronflex",
+		"dexNumber": 143,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Immunity",
+			"Thick Fat",
+			"Gluttony"
+		],
+		"base": {
+			"HP": 160,
+			"Attack": 110,
+			"Defense": 65,
+			"Sp. Attack": 65,
+			"Sp. Defense": 110,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/snorlax.png"
+	},
+	{
+		"name": "Dragonite",
+		"nameFr": "Dracolosse",
+		"dexNumber": 149,
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Inner Focus",
+			"Multiscale"
+		],
+		"base": {
+			"HP": 91,
+			"Attack": 134,
+			"Defense": 95,
+			"Sp. Attack": 100,
+			"Sp. Defense": 100,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragonite.png"
+	},
+	{
+		"name": "Meganium",
+		"nameFr": "Méganium",
+		"dexNumber": 154,
+		"types": [
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Leaf Guard"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 82,
+			"Defense": 100,
+			"Sp. Attack": 83,
+			"Sp. Defense": 100,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/meganium.png"
+	},
+	{
+		"name": "Hisuian Typhlosion",
+		"nameFr": "Typhlosion de Hisui",
+		"dexNumber": 157,
+		"types": [
+			"Fire",
+			"Ghost"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Blaze",
+			"Frisk"
+		],
+		"base": {
+			"HP": 73,
+			"Attack": 84,
+			"Defense": 78,
+			"Sp. Attack": 119,
+			"Sp. Defense": 85,
+			"Speed": 95
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png"
+	},
+	{
+		"name": "Typhlosion",
+		"nameFr": "Typhlosion",
+		"dexNumber": 157,
+		"types": [
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Flash Fire"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 84,
+			"Defense": 78,
+			"Sp. Attack": 109,
+			"Sp. Defense": 85,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/typhlosion.png"
+	},
+	{
+		"name": "Feraligatr",
+		"nameFr": "Aligatueur",
+		"dexNumber": 160,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 105,
+			"Defense": 100,
+			"Sp. Attack": 79,
+			"Sp. Defense": 83,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/feraligatr.png"
+	},
+	{
+		"name": "Ariados",
+		"nameFr": "Migalos",
+		"dexNumber": 168,
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Swarm",
+			"Insomnia",
+			"Sniper"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 90,
+			"Defense": 70,
+			"Sp. Attack": 60,
+			"Sp. Defense": 70,
+			"Speed": 40
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ariados.png"
+	},
+	{
+		"name": "Ampharos",
+		"nameFr": "Pharamp",
+		"dexNumber": 181,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Static",
+			"Plus"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 75,
+			"Defense": 85,
+			"Sp. Attack": 115,
+			"Sp. Defense": 90,
+			"Speed": 55
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ampharos.png"
+	},
+	{
+		"name": "Azumarill",
+		"nameFr": "Azumarill",
+		"dexNumber": 184,
+		"types": [
+			"Water",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Thick Fat",
+			"Huge Power",
+			"Sap Sipper"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 50,
+			"Defense": 80,
+			"Sp. Attack": 60,
+			"Sp. Defense": 80,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/azumarill.png"
+	},
+	{
+		"name": "Politoed",
+		"nameFr": "Tarpaud",
+		"dexNumber": 186,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Water Absorb",
+			"Damp",
+			"Drizzle"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 75,
+			"Defense": 75,
+			"Sp. Attack": 90,
+			"Sp. Defense": 100,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/politoed.png"
+	},
+	{
+		"name": "Espeon",
+		"nameFr": "Mentali",
+		"dexNumber": 196,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Synchronize",
+			"Magic Bounce"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 130,
+			"Sp. Defense": 95,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/espeon.png"
+	},
+	{
+		"name": "Umbreon",
+		"nameFr": "Noctali",
+		"dexNumber": 197,
+		"types": [
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Synchronize",
+			"Inner Focus"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 65,
+			"Defense": 110,
+			"Sp. Attack": 60,
+			"Sp. Defense": 130,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/umbreon.png"
+	},
+	{
+		"name": "Galarian Slowking",
+		"nameFr": "Roigada de Galar",
+		"dexNumber": 199,
+		"types": [
+			"Poison",
+			"Psychic"
+		],
+		"form": "Galar",
+		"abilities": [
+			"Curious Medicine",
+			"Own Tempo",
+			"Regenerator"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 65,
+			"Defense": 80,
+			"Sp. Attack": 110,
+			"Sp. Defense": 110,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slowking-galar.png"
+	},
+	{
+		"name": "Slowking",
+		"nameFr": "Roigada",
+		"dexNumber": 199,
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Oblivious",
+			"Own Tempo",
+			"Regenerator"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 75,
+			"Defense": 80,
+			"Sp. Attack": 100,
+			"Sp. Defense": 110,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slowking.png"
+	},
+	{
+		"name": "Forretress",
+		"nameFr": "Foretress",
+		"dexNumber": 205,
+		"types": [
+			"Bug",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sturdy",
+			"Overcoat"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 90,
+			"Defense": 140,
+			"Sp. Attack": 60,
+			"Sp. Defense": 60,
+			"Speed": 40
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/forretress.png"
+	},
+	{
+		"name": "Steelix",
+		"nameFr": "Steelix",
+		"dexNumber": 208,
+		"types": [
+			"Steel",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Rock Head",
+			"Sturdy",
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 85,
+			"Defense": 200,
+			"Sp. Attack": 55,
+			"Sp. Defense": 65,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/steelix.png"
+	},
+	{
+		"name": "Qwilfish",
+		"nameFr": "Qwilfish",
+		"dexNumber": 211,
+		"types": [
+			"Water",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Poison Point",
+			"Swift Swim",
+			"Intimidate"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 95,
+			"Defense": 85,
+			"Sp. Attack": 55,
+			"Sp. Defense": 55,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/qwilfish.png"
+	},
+	{
+		"name": "Scizor",
+		"nameFr": "Cizayox",
+		"dexNumber": 212,
+		"types": [
+			"Bug",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Swarm",
+			"Technician",
+			"Light Metal"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 130,
+			"Defense": 100,
+			"Sp. Attack": 55,
+			"Sp. Defense": 80,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scizor.png"
+	},
+	{
+		"name": "Heracross",
+		"nameFr": "Scarhino",
+		"dexNumber": 214,
+		"types": [
+			"Bug",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Swarm",
+			"Guts",
+			"Moxie"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 125,
+			"Defense": 75,
+			"Sp. Attack": 40,
+			"Sp. Defense": 95,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/heracross.png"
+	},
+	{
+		"name": "Skarmory",
+		"nameFr": "Airmure",
+		"dexNumber": 227,
+		"types": [
+			"Steel",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Sturdy",
+			"Weak Armor"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 80,
+			"Defense": 140,
+			"Sp. Attack": 40,
+			"Sp. Defense": 70,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/skarmory.png"
+	},
+	{
+		"name": "Houndoom",
+		"nameFr": "Démolosse",
+		"dexNumber": 229,
+		"types": [
+			"Dark",
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Early Bird",
+			"Flash Fire",
+			"Unnerve"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 90,
+			"Defense": 50,
+			"Sp. Attack": 110,
+			"Sp. Defense": 80,
+			"Speed": 95
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/houndoom.png"
+	},
+	{
+		"name": "Tyranitar",
+		"nameFr": "Tyranocif",
+		"dexNumber": 248,
+		"types": [
+			"Rock",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sand Stream",
+			"Unnerve"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 134,
+			"Defense": 110,
+			"Sp. Attack": 95,
+			"Sp. Defense": 100,
+			"Speed": 61
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tyranitar.png"
+	},
+	{
+		"name": "Sceptile",
+		"nameFr": "Jungko",
+		"dexNumber": 254,
+		"types": [
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Unburden"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 85,
+			"Defense": 65,
+			"Sp. Attack": 105,
+			"Sp. Defense": 85,
+			"Speed": 120
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sceptile.png"
+	},
+	{
+		"name": "Blaziken",
+		"nameFr": "Braségali",
+		"dexNumber": 257,
+		"types": [
+			"Fire",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Speed Boost"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 120,
+			"Defense": 70,
+			"Sp. Attack": 110,
+			"Sp. Defense": 70,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/blaziken.png"
+	},
+	{
+		"name": "Swampert",
+		"nameFr": "Laggron",
+		"dexNumber": 260,
+		"types": [
+			"Water",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Damp"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 110,
+			"Defense": 90,
+			"Sp. Attack": 85,
+			"Sp. Defense": 90,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/swampert.png"
+	},
+	{
+		"name": "Pelipper",
+		"nameFr": "Bekipan",
+		"dexNumber": 279,
+		"types": [
+			"Water",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Drizzle",
+			"Rain Dish"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 50,
+			"Defense": 100,
+			"Sp. Attack": 95,
+			"Sp. Defense": 70,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pelipper.png"
+	},
+	{
+		"name": "Gardevoir",
+		"nameFr": "Gardevoir",
+		"dexNumber": 282,
+		"types": [
+			"Psychic",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Synchronize",
+			"Trace",
+			"Telepathy"
+		],
+		"base": {
+			"HP": 68,
+			"Attack": 65,
+			"Defense": 65,
+			"Sp. Attack": 125,
+			"Sp. Defense": 115,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gardevoir.png"
+	},
+	{
+		"name": "Sableye",
+		"nameFr": "Ténéfix",
+		"dexNumber": 302,
+		"types": [
+			"Dark",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Stall",
+			"Prankster"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 75,
+			"Defense": 75,
+			"Sp. Attack": 65,
+			"Sp. Defense": 65,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sableye.png"
+	},
+	{
+		"name": "Mawile",
+		"nameFr": "Mysdibule",
+		"dexNumber": 303,
+		"types": [
+			"Steel",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Hyper Cutter",
+			"Intimidate",
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 85,
+			"Defense": 85,
+			"Sp. Attack": 55,
+			"Sp. Defense": 55,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mawile.png"
+	},
+	{
+		"name": "Aggron",
+		"nameFr": "Galeking",
+		"dexNumber": 306,
+		"types": [
+			"Steel",
+			"Rock"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sturdy",
+			"Rock Head",
+			"Heavy Metal"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 110,
+			"Defense": 180,
+			"Sp. Attack": 60,
+			"Sp. Defense": 60,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aggron.png"
+	},
+	{
+		"name": "Medicham",
+		"nameFr": "Charmina",
+		"dexNumber": 308,
+		"types": [
+			"Fighting",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pure Power",
+			"Telepathy"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 60,
+			"Defense": 75,
+			"Sp. Attack": 60,
+			"Sp. Defense": 75,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/medicham.png"
+	},
+	{
+		"name": "Manectric",
+		"nameFr": "Élecsprint",
+		"dexNumber": 310,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Static",
+			"Lightning Rod",
+			"Minus"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 75,
+			"Defense": 60,
+			"Sp. Attack": 105,
+			"Sp. Defense": 60,
+			"Speed": 105
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/manectric.png"
+	},
+	{
+		"name": "Sharpedo",
+		"nameFr": "Sharpedo",
+		"dexNumber": 319,
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Rough Skin",
+			"Speed Boost"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 120,
+			"Defense": 40,
+			"Sp. Attack": 95,
+			"Sp. Defense": 40,
+			"Speed": 95
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sharpedo.png"
+	},
+	{
+		"name": "Camerupt",
+		"nameFr": "Camérupt",
+		"dexNumber": 323,
+		"types": [
+			"Fire",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Magma Armor",
+			"Solid Rock",
+			"Anger Point"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 100,
+			"Defense": 70,
+			"Sp. Attack": 105,
+			"Sp. Defense": 75,
+			"Speed": 40
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/camerupt.png"
+	},
+	{
+		"name": "Torkoal",
+		"nameFr": "Chartor",
+		"dexNumber": 324,
+		"types": [
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"White Smoke",
+			"Drought",
+			"Shell Armor"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 85,
+			"Defense": 140,
+			"Sp. Attack": 85,
+			"Sp. Defense": 70,
+			"Speed": 20
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/torkoal.png"
+	},
+	{
+		"name": "Altaria",
+		"nameFr": "Altaria",
+		"dexNumber": 334,
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Natural Cure",
+			"Cloud Nine"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 70,
+			"Defense": 90,
+			"Sp. Attack": 70,
+			"Sp. Defense": 105,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/altaria.png"
+	},
+	{
+		"name": "Milotic",
+		"nameFr": "Milobellus",
+		"dexNumber": 350,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Marvel Scale",
+			"Competitive",
+			"Cute Charm"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 60,
+			"Defense": 79,
+			"Sp. Attack": 100,
+			"Sp. Defense": 125,
+			"Speed": 81
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/milotic.png"
+	},
+	{
+		"name": "Castform",
+		"nameFr": "Morphéo",
+		"dexNumber": 351,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Forecast"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 70,
+			"Defense": 70,
+			"Sp. Attack": 70,
+			"Sp. Defense": 70,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/castform.png"
+	},
+	{
+		"name": "Banette",
+		"nameFr": "Branette",
+		"dexNumber": 354,
+		"types": [
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Insomnia",
+			"Frisk",
+			"Cursed Body"
+		],
+		"base": {
+			"HP": 64,
+			"Attack": 115,
+			"Defense": 65,
+			"Sp. Attack": 83,
+			"Sp. Defense": 63,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/banette.png"
+	},
+	{
+		"name": "Chimecho",
+		"nameFr": "Éoko",
+		"dexNumber": 358,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 50,
+			"Defense": 80,
+			"Sp. Attack": 95,
+			"Sp. Defense": 90,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chimecho.png"
+	},
+	{
+		"name": "Absol",
+		"nameFr": "Absol",
+		"dexNumber": 359,
+		"types": [
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pressure",
+			"Super Luck",
+			"Justified"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 130,
+			"Defense": 60,
+			"Sp. Attack": 75,
+			"Sp. Defense": 60,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/absol.png"
+	},
+	{
+		"name": "Glalie",
+		"nameFr": "Oniglali",
+		"dexNumber": 362,
+		"types": [
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Inner Focus",
+			"Ice Body",
+			"Moody"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 80,
+			"Defense": 80,
+			"Sp. Attack": 80,
+			"Sp. Defense": 80,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glalie.png"
+	},
+	{
+		"name": "Metagross",
+		"nameFr": "Métalosse",
+		"dexNumber": 376,
+		"types": [
+			"Steel",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Clear Body",
+			"Light Metal"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 135,
+			"Defense": 130,
+			"Sp. Attack": 95,
+			"Sp. Defense": 90,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/metagross.png"
+	},
+	{
+		"name": "Torterra",
+		"nameFr": "Torterra",
+		"dexNumber": 389,
+		"types": [
+			"Grass",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Shell Armor"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 109,
+			"Defense": 105,
+			"Sp. Attack": 75,
+			"Sp. Defense": 85,
+			"Speed": 56
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/torterra.png"
+	},
+	{
+		"name": "Infernape",
+		"nameFr": "Simiabraz",
+		"dexNumber": 392,
+		"types": [
+			"Fire",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Iron Fist"
+		],
+		"base": {
+			"HP": 76,
+			"Attack": 104,
+			"Defense": 71,
+			"Sp. Attack": 104,
+			"Sp. Defense": 71,
+			"Speed": 108
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/infernape.png"
+	},
+	{
+		"name": "Empoleon",
+		"nameFr": "Pingoléon",
+		"dexNumber": 395,
+		"types": [
+			"Water",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Competitive"
+		],
+		"base": {
+			"HP": 84,
+			"Attack": 86,
+			"Defense": 88,
+			"Sp. Attack": 111,
+			"Sp. Defense": 101,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/empoleon.png"
+	},
+	{
+		"name": "Staraptor",
+		"nameFr": "Étouraptor",
+		"dexNumber": 398,
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Reckless"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 120,
+			"Defense": 70,
+			"Sp. Attack": 50,
+			"Sp. Defense": 60,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/staraptor.png"
+	},
+	{
+		"name": "Luxray",
+		"nameFr": "Luxray",
+		"dexNumber": 405,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Rivalry",
+			"Intimidate",
+			"Guts"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 120,
+			"Defense": 79,
+			"Sp. Attack": 95,
+			"Sp. Defense": 79,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/luxray.png"
+	},
+	{
+		"name": "Roserade",
+		"nameFr": "Roserade",
+		"dexNumber": 407,
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Natural Cure",
+			"Poison Point",
+			"Technician"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 70,
+			"Defense": 65,
+			"Sp. Attack": 125,
+			"Sp. Defense": 105,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/roserade.png"
+	},
+	{
+		"name": "Rampardos",
+		"nameFr": "Charkos",
+		"dexNumber": 409,
+		"types": [
+			"Rock"
+		],
+		"form": "Base",
+		"abilities": [
+			"Mold Breaker",
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 97,
+			"Attack": 165,
+			"Defense": 60,
+			"Sp. Attack": 65,
+			"Sp. Defense": 50,
+			"Speed": 58
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rampardos.png"
+	},
+	{
+		"name": "Bastiodon",
+		"nameFr": "Bastiodon",
+		"dexNumber": 411,
+		"types": [
+			"Rock",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sturdy",
+			"Soundproof"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 52,
+			"Defense": 168,
+			"Sp. Attack": 47,
+			"Sp. Defense": 138,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/bastiodon.png"
+	},
+	{
+		"name": "Lopunny",
+		"nameFr": "Lockpin",
+		"dexNumber": 428,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Cute Charm",
+			"Klutz",
+			"Limber"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 76,
+			"Defense": 84,
+			"Sp. Attack": 54,
+			"Sp. Defense": 96,
+			"Speed": 105
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lopunny.png"
+	},
+	{
+		"name": "Spiritomb",
+		"nameFr": "Spiritomb",
+		"dexNumber": 442,
+		"types": [
+			"Ghost",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pressure",
+			"Infiltrator"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 92,
+			"Defense": 108,
+			"Sp. Attack": 92,
+			"Sp. Defense": 108,
+			"Speed": 35
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/spiritomb.png"
+	},
+	{
+		"name": "Garchomp",
+		"nameFr": "Carchacrok",
+		"dexNumber": 445,
+		"types": [
+			"Dragon",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sand Veil",
+			"Rough Skin"
+		],
+		"base": {
+			"HP": 108,
+			"Attack": 130,
+			"Defense": 95,
+			"Sp. Attack": 80,
+			"Sp. Defense": 85,
+			"Speed": 102
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/garchomp.png"
+	},
+	{
+		"name": "Lucario",
+		"nameFr": "Lucario",
+		"dexNumber": 448,
+		"types": [
+			"Fighting",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Steadfast",
+			"Inner Focus",
+			"Justified"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 110,
+			"Defense": 70,
+			"Sp. Attack": 115,
+			"Sp. Defense": 70,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lucario.png"
+	},
+	{
+		"name": "Hippowdon",
+		"nameFr": "Hippodocus",
+		"dexNumber": 450,
+		"types": [
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sand Stream",
+			"Sand Force"
+		],
+		"base": {
+			"HP": 108,
+			"Attack": 112,
+			"Defense": 118,
+			"Sp. Attack": 68,
+			"Sp. Defense": 72,
+			"Speed": 47
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hippowdon.png"
+	},
+	{
+		"name": "Toxicroak",
+		"nameFr": "Coatox",
+		"dexNumber": 454,
+		"types": [
+			"Poison",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Anticipation",
+			"Dry Skin",
+			"Poison Touch"
+		],
+		"base": {
+			"HP": 83,
+			"Attack": 106,
+			"Defense": 65,
+			"Sp. Attack": 86,
+			"Sp. Defense": 65,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/toxicroak.png"
+	},
+	{
+		"name": "Abomasnow",
+		"nameFr": "Blizzaroi",
+		"dexNumber": 460,
+		"types": [
+			"Grass",
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Snow Warning",
+			"Soundproof"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 92,
+			"Defense": 75,
+			"Sp. Attack": 92,
+			"Sp. Defense": 85,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/abomasnow.png"
+	},
+	{
+		"name": "Weavile",
+		"nameFr": "Dimoret",
+		"dexNumber": 461,
+		"types": [
+			"Dark",
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pressure",
+			"Pickpocket"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 120,
+			"Defense": 65,
+			"Sp. Attack": 45,
+			"Sp. Defense": 85,
+			"Speed": 125
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/weavile.png"
+	},
+	{
+		"name": "Rhyperior",
+		"nameFr": "Rhinastoc",
+		"dexNumber": 464,
+		"types": [
+			"Ground",
+			"Rock"
+		],
+		"form": "Base",
+		"abilities": [
+			"Lightning Rod",
+			"Solid Rock",
+			"Reckless"
+		],
+		"base": {
+			"HP": 115,
+			"Attack": 140,
+			"Defense": 130,
+			"Sp. Attack": 55,
+			"Sp. Defense": 55,
+			"Speed": 40
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rhyperior.png"
+	},
+	{
+		"name": "Leafeon",
+		"nameFr": "Phyllali",
+		"dexNumber": 470,
+		"types": [
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Leaf Guard",
+			"Chlorophyll"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 110,
+			"Defense": 130,
+			"Sp. Attack": 60,
+			"Sp. Defense": 65,
+			"Speed": 95
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/leafeon.png"
+	},
+	{
+		"name": "Glaceon",
+		"nameFr": "Givrali",
+		"dexNumber": 471,
+		"types": [
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Snow Cloak",
+			"Ice Body"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 60,
+			"Defense": 110,
+			"Sp. Attack": 130,
+			"Sp. Defense": 95,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glaceon.png"
+	},
+	{
+		"name": "Gliscor",
+		"nameFr": "Scorvol",
+		"dexNumber": 472,
+		"types": [
+			"Ground",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Hyper Cutter",
+			"Sand Veil",
+			"Poison Heal"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 95,
+			"Defense": 125,
+			"Sp. Attack": 45,
+			"Sp. Defense": 75,
+			"Speed": 95
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gliscor.png"
+	},
+	{
+		"name": "Mamoswine",
+		"nameFr": "Mammochon",
+		"dexNumber": 473,
+		"types": [
+			"Ice",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Oblivious",
+			"Snow Cloak",
+			"Thick Fat"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 130,
+			"Defense": 80,
+			"Sp. Attack": 70,
+			"Sp. Defense": 60,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mamoswine.png"
+	},
+	{
+		"name": "Gallade",
+		"nameFr": "Gallame",
+		"dexNumber": 475,
+		"types": [
+			"Psychic",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Steadfast",
+			"Sharpness",
+			"Justified"
+		],
+		"base": {
+			"HP": 68,
+			"Attack": 125,
+			"Defense": 65,
+			"Sp. Attack": 65,
+			"Sp. Defense": 115,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gallade.png"
+	},
+	{
+		"name": "Froslass",
+		"nameFr": "Momartik",
+		"dexNumber": 478,
+		"types": [
+			"Ice",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Snow Cloak",
+			"Cursed Body"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 80,
+			"Defense": 70,
+			"Sp. Attack": 80,
+			"Sp. Defense": 70,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/froslass.png"
+	},
+	{
+		"name": "Rotom",
+		"nameFr": "Motisma",
+		"dexNumber": 479,
+		"types": [
+			"Electric",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 50,
+			"Defense": 77,
+			"Sp. Attack": 95,
+			"Sp. Defense": 77,
+			"Speed": 91
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rotom.png"
+	},
+	{
+		"name": "Rotom Fan",
+		"nameFr": "Motisma (Hélice)",
+		"dexNumber": 479,
+		"types": [
+			"Electric",
+			"Flying"
+		],
+		"form": "Fan",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 65,
+			"Defense": 107,
+			"Sp. Attack": 105,
+			"Sp. Defense": 107,
+			"Speed": 86
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rotom-fan.png"
+	},
+	{
+		"name": "Rotom Frost",
+		"nameFr": "Motisma (Froid)",
+		"dexNumber": 479,
+		"types": [
+			"Electric",
+			"Ice"
+		],
+		"form": "Frost",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 65,
+			"Defense": 107,
+			"Sp. Attack": 105,
+			"Sp. Defense": 107,
+			"Speed": 86
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rotom-frost.png"
+	},
+	{
+		"name": "Rotom Heat",
+		"nameFr": "Motisma (Chaleur)",
+		"dexNumber": 479,
+		"types": [
+			"Electric",
+			"Fire"
+		],
+		"form": "Heat",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 65,
+			"Defense": 107,
+			"Sp. Attack": 105,
+			"Sp. Defense": 107,
+			"Speed": 86
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rotom-heat.png"
+	},
+	{
+		"name": "Rotom Mow",
+		"nameFr": "Motisma (Tonte)",
+		"dexNumber": 479,
+		"types": [
+			"Electric",
+			"Grass"
+		],
+		"form": "Mow",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 65,
+			"Defense": 107,
+			"Sp. Attack": 105,
+			"Sp. Defense": 107,
+			"Speed": 86
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rotom-mow.png"
+	},
+	{
+		"name": "Rotom Wash",
+		"nameFr": "Motisma (Lavage)",
+		"dexNumber": 479,
+		"types": [
+			"Electric",
+			"Water"
+		],
+		"form": "Wash",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 65,
+			"Defense": 107,
+			"Sp. Attack": 105,
+			"Sp. Defense": 107,
+			"Speed": 86
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/rotom-wash.png"
+	},
+	{
+		"name": "Serperior",
+		"nameFr": "Majaspic",
+		"dexNumber": 497,
+		"types": [
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Contrary"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 75,
+			"Defense": 95,
+			"Sp. Attack": 75,
+			"Sp. Defense": 95,
+			"Speed": 113
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/serperior.png"
+	},
+	{
+		"name": "Emboar",
+		"nameFr": "Roitiflam",
+		"dexNumber": 500,
+		"types": [
+			"Fire",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Reckless"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 123,
+			"Defense": 65,
+			"Sp. Attack": 100,
+			"Sp. Defense": 65,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/emboar.png"
+	},
+	{
+		"name": "Hisuian Samurott",
+		"nameFr": "Clamiral de Hisui",
+		"dexNumber": 503,
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Torrent",
+			"Sharpness"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 108,
+			"Defense": 80,
+			"Sp. Attack": 100,
+			"Sp. Defense": 65,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/samurott-hisui.png"
+	},
+	{
+		"name": "Samurott",
+		"nameFr": "Clamiral",
+		"dexNumber": 503,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Shell Armor"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 100,
+			"Defense": 85,
+			"Sp. Attack": 108,
+			"Sp. Defense": 70,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/samurott.png"
+	},
+	{
+		"name": "Watchog",
+		"nameFr": "Miradar",
+		"dexNumber": 505,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Illuminate",
+			"Keen Eye",
+			"Analytic"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 85,
+			"Defense": 69,
+			"Sp. Attack": 60,
+			"Sp. Defense": 69,
+			"Speed": 77
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/watchog.png"
+	},
+	{
+		"name": "Liepard",
+		"nameFr": "Léopardus",
+		"dexNumber": 510,
+		"types": [
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Limber",
+			"Unburden",
+			"Prankster"
+		],
+		"base": {
+			"HP": 64,
+			"Attack": 88,
+			"Defense": 50,
+			"Sp. Attack": 88,
+			"Sp. Defense": 50,
+			"Speed": 106
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/liepard.png"
+	},
+	{
+		"name": "Simisage",
+		"nameFr": "Feuiloutan",
+		"dexNumber": 512,
+		"types": [
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Gluttony",
+			"Overgrow"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 98,
+			"Defense": 63,
+			"Sp. Attack": 98,
+			"Sp. Defense": 63,
+			"Speed": 101
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/simisage.png"
+	},
+	{
+		"name": "Simisear",
+		"nameFr": "Flamoutan",
+		"dexNumber": 514,
+		"types": [
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Gluttony",
+			"Blaze"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 98,
+			"Defense": 63,
+			"Sp. Attack": 98,
+			"Sp. Defense": 63,
+			"Speed": 101
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/simisear.png"
+	},
+	{
+		"name": "Simipour",
+		"nameFr": "Flotoutan",
+		"dexNumber": 516,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Gluttony",
+			"Torrent"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 98,
+			"Defense": 63,
+			"Sp. Attack": 98,
+			"Sp. Defense": 63,
+			"Speed": 101
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/simipour.png"
+	},
+	{
+		"name": "Musharna",
+		"nameFr": "Mushana",
+		"dexNumber": 518,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Forewarn",
+			"Synchronize",
+			"Telepathy"
+		],
+		"base": {
+			"HP": 116,
+			"Attack": 55,
+			"Defense": 85,
+			"Sp. Attack": 107,
+			"Sp. Defense": 95,
+			"Speed": 29
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/musharna.png"
+	},
+	{
+		"name": "Excadrill",
+		"nameFr": "Minotaupe",
+		"dexNumber": 530,
+		"types": [
+			"Ground",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sand Rush",
+			"Sand Force",
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 135,
+			"Defense": 60,
+			"Sp. Attack": 50,
+			"Sp. Defense": 65,
+			"Speed": 88
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/excadrill.png"
+	},
+	{
+		"name": "Audino",
+		"nameFr": "Nanméouïe",
+		"dexNumber": 531,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Healer",
+			"Regenerator",
+			"Klutz"
+		],
+		"base": {
+			"HP": 103,
+			"Attack": 60,
+			"Defense": 86,
+			"Sp. Attack": 60,
+			"Sp. Defense": 86,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/audino.png"
+	},
+	{
+		"name": "Conkeldurr",
+		"nameFr": "Bétochef",
+		"dexNumber": 534,
+		"types": [
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Guts",
+			"Sheer Force",
+			"Iron Fist"
+		],
+		"base": {
+			"HP": 105,
+			"Attack": 140,
+			"Defense": 95,
+			"Sp. Attack": 55,
+			"Sp. Defense": 65,
+			"Speed": 45
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/conkeldurr.png"
+	},
+	{
+		"name": "Scolipede",
+		"nameFr": "Brutapode",
+		"dexNumber": 545,
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Poison Point",
+			"Swarm",
+			"Speed Boost"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 100,
+			"Defense": 89,
+			"Sp. Attack": 55,
+			"Sp. Defense": 69,
+			"Speed": 112
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scolipede.png"
+	},
+	{
+		"name": "Whimsicott",
+		"nameFr": "Farfaduvet",
+		"dexNumber": 547,
+		"types": [
+			"Grass",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Prankster",
+			"Infiltrator",
+			"Chlorophyll"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 67,
+			"Defense": 85,
+			"Sp. Attack": 77,
+			"Sp. Defense": 75,
+			"Speed": 116
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/whimsicott.png"
+	},
+	{
+		"name": "Krookodile",
+		"nameFr": "Crocorible",
+		"dexNumber": 553,
+		"types": [
+			"Ground",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Moxie",
+			"Anger Point"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 117,
+			"Defense": 80,
+			"Sp. Attack": 65,
+			"Sp. Defense": 70,
+			"Speed": 92
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/krookodile.png"
+	},
+	{
+		"name": "Scrafty",
+		"nameFr": "Baggaïd",
+		"dexNumber": 560,
+		"types": [
+			"Dark",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Shed Skin",
+			"Moxie",
+			"Intimidate"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 115,
+			"Sp. Attack": 45,
+			"Sp. Defense": 115,
+			"Speed": 58
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scrafty.png"
+	},
+	{
+		"name": "Cofagrigus",
+		"nameFr": "Tutankafer",
+		"dexNumber": 563,
+		"types": [
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Mummy"
+		],
+		"base": {
+			"HP": 58,
+			"Attack": 50,
+			"Defense": 145,
+			"Sp. Attack": 95,
+			"Sp. Defense": 105,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/cofagrigus.png"
+	},
+	{
+		"name": "Garbodor",
+		"nameFr": "Miasmax",
+		"dexNumber": 569,
+		"types": [
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Stench",
+			"Weak Armor",
+			"Aftermath"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 95,
+			"Defense": 82,
+			"Sp. Attack": 60,
+			"Sp. Defense": 82,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/garbodor.png"
+	},
+	{
+		"name": "Hisuian Zoroark",
+		"nameFr": "Zoroark de Hisui",
+		"dexNumber": 571,
+		"types": [
+			"Normal",
+			"Ghost"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Illusion"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 100,
+			"Defense": 60,
+			"Sp. Attack": 125,
+			"Sp. Defense": 60,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/zoroark-hisui.png"
+	},
+	{
+		"name": "Zoroark",
+		"nameFr": "Zoroark",
+		"dexNumber": 571,
+		"types": [
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Illusion"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 105,
+			"Defense": 60,
+			"Sp. Attack": 120,
+			"Sp. Defense": 60,
+			"Speed": 105
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/zoroark.png"
+	},
+	{
+		"name": "Reuniclus",
+		"nameFr": "Symbios",
+		"dexNumber": 579,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overcoat",
+			"Magic Guard",
+			"Regenerator"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 65,
+			"Defense": 75,
+			"Sp. Attack": 125,
+			"Sp. Defense": 85,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/reuniclus.png"
+	},
+	{
+		"name": "Vanilluxe",
+		"nameFr": "Sorbouboul",
+		"dexNumber": 584,
+		"types": [
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Ice Body",
+			"Snow Warning",
+			"Weak Armor"
+		],
+		"base": {
+			"HP": 71,
+			"Attack": 95,
+			"Defense": 85,
+			"Sp. Attack": 110,
+			"Sp. Defense": 95,
+			"Speed": 79
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/vanilluxe.png"
+	},
+	{
+		"name": "Emolga",
+		"nameFr": "Emolga",
+		"dexNumber": 587,
+		"types": [
+			"Electric",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Static",
+			"Motor Drive"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 75,
+			"Defense": 60,
+			"Sp. Attack": 75,
+			"Sp. Defense": 60,
+			"Speed": 103
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/emolga.png"
+	},
+	{
+		"name": "Eelektross",
+		"nameFr": "Ohmassacre",
+		"dexNumber": 604,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 115,
+			"Defense": 80,
+			"Sp. Attack": 105,
+			"Sp. Defense": 80,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/eelektross.png"
+	},
+	{
+		"name": "Chandelure",
+		"nameFr": "Lugulabre",
+		"dexNumber": 609,
+		"types": [
+			"Ghost",
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flash Fire",
+			"Flame Body",
+			"Infiltrator"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 55,
+			"Defense": 90,
+			"Sp. Attack": 145,
+			"Sp. Defense": 90,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chandelure.png"
+	},
+	{
+		"name": "Beartic",
+		"nameFr": "Polagriffe",
+		"dexNumber": 614,
+		"types": [
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Snow Cloak",
+			"Slush Rush",
+			"Swift Swim"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 130,
+			"Defense": 80,
+			"Sp. Attack": 70,
+			"Sp. Defense": 80,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/beartic.png"
+	},
+	{
+		"name": "Galarian Stunfisk",
+		"nameFr": "Limonde de Galar",
+		"dexNumber": 618,
+		"types": [
+			"Ground",
+			"Steel"
+		],
+		"form": "Galar",
+		"abilities": [
+			"Mimicry"
+		],
+		"base": {
+			"HP": 109,
+			"Attack": 81,
+			"Defense": 99,
+			"Sp. Attack": 66,
+			"Sp. Defense": 84,
+			"Speed": 32
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/stunfisk-galar.png"
+	},
+	{
+		"name": "Stunfisk",
+		"nameFr": "Limonde",
+		"dexNumber": 618,
+		"types": [
+			"Ground",
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Static",
+			"Limber",
+			"Sand Veil"
+		],
+		"base": {
+			"HP": 109,
+			"Attack": 66,
+			"Defense": 84,
+			"Sp. Attack": 81,
+			"Sp. Defense": 99,
+			"Speed": 32
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/stunfisk.png"
+	},
+	{
+		"name": "Golurk",
+		"nameFr": "Golemastoc",
+		"dexNumber": 623,
+		"types": [
+			"Ground",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Iron Fist",
+			"Klutz",
+			"No Guard"
+		],
+		"base": {
+			"HP": 89,
+			"Attack": 124,
+			"Defense": 80,
+			"Sp. Attack": 55,
+			"Sp. Defense": 80,
+			"Speed": 55
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/golurk.png"
+	},
+	{
+		"name": "Hydreigon",
+		"nameFr": "Trioxhydre",
+		"dexNumber": 635,
+		"types": [
+			"Dark",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 92,
+			"Attack": 105,
+			"Defense": 90,
+			"Sp. Attack": 125,
+			"Sp. Defense": 90,
+			"Speed": 98
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hydreigon.png"
+	},
+	{
+		"name": "Volcarona",
+		"nameFr": "Pyrax",
+		"dexNumber": 637,
+		"types": [
+			"Bug",
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flame Body",
+			"Swarm"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 60,
+			"Defense": 65,
+			"Sp. Attack": 135,
+			"Sp. Defense": 105,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/volcarona.png"
+	},
+	{
+		"name": "Chesnaught",
+		"nameFr": "Blindépique",
+		"dexNumber": 652,
+		"types": [
+			"Grass",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Bulletproof"
+		],
+		"base": {
+			"HP": 88,
+			"Attack": 107,
+			"Defense": 122,
+			"Sp. Attack": 74,
+			"Sp. Defense": 75,
+			"Speed": 64
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chesnaught.png"
+	},
+	{
+		"name": "Delphox",
+		"nameFr": "Goupelin",
+		"dexNumber": 655,
+		"types": [
+			"Fire",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Magician"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 69,
+			"Defense": 72,
+			"Sp. Attack": 114,
+			"Sp. Defense": 100,
+			"Speed": 104
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/delphox.png"
+	},
+	{
+		"name": "Greninja",
+		"nameFr": "Amphinobi",
+		"dexNumber": 658,
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Protean",
+			"Battle Bond"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 95,
+			"Defense": 67,
+			"Sp. Attack": 103,
+			"Sp. Defense": 71,
+			"Speed": 122
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/greninja.png"
+	},
+	{
+		"name": "Diggersby",
+		"nameFr": "Excavarenne",
+		"dexNumber": 660,
+		"types": [
+			"Normal",
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pickup",
+			"Cheek Pouch",
+			"Huge Power"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 56,
+			"Defense": 77,
+			"Sp. Attack": 50,
+			"Sp. Defense": 77,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/diggersby.png"
+	},
+	{
+		"name": "Talonflame",
+		"nameFr": "Flambusard",
+		"dexNumber": 663,
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flame Body",
+			"Gale Wings"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 81,
+			"Defense": 71,
+			"Sp. Attack": 74,
+			"Sp. Defense": 69,
+			"Speed": 126
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/talonflame.png"
+	},
+	{
+		"name": "Vivillon Fancy Pattern",
+		"nameFr": "Prismillon",
+		"dexNumber": 666,
+		"types": [
+			"Bug",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Shield Dust",
+			"Compound Eyes",
+			"Friend Guard"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 52,
+			"Defense": 50,
+			"Sp. Attack": 90,
+			"Sp. Defense": 50,
+			"Speed": 89
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/vivillon.png"
+	},
+	{
+		"name": "Pyroar",
+		"nameFr": "Némélios",
+		"dexNumber": 668,
+		"types": [
+			"Fire",
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Rivalry",
+			"Unnerve",
+			"Moxie"
+		],
+		"base": {
+			"HP": 86,
+			"Attack": 68,
+			"Defense": 72,
+			"Sp. Attack": 109,
+			"Sp. Defense": 66,
+			"Speed": 106
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pyroar.png"
+	},
+	{
+		"name": "Floette",
+		"nameFr": "Floette",
+		"dexNumber": 670,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flower Veil",
+			"Symbiosis"
+		],
+		"base": {
+			"HP": 54,
+			"Attack": 45,
+			"Defense": 47,
+			"Sp. Attack": 75,
+			"Sp. Defense": 98,
+			"Speed": 52
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/floette.png"
+	},
+	{
+		"name": "Florges Red Flower",
+		"nameFr": "Florges",
+		"dexNumber": 671,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flower Veil",
+			"Symbiosis"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 65,
+			"Defense": 68,
+			"Sp. Attack": 112,
+			"Sp. Defense": 154,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/florges.png"
+	},
+	{
+		"name": "Pangoro",
+		"nameFr": "Pandarbare",
+		"dexNumber": 675,
+		"types": [
+			"Fighting",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Iron Fist",
+			"Mold Breaker",
+			"Scrappy"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 124,
+			"Defense": 78,
+			"Sp. Attack": 69,
+			"Sp. Defense": 71,
+			"Speed": 58
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pangoro.png"
+	},
+	{
+		"name": "Furfrou Natural Form",
+		"nameFr": "Couafarel",
+		"dexNumber": 676,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Fur Coat"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 80,
+			"Defense": 60,
+			"Sp. Attack": 65,
+			"Sp. Defense": 90,
+			"Speed": 102
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/furfrou.png"
+	},
+	{
+		"name": "Meowstic",
+		"nameFr": "Mistigrix",
+		"dexNumber": 678,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Infiltrator",
+			"Prankster"
+		],
+		"base": {
+			"HP": 74,
+			"Attack": 48,
+			"Defense": 76,
+			"Sp. Attack": 83,
+			"Sp. Defense": 81,
+			"Speed": 104
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/meowstic.png"
+	},
+	{
+		"name": "Meowstic Female",
+		"nameFr": "Mistigrix (♀)",
+		"dexNumber": 678,
+		"types": [
+			"Psychic"
+		],
+		"form": "F",
+		"abilities": [
+			"Keen Eye",
+			"Infiltrator",
+			"Competitive"
+		],
+		"base": {
+			"HP": 74,
+			"Attack": 48,
+			"Defense": 76,
+			"Sp. Attack": 83,
+			"Sp. Defense": 81,
+			"Speed": 104
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/meowstic-f.png"
+	},
+	{
+		"name": "Aegislash Shield Forme",
+		"nameFr": "Exagide",
+		"dexNumber": 681,
+		"types": [
+			"Steel",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Stance Change"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 50,
+			"Defense": 140,
+			"Sp. Attack": 50,
+			"Sp. Defense": 140,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aegislash.png"
+	},
+	{
+		"name": "Aromatisse",
+		"nameFr": "Cocotine",
+		"dexNumber": 683,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Healer",
+			"Aroma Veil"
+		],
+		"base": {
+			"HP": 101,
+			"Attack": 72,
+			"Defense": 72,
+			"Sp. Attack": 99,
+			"Sp. Defense": 89,
+			"Speed": 29
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aromatisse.png"
+	},
+	{
+		"name": "Slurpuff",
+		"nameFr": "Cupcanaille",
+		"dexNumber": 685,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sweet Veil",
+			"Unburden"
+		],
+		"base": {
+			"HP": 82,
+			"Attack": 80,
+			"Defense": 86,
+			"Sp. Attack": 85,
+			"Sp. Defense": 75,
+			"Speed": 72
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slurpuff.png"
+	},
+	{
+		"name": "Malamar",
+		"nameFr": "Sepiatroce",
+		"dexNumber": 687,
+		"types": [
+			"Dark",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Contrary",
+			"Suction Cups",
+			"Infiltrator"
+		],
+		"base": {
+			"HP": 86,
+			"Attack": 92,
+			"Defense": 88,
+			"Sp. Attack": 68,
+			"Sp. Defense": 75,
+			"Speed": 73
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/malamar.png"
+	},
+	{
+		"name": "Barbaracle",
+		"nameFr": "Golgopathe",
+		"dexNumber": 689,
+		"types": [
+			"Rock",
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Tough Claws",
+			"Sniper",
+			"Pickpocket"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 105,
+			"Defense": 115,
+			"Sp. Attack": 54,
+			"Sp. Defense": 86,
+			"Speed": 68
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/barbaracle.png"
+	},
+	{
+		"name": "Dragalge",
+		"nameFr": "Kravarech",
+		"dexNumber": 691,
+		"types": [
+			"Poison",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Poison Point",
+			"Poison Touch",
+			"Adaptability"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 75,
+			"Defense": 90,
+			"Sp. Attack": 97,
+			"Sp. Defense": 123,
+			"Speed": 44
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragalge.png"
+	},
+	{
+		"name": "Clawitzer",
+		"nameFr": "Gamblast",
+		"dexNumber": 693,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Mega Launcher"
+		],
+		"base": {
+			"HP": 71,
+			"Attack": 73,
+			"Defense": 88,
+			"Sp. Attack": 120,
+			"Sp. Defense": 89,
+			"Speed": 59
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/clawitzer.png"
+	},
+	{
+		"name": "Heliolisk",
+		"nameFr": "Iguolta",
+		"dexNumber": 695,
+		"types": [
+			"Electric",
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Dry Skin",
+			"Sand Veil",
+			"Solar Power"
+		],
+		"base": {
+			"HP": 62,
+			"Attack": 55,
+			"Defense": 52,
+			"Sp. Attack": 109,
+			"Sp. Defense": 94,
+			"Speed": 109
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/heliolisk.png"
+	},
+	{
+		"name": "Tyrantrum",
+		"nameFr": "Rexillius",
+		"dexNumber": 697,
+		"types": [
+			"Rock",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Strong Jaw",
+			"Rock Head"
+		],
+		"base": {
+			"HP": 82,
+			"Attack": 121,
+			"Defense": 119,
+			"Sp. Attack": 69,
+			"Sp. Defense": 59,
+			"Speed": 71
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tyrantrum.png"
+	},
+	{
+		"name": "Aurorus",
+		"nameFr": "Dragmara",
+		"dexNumber": 699,
+		"types": [
+			"Rock",
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Refrigerate",
+			"Snow Warning"
+		],
+		"base": {
+			"HP": 123,
+			"Attack": 77,
+			"Defense": 72,
+			"Sp. Attack": 99,
+			"Sp. Defense": 92,
+			"Speed": 58
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aurorus.png"
+	},
+	{
+		"name": "Sylveon",
+		"nameFr": "Nymphali",
+		"dexNumber": 700,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Cute Charm",
+			"Pixilate"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 65,
+			"Defense": 65,
+			"Sp. Attack": 110,
+			"Sp. Defense": 130,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sylveon.png"
+	},
+	{
+		"name": "Hawlucha",
+		"nameFr": "Brutalibré",
+		"dexNumber": 701,
+		"types": [
+			"Fighting",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Limber",
+			"Unburden",
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 92,
+			"Defense": 75,
+			"Sp. Attack": 74,
+			"Sp. Defense": 63,
+			"Speed": 118
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"
+	},
+	{
+		"name": "Dedenne",
+		"nameFr": "Dedenne",
+		"dexNumber": 702,
+		"types": [
+			"Electric",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Cheek Pouch",
+			"Pickup",
+			"Plus"
+		],
+		"base": {
+			"HP": 67,
+			"Attack": 58,
+			"Defense": 57,
+			"Sp. Attack": 81,
+			"Sp. Defense": 67,
+			"Speed": 101
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dedenne.png"
+	},
+	{
+		"name": "Goodra",
+		"nameFr": "Muplodocus",
+		"dexNumber": 706,
+		"types": [
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sap Sipper",
+			"Hydration",
+			"Gooey"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 100,
+			"Defense": 70,
+			"Sp. Attack": 110,
+			"Sp. Defense": 150,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/goodra.png"
+	},
+	{
+		"name": "Hisuian Goodra",
+		"nameFr": "Muplodocus de Hisui",
+		"dexNumber": 706,
+		"types": [
+			"Steel",
+			"Dragon"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Sap Sipper",
+			"Shell Armor",
+			"Gooey"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 100,
+			"Defense": 100,
+			"Sp. Attack": 110,
+			"Sp. Defense": 150,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/goodra-hisui.png"
+	},
+	{
+		"name": "Klefki",
+		"nameFr": "Trousselin",
+		"dexNumber": 707,
+		"types": [
+			"Steel",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Prankster",
+			"Magician"
+		],
+		"base": {
+			"HP": 57,
+			"Attack": 80,
+			"Defense": 91,
+			"Sp. Attack": 80,
+			"Sp. Defense": 87,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/klefki.png"
+	},
+	{
+		"name": "Trevenant",
+		"nameFr": "Desséliande",
+		"dexNumber": 709,
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Natural Cure",
+			"Frisk",
+			"Harvest"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 110,
+			"Defense": 76,
+			"Sp. Attack": 65,
+			"Sp. Defense": 82,
+			"Speed": 56
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/trevenant.png"
+	},
+	{
+		"name": "Gourgeist",
+		"nameFr": "Banshitrouye",
+		"dexNumber": 711,
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pickup",
+			"Frisk",
+			"Insomnia"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 122,
+			"Sp. Attack": 58,
+			"Sp. Defense": 75,
+			"Speed": 84
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gourgeist.png"
+	},
+	{
+		"name": "Gourgeist Jumbo Variety",
+		"nameFr": "Banshitrouye (Géant)",
+		"dexNumber": 711,
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"form": "Super",
+		"abilities": [
+			"Pickup",
+			"Frisk",
+			"Insomnia"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 100,
+			"Defense": 122,
+			"Sp. Attack": 58,
+			"Sp. Defense": 75,
+			"Speed": 54
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gourgeist-super.png"
+	},
+	{
+		"name": "Gourgeist Large Variety",
+		"nameFr": "Banshitrouye (Grand)",
+		"dexNumber": 711,
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"form": "Large",
+		"abilities": [
+			"Pickup",
+			"Frisk",
+			"Insomnia"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 95,
+			"Defense": 122,
+			"Sp. Attack": 58,
+			"Sp. Defense": 75,
+			"Speed": 69
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gourgeist-large.png"
+	},
+	{
+		"name": "Gourgeist Small Variety",
+		"nameFr": "Banshitrouye (Petit)",
+		"dexNumber": 711,
+		"types": [
+			"Ghost",
+			"Grass"
+		],
+		"form": "Small",
+		"abilities": [
+			"Pickup",
+			"Frisk",
+			"Insomnia"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 85,
+			"Defense": 122,
+			"Sp. Attack": 58,
+			"Sp. Defense": 75,
+			"Speed": 99
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gourgeist-small.png"
+	},
+	{
+		"name": "Avalugg",
+		"nameFr": "Séracrawl",
+		"dexNumber": 713,
+		"types": [
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Own Tempo",
+			"Ice Body",
+			"Sturdy"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 117,
+			"Defense": 184,
+			"Sp. Attack": 44,
+			"Sp. Defense": 46,
+			"Speed": 28
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/avalugg.png"
+	},
+	{
+		"name": "Hisuian Avalugg",
+		"nameFr": "Séracrawl de Hisui",
+		"dexNumber": 713,
+		"types": [
+			"Ice",
+			"Rock"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Strong Jaw",
+			"Ice Body",
+			"Sturdy"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 127,
+			"Defense": 184,
+			"Sp. Attack": 34,
+			"Sp. Defense": 36,
+			"Speed": 38
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/avalugg-hisui.png"
+	},
+	{
+		"name": "Noivern",
+		"nameFr": "Bruyverne",
+		"dexNumber": 715,
+		"types": [
+			"Flying",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Frisk",
+			"Infiltrator",
+			"Telepathy"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 70,
+			"Defense": 80,
+			"Sp. Attack": 97,
+			"Sp. Defense": 80,
+			"Speed": 123
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/noivern.png"
+	},
+	{
+		"name": "Decidueye",
+		"nameFr": "Archéduc",
+		"dexNumber": 724,
+		"types": [
+			"Grass",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Long Reach"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 107,
+			"Defense": 75,
+			"Sp. Attack": 100,
+			"Sp. Defense": 100,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/decidueye.png"
+	},
+	{
+		"name": "Hisuian Decidueye",
+		"nameFr": "Archéduc de Hisui",
+		"dexNumber": 724,
+		"types": [
+			"Grass",
+			"Fighting"
+		],
+		"form": "Hisui",
+		"abilities": [
+			"Overgrow",
+			"Scrappy"
+		],
+		"base": {
+			"HP": 88,
+			"Attack": 112,
+			"Defense": 80,
+			"Sp. Attack": 95,
+			"Sp. Defense": 95,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/decidueye-hisui.png"
+	},
+	{
+		"name": "Incineroar",
+		"nameFr": "Félinferno",
+		"dexNumber": 727,
+		"types": [
+			"Fire",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Intimidate"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 115,
+			"Defense": 90,
+			"Sp. Attack": 80,
+			"Sp. Defense": 90,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/incineroar.png"
+	},
+	{
+		"name": "Primarina",
+		"nameFr": "Oratoria",
+		"dexNumber": 730,
+		"types": [
+			"Water",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Liquid Voice"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 74,
+			"Defense": 74,
+			"Sp. Attack": 126,
+			"Sp. Defense": 116,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/primarina.png"
+	},
+	{
+		"name": "Toucannon",
+		"nameFr": "Bazoucan",
+		"dexNumber": 733,
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Skill Link",
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 120,
+			"Defense": 75,
+			"Sp. Attack": 75,
+			"Sp. Defense": 75,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/toucannon.png"
+	},
+	{
+		"name": "Crabominable",
+		"nameFr": "Crabominable",
+		"dexNumber": 740,
+		"types": [
+			"Fighting",
+			"Ice"
+		],
+		"form": "Base",
+		"abilities": [
+			"Hyper Cutter",
+			"Iron Fist",
+			"Anger Point"
+		],
+		"base": {
+			"HP": 97,
+			"Attack": 132,
+			"Defense": 77,
+			"Sp. Attack": 62,
+			"Sp. Defense": 67,
+			"Speed": 43
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/crabominable.png"
+	},
+	{
+		"name": "Lycanroc",
+		"nameFr": "Lougaroc",
+		"dexNumber": 745,
+		"types": [
+			"Rock"
+		],
+		"form": "Base",
+		"abilities": [
+			"Keen Eye",
+			"Sand Rush",
+			"Steadfast"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 115,
+			"Defense": 65,
+			"Sp. Attack": 55,
+			"Sp. Defense": 65,
+			"Speed": 112
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lycanroc.png"
+	},
+	{
+		"name": "Lycanroc Dusk Form",
+		"nameFr": "Lougaroc (Crépuscule)",
+		"dexNumber": 745,
+		"types": [
+			"Rock"
+		],
+		"form": "Dusk",
+		"abilities": [
+			"Tough Claws"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 117,
+			"Defense": 65,
+			"Sp. Attack": 55,
+			"Sp. Defense": 65,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lycanroc-dusk.png"
+	},
+	{
+		"name": "Lycanroc Midnight Form",
+		"nameFr": "Lougaroc (Nocturne)",
+		"dexNumber": 745,
+		"types": [
+			"Rock"
+		],
+		"form": "Midnight",
+		"abilities": [
+			"Keen Eye",
+			"Vital Spirit",
+			"No Guard"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 115,
+			"Defense": 75,
+			"Sp. Attack": 55,
+			"Sp. Defense": 75,
+			"Speed": 82
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lycanroc-midnight.png"
+	},
+	{
+		"name": "Toxapex",
+		"nameFr": "Prédastérie",
+		"dexNumber": 748,
+		"types": [
+			"Poison",
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Merciless",
+			"Limber",
+			"Regenerator"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 63,
+			"Defense": 152,
+			"Sp. Attack": 53,
+			"Sp. Defense": 142,
+			"Speed": 35
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/toxapex.png"
+	},
+	{
+		"name": "Mudsdale",
+		"nameFr": "Bourrinos",
+		"dexNumber": 750,
+		"types": [
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Own Tempo",
+			"Stamina",
+			"Inner Focus"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 125,
+			"Defense": 100,
+			"Sp. Attack": 55,
+			"Sp. Defense": 85,
+			"Speed": 35
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mudsdale.png"
+	},
+	{
+		"name": "Araquanid",
+		"nameFr": "Tarenbulle",
+		"dexNumber": 752,
+		"types": [
+			"Water",
+			"Bug"
+		],
+		"form": "Base",
+		"abilities": [
+			"Water Bubble",
+			"Water Absorb"
+		],
+		"base": {
+			"HP": 68,
+			"Attack": 70,
+			"Defense": 92,
+			"Sp. Attack": 50,
+			"Sp. Defense": 132,
+			"Speed": 42
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/araquanid.png"
+	},
+	{
+		"name": "Salazzle",
+		"nameFr": "Malamandre",
+		"dexNumber": 758,
+		"types": [
+			"Poison",
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Corrosion",
+			"Oblivious"
+		],
+		"base": {
+			"HP": 68,
+			"Attack": 64,
+			"Defense": 60,
+			"Sp. Attack": 111,
+			"Sp. Defense": 60,
+			"Speed": 117
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/salazzle.png"
+	},
+	{
+		"name": "Tsareena",
+		"nameFr": "Sucreine",
+		"dexNumber": 763,
+		"types": [
+			"Grass"
+		],
+		"form": "Base",
+		"abilities": [
+			"Leaf Guard",
+			"Queenly Majesty",
+			"Sweet Veil"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 120,
+			"Defense": 98,
+			"Sp. Attack": 50,
+			"Sp. Defense": 98,
+			"Speed": 72
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tsareena.png"
+	},
+	{
+		"name": "Oranguru",
+		"nameFr": "Gouroutan",
+		"dexNumber": 765,
+		"types": [
+			"Normal",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Inner Focus",
+			"Telepathy",
+			"Symbiosis"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 60,
+			"Defense": 80,
+			"Sp. Attack": 90,
+			"Sp. Defense": 110,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/oranguru.png"
+	},
+	{
+		"name": "Passimian",
+		"nameFr": "Quartermac",
+		"dexNumber": 766,
+		"types": [
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Receiver",
+			"Defiant"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 120,
+			"Defense": 90,
+			"Sp. Attack": 40,
+			"Sp. Defense": 60,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/passimian.png"
+	},
+	{
+		"name": "Mimikyu",
+		"nameFr": "Mimiqui",
+		"dexNumber": 778,
+		"types": [
+			"Ghost",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Disguise"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 90,
+			"Defense": 80,
+			"Sp. Attack": 50,
+			"Sp. Defense": 105,
+			"Speed": 96
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mimikyu.png"
+	},
+	{
+		"name": "Drampa",
+		"nameFr": "Draïeul",
+		"dexNumber": 780,
+		"types": [
+			"Normal",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Berserk",
+			"Sap Sipper",
+			"Cloud Nine"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 60,
+			"Defense": 85,
+			"Sp. Attack": 135,
+			"Sp. Defense": 91,
+			"Speed": 36
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/drampa.png"
+	},
+	{
+		"name": "Kommo-o",
+		"nameFr": "Ékaïser",
+		"dexNumber": 784,
+		"types": [
+			"Dragon",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Bulletproof",
+			"Soundproof",
+			"Overcoat"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 110,
+			"Defense": 125,
+			"Sp. Attack": 100,
+			"Sp. Defense": 105,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/kommoo.png"
+	},
+	{
+		"name": "Corviknight",
+		"nameFr": "Corvaillus",
+		"dexNumber": 823,
+		"types": [
+			"Flying",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pressure",
+			"Unnerve",
+			"Mirror Armor"
+		],
+		"base": {
+			"HP": 98,
+			"Attack": 87,
+			"Defense": 105,
+			"Sp. Attack": 53,
+			"Sp. Defense": 85,
+			"Speed": 67
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/corviknight.png"
+	},
+	{
+		"name": "Flapple",
+		"nameFr": "Pomdrapi",
+		"dexNumber": 841,
+		"types": [
+			"Grass",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Ripen",
+			"Gluttony",
+			"Hustle"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 110,
+			"Defense": 80,
+			"Sp. Attack": 95,
+			"Sp. Defense": 60,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/flapple.png"
+	},
+	{
+		"name": "Appletun",
+		"nameFr": "Dratatin",
+		"dexNumber": 842,
+		"types": [
+			"Grass",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Ripen",
+			"Gluttony",
+			"Thick Fat"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 85,
+			"Defense": 80,
+			"Sp. Attack": 100,
+			"Sp. Defense": 80,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/appletun.png"
+	},
+	{
+		"name": "Sandaconda",
+		"nameFr": "Dunaconda",
+		"dexNumber": 844,
+		"types": [
+			"Ground"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sand Spit",
+			"Shed Skin",
+			"Sand Veil"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 107,
+			"Defense": 125,
+			"Sp. Attack": 65,
+			"Sp. Defense": 70,
+			"Speed": 71
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sandaconda.png"
+	},
+	{
+		"name": "Polteageist",
+		"nameFr": "Polthégeist",
+		"dexNumber": 855,
+		"types": [
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Weak Armor",
+			"Cursed Body"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 65,
+			"Defense": 65,
+			"Sp. Attack": 134,
+			"Sp. Defense": 114,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/polteageist.png"
+	},
+	{
+		"name": "Hatterene",
+		"nameFr": "Sorcilence",
+		"dexNumber": 858,
+		"types": [
+			"Psychic",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Healer",
+			"Anticipation",
+			"Magic Bounce"
+		],
+		"base": {
+			"HP": 57,
+			"Attack": 90,
+			"Defense": 95,
+			"Sp. Attack": 136,
+			"Sp. Defense": 103,
+			"Speed": 29
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hatterene.png"
+	},
+	{
+		"name": "Grimmsnarl",
+		"nameFr": "Angoliath",
+		"dexNumber": 861,
+		"types": [
+			"Dark",
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Prankster",
+			"Frisk",
+			"Pickpocket"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 120,
+			"Defense": 65,
+			"Sp. Attack": 95,
+			"Sp. Defense": 75,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/grimmsnarl.png"
+	},
+	{
+		"name": "Mr. Rime",
+		"nameFr": "M. Glaquette",
+		"dexNumber": 866,
+		"types": [
+			"Ice",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Tangled Feet",
+			"Screen Cleaner",
+			"Ice Body"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 85,
+			"Defense": 75,
+			"Sp. Attack": 110,
+			"Sp. Defense": 100,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mrrime.png"
+	},
+	{
+		"name": "Runerigus",
+		"nameFr": "Tutétékri",
+		"dexNumber": 867,
+		"types": [
+			"Ground",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Wandering Spirit"
+		],
+		"base": {
+			"HP": 58,
+			"Attack": 95,
+			"Defense": 145,
+			"Sp. Attack": 50,
+			"Sp. Defense": 105,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/runerigus.png"
+	},
+	{
+		"name": "Alcremie",
+		"nameFr": "Charmilly",
+		"dexNumber": 869,
+		"types": [
+			"Fairy"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sweet Veil",
+			"Aroma Veil"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 60,
+			"Defense": 75,
+			"Sp. Attack": 110,
+			"Sp. Defense": 121,
+			"Speed": 64
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/alcremie.png"
+	},
+	{
+		"name": "Falinks",
+		"nameFr": "Hexadron",
+		"dexNumber": 870,
+		"types": [
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Battle Armor",
+			"Defiant"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 100,
+			"Defense": 100,
+			"Sp. Attack": 70,
+			"Sp. Defense": 60,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/falinks.png"
+	},
+	{
+		"name": "Morpeko",
+		"nameFr": "Morpeko",
+		"dexNumber": 877,
+		"types": [
+			"Electric",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Hunger Switch"
+		],
+		"base": {
+			"HP": 58,
+			"Attack": 95,
+			"Defense": 58,
+			"Sp. Attack": 70,
+			"Sp. Defense": 58,
+			"Speed": 97
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/morpeko.png"
+	},
+	{
+		"name": "Dragapult",
+		"nameFr": "Lanssorien",
+		"dexNumber": 887,
+		"types": [
+			"Dragon",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Clear Body",
+			"Infiltrator",
+			"Cursed Body"
+		],
+		"base": {
+			"HP": 88,
+			"Attack": 120,
+			"Defense": 75,
+			"Sp. Attack": 100,
+			"Sp. Defense": 75,
+			"Speed": 142
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragapult.png"
+	},
+	{
+		"name": "Wyrdeer",
+		"nameFr": "Wyrdeer",
+		"dexNumber": 899,
+		"types": [
+			"Normal",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Intimidate",
+			"Frisk",
+			"Sap Sipper"
+		],
+		"base": {
+			"HP": 103,
+			"Attack": 105,
+			"Defense": 72,
+			"Sp. Attack": 105,
+			"Sp. Defense": 75,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/wyrdeer.png"
+	},
+	{
+		"name": "Kleavor",
+		"nameFr": "Kleavor",
+		"dexNumber": 900,
+		"types": [
+			"Bug",
+			"Rock"
+		],
+		"form": "Base",
+		"abilities": [
+			"Swarm",
+			"Sheer Force",
+			"Sharpness"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 135,
+			"Defense": 95,
+			"Sp. Attack": 45,
+			"Sp. Defense": 70,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/kleavor.png"
+	},
+	{
+		"name": "Basculegion Female",
+		"nameFr": "Basculegion Female",
+		"dexNumber": 902,
+		"types": [
+			"Water",
+			"Ghost"
+		],
+		"form": "F",
+		"abilities": [
+			"Swift Swim",
+			"Adaptability",
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 120,
+			"Attack": 92,
+			"Defense": 65,
+			"Sp. Attack": 100,
+			"Sp. Defense": 75,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/basculegion-f.png"
+	},
+	{
+		"name": "Basculegion Male",
+		"nameFr": "Basculegion Male",
+		"dexNumber": 902,
+		"types": [
+			"Water",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Swift Swim",
+			"Adaptability",
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 120,
+			"Attack": 112,
+			"Defense": 65,
+			"Sp. Attack": 80,
+			"Sp. Defense": 75,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/basculegion.png"
+	},
+	{
+		"name": "Sneasler",
+		"nameFr": "Sneasler",
+		"dexNumber": 903,
+		"types": [
+			"Fighting",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Pressure",
+			"Unburden",
+			"Poison Touch"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 130,
+			"Defense": 60,
+			"Sp. Attack": 40,
+			"Sp. Defense": 80,
+			"Speed": 120
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sneasler.png"
+	},
+	{
+		"name": "Overqwil",
+		"nameFr": "Overqwil",
+		"dexNumber": 904,
+		"types": [
+			"Dark",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Poison Point",
+			"Swift Swim",
+			"Intimidate"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 115,
+			"Defense": 95,
+			"Sp. Attack": 65,
+			"Sp. Defense": 65,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/overqwil.png"
+	},
+	{
+		"name": "Meowscarada",
+		"nameFr": "Meowscarada",
+		"dexNumber": 908,
+		"types": [
+			"Grass",
+			"Dark"
+		],
+		"form": "Base",
+		"abilities": [
+			"Overgrow",
+			"Protean"
+		],
+		"base": {
+			"HP": 76,
+			"Attack": 110,
+			"Defense": 70,
+			"Sp. Attack": 81,
+			"Sp. Defense": 70,
+			"Speed": 123
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/meowscarada.png"
+	},
+	{
+		"name": "Skeledirge",
+		"nameFr": "Skeledirge",
+		"dexNumber": 911,
+		"types": [
+			"Fire",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Blaze",
+			"Unaware"
+		],
+		"base": {
+			"HP": 104,
+			"Attack": 75,
+			"Defense": 100,
+			"Sp. Attack": 110,
+			"Sp. Defense": 75,
+			"Speed": 66
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/skeledirge.png"
+	},
+	{
+		"name": "Quaquaval",
+		"nameFr": "Quaquaval",
+		"dexNumber": 914,
+		"types": [
+			"Water",
+			"Fighting"
+		],
+		"form": "Base",
+		"abilities": [
+			"Torrent",
+			"Moxie"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 120,
+			"Defense": 80,
+			"Sp. Attack": 85,
+			"Sp. Defense": 75,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/quaquaval.png"
+	},
+	{
+		"name": "Maushold",
+		"nameFr": "Maushold",
+		"dexNumber": 925,
+		"types": [
+			"Normal"
+		],
+		"form": "Base",
+		"abilities": [
+			"Friend Guard",
+			"Cheek Pouch",
+			"Technician"
+		],
+		"base": {
+			"HP": 74,
+			"Attack": 75,
+			"Defense": 70,
+			"Sp. Attack": 65,
+			"Sp. Defense": 75,
+			"Speed": 111
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/maushold.png"
+	},
+	{
+		"name": "Garganacl",
+		"nameFr": "Garganacl",
+		"dexNumber": 934,
+		"types": [
+			"Rock"
+		],
+		"form": "Base",
+		"abilities": [
+			"Purifying Salt",
+			"Sturdy",
+			"Clear Body"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 100,
+			"Defense": 130,
+			"Sp. Attack": 45,
+			"Sp. Defense": 90,
+			"Speed": 35
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/garganacl.png"
+	},
+	{
+		"name": "Armarouge",
+		"nameFr": "Armarouge",
+		"dexNumber": 936,
+		"types": [
+			"Fire",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flash Fire",
+			"Weak Armor"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 60,
+			"Defense": 100,
+			"Sp. Attack": 125,
+			"Sp. Defense": 80,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/armarouge.png"
+	},
+	{
+		"name": "Ceruledge",
+		"nameFr": "Ceruledge",
+		"dexNumber": 937,
+		"types": [
+			"Fire",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Flash Fire",
+			"Weak Armor"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 125,
+			"Defense": 80,
+			"Sp. Attack": 60,
+			"Sp. Defense": 100,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ceruledge.png"
+	},
+	{
+		"name": "Bellibolt",
+		"nameFr": "Bellibolt",
+		"dexNumber": 939,
+		"types": [
+			"Electric"
+		],
+		"form": "Base",
+		"abilities": [
+			"Electromorphosis",
+			"Static",
+			"Damp"
+		],
+		"base": {
+			"HP": 109,
+			"Attack": 64,
+			"Defense": 91,
+			"Sp. Attack": 103,
+			"Sp. Defense": 83,
+			"Speed": 45
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/bellibolt.png"
+	},
+	{
+		"name": "Scovillain",
+		"nameFr": "Scovillain",
+		"dexNumber": 952,
+		"types": [
+			"Grass",
+			"Fire"
+		],
+		"form": "Base",
+		"abilities": [
+			"Chlorophyll",
+			"Insomnia",
+			"Moody"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 108,
+			"Defense": 65,
+			"Sp. Attack": 108,
+			"Sp. Defense": 65,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scovillain.png"
+	},
+	{
+		"name": "Espathra",
+		"nameFr": "Espathra",
+		"dexNumber": 956,
+		"types": [
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Opportunist",
+			"Frisk",
+			"Speed Boost"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 60,
+			"Defense": 60,
+			"Sp. Attack": 101,
+			"Sp. Defense": 60,
+			"Speed": 105
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/espathra.png"
+	},
+	{
+		"name": "Tinkaton",
+		"nameFr": "Tinkaton",
+		"dexNumber": 959,
+		"types": [
+			"Fairy",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Mold Breaker",
+			"Own Tempo",
+			"Pickpocket"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 75,
+			"Defense": 77,
+			"Sp. Attack": 70,
+			"Sp. Defense": 105,
+			"Speed": 94
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tinkaton.png"
+	},
+	{
+		"name": "Palafin Zero Form",
+		"nameFr": "Palafin Zero Form",
+		"dexNumber": 964,
+		"types": [
+			"Water"
+		],
+		"form": "Base",
+		"abilities": [
+			"Zero to Hero"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 70,
+			"Defense": 72,
+			"Sp. Attack": 53,
+			"Sp. Defense": 62,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/palafin.png"
+	},
+	{
+		"name": "Orthworm",
+		"nameFr": "Orthworm",
+		"dexNumber": 968,
+		"types": [
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Earth Eater",
+			"Sand Veil"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 85,
+			"Defense": 145,
+			"Sp. Attack": 60,
+			"Sp. Defense": 55,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/orthworm.png"
+	},
+	{
+		"name": "Glimmora",
+		"nameFr": "Glimmora",
+		"dexNumber": 970,
+		"types": [
+			"Rock",
+			"Poison"
+		],
+		"form": "Base",
+		"abilities": [
+			"Toxic Debris",
+			"Corrosion"
+		],
+		"base": {
+			"HP": 83,
+			"Attack": 55,
+			"Defense": 90,
+			"Sp. Attack": 130,
+			"Sp. Defense": 81,
+			"Speed": 86
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glimmora.png"
+	},
+	{
+		"name": "Houndstone",
+		"nameFr": "Houndstone",
+		"dexNumber": 972,
+		"types": [
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Sand Rush",
+			"Fluffy"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 101,
+			"Defense": 100,
+			"Sp. Attack": 50,
+			"Sp. Defense": 97,
+			"Speed": 68
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/houndstone.png"
+	},
+	{
+		"name": "Annihilape",
+		"nameFr": "Annihilape",
+		"dexNumber": 979,
+		"types": [
+			"Fighting",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Vital Spirit",
+			"Inner Focus",
+			"Defiant"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 115,
+			"Defense": 80,
+			"Sp. Attack": 50,
+			"Sp. Defense": 90,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/annihilape.png"
+	},
+	{
+		"name": "Farigiraf",
+		"nameFr": "Farigiraf",
+		"dexNumber": 981,
+		"types": [
+			"Normal",
+			"Psychic"
+		],
+		"form": "Base",
+		"abilities": [
+			"Cud Chew",
+			"Armor Tail",
+			"Sap Sipper"
+		],
+		"base": {
+			"HP": 120,
+			"Attack": 90,
+			"Defense": 70,
+			"Sp. Attack": 110,
+			"Sp. Defense": 70,
+			"Speed": 60
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/farigiraf.png"
+	},
+	{
+		"name": "Kingambit",
+		"nameFr": "Kingambit",
+		"dexNumber": 983,
+		"types": [
+			"Dark",
+			"Steel"
+		],
+		"form": "Base",
+		"abilities": [
+			"Defiant",
+			"Supreme Overlord",
+			"Pressure"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 135,
+			"Defense": 120,
+			"Sp. Attack": 60,
+			"Sp. Defense": 85,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/kingambit.png"
+	},
+	{
+		"name": "Gholdengo",
+		"nameFr": "Gholdengo",
+		"dexNumber": 1000,
+		"types": [
+			"Steel",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Good as Gold"
+		],
+		"base": {
+			"HP": 87,
+			"Attack": 60,
+			"Defense": 95,
+			"Sp. Attack": 133,
+			"Sp. Defense": 91,
+			"Speed": 84
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gholdengo.png"
+	},
+	{
+		"name": "Sinistcha",
+		"nameFr": "Sinistcha",
+		"dexNumber": 1013,
+		"types": [
+			"Grass",
+			"Ghost"
+		],
+		"form": "Base",
+		"abilities": [
+			"Hospitality",
+			"Heatproof"
+		],
+		"base": {
+			"HP": 71,
+			"Attack": 60,
+			"Defense": 106,
+			"Sp. Attack": 121,
+			"Sp. Defense": 80,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png"
+	},
+	{
+		"name": "Archaludon",
+		"nameFr": "Archaludon",
+		"dexNumber": 1018,
+		"types": [
+			"Steel",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Stamina",
+			"Sturdy",
+			"Stalwart"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 105,
+			"Defense": 130,
+			"Sp. Attack": 125,
+			"Sp. Defense": 65,
+			"Speed": 85
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/archaludon.png"
+	},
+	{
+		"name": "Hydrapple",
+		"nameFr": "Hydrapple",
+		"dexNumber": 1019,
+		"types": [
+			"Grass",
+			"Dragon"
+		],
+		"form": "Base",
+		"abilities": [
+			"Supersweet Syrup",
+			"Regenerator",
+			"Sticky Hold"
+		],
+		"base": {
+			"HP": 106,
+			"Attack": 80,
+			"Defense": 110,
+			"Sp. Attack": 120,
+			"Sp. Defense": 80,
+			"Speed": 44
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hydrapple.png"
+	}
+]
