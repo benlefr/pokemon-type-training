@@ -39,17 +39,20 @@ jobs:
       - name: Prepare Pages bundle
         run: |
           rm -rf _site
-          mkdir -p _site _site/quiz _site/revision
+          mkdir -p _site _site/quiz _site/revision _site/double-battle
           cp -r .svelte-kit/output/client/_app _site/_app
           cp static/favicon.svg _site/favicon.svg
           cp .svelte-kit/output/prerendered/pages/index.html _site/index.html
           cp .svelte-kit/output/prerendered/pages/quiz.html _site/quiz/index.html
           cp .svelte-kit/output/prerendered/pages/revision.html _site/revision/index.html
+          cp .svelte-kit/output/prerendered/pages/double-battle.html _site/double-battle/index.html
           sed -i 's|href="./_app/|href="../_app/|g; s|src="./_app/|src="../_app/|g; s|href="./favicon.svg"|href="../favicon.svg"|g' _site/quiz/index.html
           sed -i 's|href="./_app/|href="../_app/|g; s|src="./_app/|src="../_app/|g; s|href="./favicon.svg"|href="../favicon.svg"|g' _site/revision/index.html
+          sed -i 's|href="./_app/|href="../_app/|g; s|src="./_app/|src="../_app/|g; s|href="./favicon.svg"|href="../favicon.svg"|g' _site/double-battle/index.html
           sed -i 's|href="/|href="/pokemon-type-training/|g; s|src="/|src="/pokemon-type-training/|g' _site/index.html
           sed -i 's|href="/|href="/pokemon-type-training/|g; s|src="/|src="/pokemon-type-training/|g' _site/quiz/index.html
           sed -i 's|href="/|href="/pokemon-type-training/|g; s|src="/|src="/pokemon-type-training/|g' _site/revision/index.html
+          sed -i 's|href="/|href="/pokemon-type-training/|g; s|src="/|src="/pokemon-type-training/|g' _site/double-battle/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
