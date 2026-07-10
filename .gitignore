@@ -13,5 +13,6 @@ pokedex_raw.json
 showdown_pokedex.json
 battle_data.zip
 battle_data_extract/
+battle_data_json/
 battle_names.json
 sprite_urls.txt

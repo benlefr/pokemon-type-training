@@ -18,6 +18,13 @@ export interface Pokemon {
 	abilities: string[];
 	base: BaseStats;
 	thumbnail: string;
+	/** Objet requis (méga-gemme) pour les méga-évolutions. */
+	item?: string | null;
+}
+
+/** Vrai si le Pokémon est une méga-évolution. */
+export function isMega(p: Pokemon): boolean {
+	return /Mega/.test(p.form);
 }
 
 export const roster: Pokemon[] = rosterData as Pokemon[];

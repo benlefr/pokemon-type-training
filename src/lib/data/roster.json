@@ -23,6 +23,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/venusaur.png"
 	},
 	{
+		"name": "Venusaur-Mega",
+		"nameFr": "Méga-Florizarre",
+		"dexNumber": 3,
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Thick Fat"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 100,
+			"Defense": 123,
+			"Sp. Attack": 122,
+			"Sp. Defense": 120,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/venusaur-mega.png",
+		"item": "Venusaurite"
+	},
+	{
 		"name": "Charizard",
 		"nameFr": "Dracaufeu",
 		"dexNumber": 6,
@@ -46,6 +69,52 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/charizard.png"
 	},
 	{
+		"name": "Charizard-Mega-X",
+		"nameFr": "Méga-Dracaufeu X",
+		"dexNumber": 6,
+		"types": [
+			"Fire",
+			"Dragon"
+		],
+		"form": "Mega-X",
+		"abilities": [
+			"Tough Claws"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 130,
+			"Defense": 111,
+			"Sp. Attack": 130,
+			"Sp. Defense": 85,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/charizard-megax.png",
+		"item": "Charizardite X"
+	},
+	{
+		"name": "Charizard-Mega-Y",
+		"nameFr": "Méga-Dracaufeu Y",
+		"dexNumber": 6,
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"form": "Mega-Y",
+		"abilities": [
+			"Drought"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 104,
+			"Defense": 78,
+			"Sp. Attack": 159,
+			"Sp. Defense": 115,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/charizard-megay.png",
+		"item": "Charizardite Y"
+	},
+	{
 		"name": "Blastoise",
 		"nameFr": "Tortank",
 		"dexNumber": 9,
@@ -66,6 +135,28 @@
 			"Speed": 78
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/blastoise.png"
+	},
+	{
+		"name": "Blastoise-Mega",
+		"nameFr": "Méga-Tortank",
+		"dexNumber": 9,
+		"types": [
+			"Water"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Mega Launcher"
+		],
+		"base": {
+			"HP": 79,
+			"Attack": 103,
+			"Defense": 120,
+			"Sp. Attack": 135,
+			"Sp. Defense": 115,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/blastoise-mega.png",
+		"item": "Blastoisinite"
 	},
 	{
 		"name": "Beedrill",
@@ -91,6 +182,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/beedrill.png"
 	},
 	{
+		"name": "Beedrill-Mega",
+		"nameFr": "Méga-Dardargnan",
+		"dexNumber": 15,
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Adaptability"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 150,
+			"Defense": 40,
+			"Sp. Attack": 15,
+			"Sp. Defense": 80,
+			"Speed": 145
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/beedrill-mega.png",
+		"item": "Beedrillite"
+	},
+	{
 		"name": "Pidgeot",
 		"nameFr": "Roucarnage",
 		"dexNumber": 18,
@@ -113,6 +227,29 @@
 			"Speed": 101
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pidgeot.png"
+	},
+	{
+		"name": "Pidgeot-Mega",
+		"nameFr": "Méga-Roucarnage",
+		"dexNumber": 18,
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"No Guard"
+		],
+		"base": {
+			"HP": 83,
+			"Attack": 80,
+			"Defense": 80,
+			"Sp. Attack": 135,
+			"Sp. Defense": 80,
+			"Speed": 121
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png",
+		"item": "Pidgeotite"
 	},
 	{
 		"name": "Arbok",
@@ -204,6 +341,50 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/raichu.png"
 	},
 	{
+		"name": "Raichu-Mega-X",
+		"nameFr": "Méga-Raichu X",
+		"dexNumber": 26,
+		"types": [
+			"Electric"
+		],
+		"form": "Mega-X",
+		"abilities": [
+			"Electric Surge"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 135,
+			"Defense": 95,
+			"Sp. Attack": 90,
+			"Sp. Defense": 95,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/raichu-megax.png",
+		"item": "Raichunite X"
+	},
+	{
+		"name": "Raichu-Mega-Y",
+		"nameFr": "Méga-Raichu Y",
+		"dexNumber": 26,
+		"types": [
+			"Electric"
+		],
+		"form": "Mega-Y",
+		"abilities": [
+			"No Guard"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 100,
+			"Defense": 55,
+			"Sp. Attack": 160,
+			"Sp. Defense": 80,
+			"Speed": 130
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/raichu-megay.png",
+		"item": "Raichunite Y"
+	},
+	{
 		"name": "Clefable",
 		"nameFr": "Mélodelfe",
 		"dexNumber": 36,
@@ -225,6 +406,29 @@
 			"Speed": 60
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/clefable.png"
+	},
+	{
+		"name": "Clefable-Mega",
+		"nameFr": "Méga-Mélodelfe",
+		"dexNumber": 36,
+		"types": [
+			"Fairy",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Magic Bounce"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 80,
+			"Defense": 93,
+			"Sp. Attack": 135,
+			"Sp. Defense": 110,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/clefable-mega.png",
+		"item": "Clefablite"
 	},
 	{
 		"name": "Alolan Ninetales",
@@ -365,6 +569,28 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/alakazam.png"
 	},
 	{
+		"name": "Alakazam-Mega",
+		"nameFr": "Méga-Alakazam",
+		"dexNumber": 65,
+		"types": [
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Trace"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 50,
+			"Defense": 65,
+			"Sp. Attack": 175,
+			"Sp. Defense": 105,
+			"Speed": 150
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/alakazam-mega.png",
+		"item": "Alakazite"
+	},
+	{
 		"name": "Machamp",
 		"nameFr": "Mackogneur",
 		"dexNumber": 68,
@@ -409,6 +635,29 @@
 			"Speed": 70
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/victreebel.png"
+	},
+	{
+		"name": "Victreebel-Mega",
+		"nameFr": "Méga-Empiflor",
+		"dexNumber": 71,
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Innards Out"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 125,
+			"Defense": 85,
+			"Sp. Attack": 135,
+			"Sp. Defense": 95,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/victreebel-mega.png",
+		"item": "Victreebelite"
 	},
 	{
 		"name": "Galarian Slowbro",
@@ -459,6 +708,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slowbro.png"
 	},
 	{
+		"name": "Slowbro-Mega",
+		"nameFr": "Méga-Flagadoss",
+		"dexNumber": 80,
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Shell Armor"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 75,
+			"Defense": 180,
+			"Sp. Attack": 130,
+			"Sp. Defense": 80,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png",
+		"item": "Slowbronite"
+	},
+	{
 		"name": "Gengar",
 		"nameFr": "Ectoplasma",
 		"dexNumber": 94,
@@ -479,6 +751,29 @@
 			"Speed": 110
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gengar.png"
+	},
+	{
+		"name": "Gengar-Mega",
+		"nameFr": "Méga-Ectoplasma",
+		"dexNumber": 94,
+		"types": [
+			"Ghost",
+			"Poison"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Shadow Tag"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 65,
+			"Defense": 80,
+			"Sp. Attack": 170,
+			"Sp. Defense": 95,
+			"Speed": 130
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gengar-mega.png",
+		"item": "Gengarite"
 	},
 	{
 		"name": "Kangaskhan",
@@ -502,6 +797,28 @@
 			"Speed": 90
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/kangaskhan.png"
+	},
+	{
+		"name": "Kangaskhan-Mega",
+		"nameFr": "Méga-Kangourex",
+		"dexNumber": 115,
+		"types": [
+			"Normal"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Parental Bond"
+		],
+		"base": {
+			"HP": 105,
+			"Attack": 125,
+			"Defense": 100,
+			"Sp. Attack": 60,
+			"Sp. Defense": 100,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/kangaskhan-mega.png",
+		"item": "Kangaskhanite"
 	},
 	{
 		"name": "Starmie",
@@ -528,6 +845,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/starmie.png"
 	},
 	{
+		"name": "Starmie-Mega",
+		"nameFr": "Méga-Staross",
+		"dexNumber": 121,
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Huge Power"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 100,
+			"Defense": 105,
+			"Sp. Attack": 130,
+			"Sp. Defense": 105,
+			"Speed": 120
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/starmie-mega.png",
+		"item": "Starminite"
+	},
+	{
 		"name": "Pinsir",
 		"nameFr": "Scarabrute",
 		"dexNumber": 127,
@@ -549,6 +889,29 @@
 			"Speed": 85
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pinsir.png"
+	},
+	{
+		"name": "Pinsir-Mega",
+		"nameFr": "Méga-Scarabrute",
+		"dexNumber": 127,
+		"types": [
+			"Bug",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Aerilate"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 155,
+			"Defense": 120,
+			"Sp. Attack": 65,
+			"Sp. Defense": 90,
+			"Speed": 105
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pinsir-mega.png",
+		"item": "Pinsirite"
 	},
 	{
 		"name": "Paldean Tauros Aqua Breed",
@@ -668,6 +1031,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gyarados.png"
 	},
 	{
+		"name": "Gyarados-Mega",
+		"nameFr": "Méga-Léviator",
+		"dexNumber": 130,
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 155,
+			"Defense": 109,
+			"Sp. Attack": 70,
+			"Sp. Defense": 130,
+			"Speed": 81
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gyarados-mega.png",
+		"item": "Gyaradosite"
+	},
+	{
 		"name": "Ditto",
 		"nameFr": "Métamorph",
 		"dexNumber": 132,
@@ -780,6 +1166,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aerodactyl.png"
 	},
 	{
+		"name": "Aerodactyl-Mega",
+		"nameFr": "Méga-Ptéra",
+		"dexNumber": 142,
+		"types": [
+			"Rock",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Tough Claws"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 135,
+			"Defense": 85,
+			"Sp. Attack": 70,
+			"Sp. Defense": 95,
+			"Speed": 150
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aerodactyl-mega.png",
+		"item": "Aerodactylite"
+	},
+	{
 		"name": "Snorlax",
 		"nameFr": "Ronflex",
 		"dexNumber": 143,
@@ -826,6 +1235,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragonite.png"
 	},
 	{
+		"name": "Dragonite-Mega",
+		"nameFr": "Méga-Dracolosse",
+		"dexNumber": 149,
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Multiscale"
+		],
+		"base": {
+			"HP": 91,
+			"Attack": 124,
+			"Defense": 115,
+			"Sp. Attack": 145,
+			"Sp. Defense": 125,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragonite-mega.png",
+		"item": "Dragoninite"
+	},
+	{
 		"name": "Meganium",
 		"nameFr": "Méganium",
 		"dexNumber": 154,
@@ -846,6 +1278,29 @@
 			"Speed": 80
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/meganium.png"
+	},
+	{
+		"name": "Meganium-Mega",
+		"nameFr": "Méga-Méganium",
+		"dexNumber": 154,
+		"types": [
+			"Grass",
+			"Fairy"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Mega Sol"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 92,
+			"Defense": 115,
+			"Sp. Attack": 143,
+			"Sp. Defense": 115,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/meganium-mega.png",
+		"item": "Meganiumite"
 	},
 	{
 		"name": "Hisuian Typhlosion",
@@ -915,6 +1370,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/feraligatr.png"
 	},
 	{
+		"name": "Feraligatr-Mega",
+		"nameFr": "Méga-Aligatueur",
+		"dexNumber": 160,
+		"types": [
+			"Water",
+			"Dragon"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Dragonize"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 160,
+			"Defense": 125,
+			"Sp. Attack": 89,
+			"Sp. Defense": 93,
+			"Speed": 78
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/feraligatr-mega.png",
+		"item": "Feraligite"
+	},
+	{
 		"name": "Ariados",
 		"nameFr": "Migalos",
 		"dexNumber": 168,
@@ -959,6 +1437,29 @@
 			"Speed": 55
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ampharos.png"
+	},
+	{
+		"name": "Ampharos-Mega",
+		"nameFr": "Méga-Pharamp",
+		"dexNumber": 181,
+		"types": [
+			"Electric",
+			"Dragon"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 95,
+			"Defense": 105,
+			"Sp. Attack": 165,
+			"Sp. Defense": 110,
+			"Speed": 45
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/ampharos-mega.png",
+		"item": "Ampharosite"
 	},
 	{
 		"name": "Azumarill",
@@ -1147,6 +1648,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/steelix.png"
 	},
 	{
+		"name": "Steelix-Mega",
+		"nameFr": "Méga-Steelix",
+		"dexNumber": 208,
+		"types": [
+			"Steel",
+			"Ground"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Sand Force"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 125,
+			"Defense": 230,
+			"Sp. Attack": 55,
+			"Sp. Defense": 95,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/steelix-mega.png",
+		"item": "Steelixite"
+	},
+	{
 		"name": "Qwilfish",
 		"nameFr": "Qwilfish",
 		"dexNumber": 211,
@@ -1195,6 +1719,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scizor.png"
 	},
 	{
+		"name": "Scizor-Mega",
+		"nameFr": "Méga-Cizayox",
+		"dexNumber": 212,
+		"types": [
+			"Bug",
+			"Steel"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Technician"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 150,
+			"Defense": 140,
+			"Sp. Attack": 65,
+			"Sp. Defense": 100,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scizor-mega.png",
+		"item": "Scizorite"
+	},
+	{
 		"name": "Heracross",
 		"nameFr": "Scarhino",
 		"dexNumber": 214,
@@ -1217,6 +1764,29 @@
 			"Speed": 85
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/heracross.png"
+	},
+	{
+		"name": "Heracross-Mega",
+		"nameFr": "Méga-Scarhino",
+		"dexNumber": 214,
+		"types": [
+			"Bug",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Skill Link"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 185,
+			"Defense": 115,
+			"Sp. Attack": 40,
+			"Sp. Defense": 105,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/heracross-mega.png",
+		"item": "Heracronite"
 	},
 	{
 		"name": "Skarmory",
@@ -1243,6 +1813,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/skarmory.png"
 	},
 	{
+		"name": "Skarmory-Mega",
+		"nameFr": "Méga-Airmure",
+		"dexNumber": 227,
+		"types": [
+			"Steel",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Stalwart"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 140,
+			"Defense": 110,
+			"Sp. Attack": 40,
+			"Sp. Defense": 100,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/skarmory-mega.png",
+		"item": "Skarmorite"
+	},
+	{
 		"name": "Houndoom",
 		"nameFr": "Démolosse",
 		"dexNumber": 229,
@@ -1265,6 +1858,29 @@
 			"Speed": 95
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/houndoom.png"
+	},
+	{
+		"name": "Houndoom-Mega",
+		"nameFr": "Méga-Démolosse",
+		"dexNumber": 229,
+		"types": [
+			"Dark",
+			"Fire"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Solar Power"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 90,
+			"Defense": 90,
+			"Sp. Attack": 140,
+			"Sp. Defense": 90,
+			"Speed": 115
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/houndoom-mega.png",
+		"item": "Houndoominite"
 	},
 	{
 		"name": "Tyranitar",
@@ -1290,6 +1906,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tyranitar.png"
 	},
 	{
+		"name": "Tyranitar-Mega",
+		"nameFr": "Méga-Tyranocif",
+		"dexNumber": 248,
+		"types": [
+			"Rock",
+			"Dark"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Sand Stream"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 164,
+			"Defense": 150,
+			"Sp. Attack": 95,
+			"Sp. Defense": 120,
+			"Speed": 71
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/tyranitar-mega.png",
+		"item": "Tyranitarite"
+	},
+	{
 		"name": "Sceptile",
 		"nameFr": "Jungko",
 		"dexNumber": 254,
@@ -1310,6 +1949,29 @@
 			"Speed": 120
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sceptile.png"
+	},
+	{
+		"name": "Sceptile-Mega",
+		"nameFr": "Méga-Jungko",
+		"dexNumber": 254,
+		"types": [
+			"Grass",
+			"Dragon"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Lightning Rod"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 110,
+			"Defense": 75,
+			"Sp. Attack": 145,
+			"Sp. Defense": 85,
+			"Speed": 145
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sceptile-mega.png",
+		"item": "Sceptilite"
 	},
 	{
 		"name": "Blaziken",
@@ -1335,6 +1997,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/blaziken.png"
 	},
 	{
+		"name": "Blaziken-Mega",
+		"nameFr": "Méga-Braségali",
+		"dexNumber": 257,
+		"types": [
+			"Fire",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Speed Boost"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 160,
+			"Defense": 80,
+			"Sp. Attack": 130,
+			"Sp. Defense": 80,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/blaziken-mega.png",
+		"item": "Blazikenite"
+	},
+	{
 		"name": "Swampert",
 		"nameFr": "Laggron",
 		"dexNumber": 260,
@@ -1356,6 +2041,29 @@
 			"Speed": 60
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/swampert.png"
+	},
+	{
+		"name": "Swampert-Mega",
+		"nameFr": "Méga-Laggron",
+		"dexNumber": 260,
+		"types": [
+			"Water",
+			"Ground"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Swift Swim"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 150,
+			"Defense": 110,
+			"Sp. Attack": 95,
+			"Sp. Defense": 110,
+			"Speed": 70
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/swampert-mega.png",
+		"item": "Swampertite"
 	},
 	{
 		"name": "Pelipper",
@@ -1406,6 +2114,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gardevoir.png"
 	},
 	{
+		"name": "Gardevoir-Mega",
+		"nameFr": "Méga-Gardevoir",
+		"dexNumber": 282,
+		"types": [
+			"Psychic",
+			"Fairy"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Pixilate"
+		],
+		"base": {
+			"HP": 68,
+			"Attack": 85,
+			"Defense": 65,
+			"Sp. Attack": 165,
+			"Sp. Defense": 135,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gardevoir-mega.png",
+		"item": "Gardevoirite"
+	},
+	{
 		"name": "Sableye",
 		"nameFr": "Ténéfix",
 		"dexNumber": 302,
@@ -1428,6 +2159,29 @@
 			"Speed": 50
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sableye.png"
+	},
+	{
+		"name": "Sableye-Mega",
+		"nameFr": "Méga-Ténéfix",
+		"dexNumber": 302,
+		"types": [
+			"Dark",
+			"Ghost"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Magic Bounce"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 85,
+			"Defense": 125,
+			"Sp. Attack": 85,
+			"Sp. Defense": 115,
+			"Speed": 20
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sableye-mega.png",
+		"item": "Sablenite"
 	},
 	{
 		"name": "Mawile",
@@ -1454,6 +2208,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mawile.png"
 	},
 	{
+		"name": "Mawile-Mega",
+		"nameFr": "Méga-Mysdibule",
+		"dexNumber": 303,
+		"types": [
+			"Steel",
+			"Fairy"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Huge Power"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 105,
+			"Defense": 125,
+			"Sp. Attack": 55,
+			"Sp. Defense": 95,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/mawile-mega.png",
+		"item": "Mawilite"
+	},
+	{
 		"name": "Aggron",
 		"nameFr": "Galeking",
 		"dexNumber": 306,
@@ -1476,6 +2253,28 @@
 			"Speed": 50
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aggron.png"
+	},
+	{
+		"name": "Aggron-Mega",
+		"nameFr": "Méga-Galeking",
+		"dexNumber": 306,
+		"types": [
+			"Steel"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Filter"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 140,
+			"Defense": 230,
+			"Sp. Attack": 60,
+			"Sp. Defense": 80,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png",
+		"item": "Aggronite"
 	},
 	{
 		"name": "Medicham",
@@ -1501,6 +2300,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/medicham.png"
 	},
 	{
+		"name": "Medicham-Mega",
+		"nameFr": "Méga-Charmina",
+		"dexNumber": 308,
+		"types": [
+			"Fighting",
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Pure Power"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 100,
+			"Defense": 85,
+			"Sp. Attack": 80,
+			"Sp. Defense": 85,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/medicham-mega.png",
+		"item": "Medichamite"
+	},
+	{
 		"name": "Manectric",
 		"nameFr": "Élecsprint",
 		"dexNumber": 310,
@@ -1522,6 +2344,28 @@
 			"Speed": 105
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/manectric.png"
+	},
+	{
+		"name": "Manectric-Mega",
+		"nameFr": "Méga-Élecsprint",
+		"dexNumber": 310,
+		"types": [
+			"Electric"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Intimidate"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 75,
+			"Defense": 80,
+			"Sp. Attack": 135,
+			"Sp. Defense": 80,
+			"Speed": 135
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/manectric-mega.png",
+		"item": "Manectite"
 	},
 	{
 		"name": "Sharpedo",
@@ -1547,6 +2391,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sharpedo.png"
 	},
 	{
+		"name": "Sharpedo-Mega",
+		"nameFr": "Méga-Sharpedo",
+		"dexNumber": 319,
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Strong Jaw"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 140,
+			"Defense": 70,
+			"Sp. Attack": 110,
+			"Sp. Defense": 65,
+			"Speed": 105
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/sharpedo-mega.png",
+		"item": "Sharpedonite"
+	},
+	{
 		"name": "Camerupt",
 		"nameFr": "Camérupt",
 		"dexNumber": 323,
@@ -1569,6 +2436,29 @@
 			"Speed": 40
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/camerupt.png"
+	},
+	{
+		"name": "Camerupt-Mega",
+		"nameFr": "Méga-Camérupt",
+		"dexNumber": 323,
+		"types": [
+			"Fire",
+			"Ground"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Sheer Force"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 120,
+			"Defense": 100,
+			"Sp. Attack": 145,
+			"Sp. Defense": 105,
+			"Speed": 20
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/camerupt-mega.png",
+		"item": "Cameruptite"
 	},
 	{
 		"name": "Torkoal",
@@ -1615,6 +2505,29 @@
 			"Speed": 80
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/altaria.png"
+	},
+	{
+		"name": "Altaria-Mega",
+		"nameFr": "Méga-Altaria",
+		"dexNumber": 334,
+		"types": [
+			"Dragon",
+			"Fairy"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Pixilate"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 110,
+			"Defense": 110,
+			"Sp. Attack": 110,
+			"Sp. Defense": 105,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/altaria-mega.png",
+		"item": "Altarianite"
 	},
 	{
 		"name": "Milotic",
@@ -1684,6 +2597,28 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/banette.png"
 	},
 	{
+		"name": "Banette-Mega",
+		"nameFr": "Méga-Branette",
+		"dexNumber": 354,
+		"types": [
+			"Ghost"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Prankster"
+		],
+		"base": {
+			"HP": 64,
+			"Attack": 165,
+			"Defense": 75,
+			"Sp. Attack": 93,
+			"Sp. Defense": 83,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/banette-mega.png",
+		"item": "Banettite"
+	},
+	{
 		"name": "Chimecho",
 		"nameFr": "Éoko",
 		"dexNumber": 358,
@@ -1703,6 +2638,29 @@
 			"Speed": 65
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chimecho.png"
+	},
+	{
+		"name": "Chimecho-Mega",
+		"nameFr": "Méga-Éoko",
+		"dexNumber": 358,
+		"types": [
+			"Psychic",
+			"Steel"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 50,
+			"Defense": 110,
+			"Sp. Attack": 135,
+			"Sp. Defense": 120,
+			"Speed": 65
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chimecho-mega.png",
+		"item": "Chimechite"
 	},
 	{
 		"name": "Absol",
@@ -1728,6 +2686,51 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/absol.png"
 	},
 	{
+		"name": "Absol-Mega",
+		"nameFr": "Méga-Absol",
+		"dexNumber": 359,
+		"types": [
+			"Dark"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Magic Bounce"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 150,
+			"Defense": 60,
+			"Sp. Attack": 115,
+			"Sp. Defense": 60,
+			"Speed": 115
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/absol-mega.png",
+		"item": "Absolite"
+	},
+	{
+		"name": "Absol-Mega-Z",
+		"nameFr": "Méga-Absol",
+		"dexNumber": 359,
+		"types": [
+			"Dark",
+			"Ghost"
+		],
+		"form": "Mega-Z",
+		"abilities": [
+			"Magic Bounce"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 154,
+			"Defense": 60,
+			"Sp. Attack": 75,
+			"Sp. Defense": 60,
+			"Speed": 151
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/absol-megaz.png",
+		"item": "Absolite Z"
+	},
+	{
 		"name": "Glalie",
 		"nameFr": "Oniglali",
 		"dexNumber": 362,
@@ -1751,6 +2754,28 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glalie.png"
 	},
 	{
+		"name": "Glalie-Mega",
+		"nameFr": "Méga-Oniglali",
+		"dexNumber": 362,
+		"types": [
+			"Ice"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Refrigerate"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 120,
+			"Defense": 80,
+			"Sp. Attack": 120,
+			"Sp. Defense": 80,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glalie-mega.png",
+		"item": "Glalitite"
+	},
+	{
 		"name": "Metagross",
 		"nameFr": "Métalosse",
 		"dexNumber": 376,
@@ -1772,6 +2797,29 @@
 			"Speed": 70
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/metagross.png"
+	},
+	{
+		"name": "Metagross-Mega",
+		"nameFr": "Méga-Métalosse",
+		"dexNumber": 376,
+		"types": [
+			"Steel",
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Tough Claws"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 145,
+			"Defense": 150,
+			"Sp. Attack": 105,
+			"Sp. Defense": 110,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/metagross-mega.png",
+		"item": "Metagrossite"
 	},
 	{
 		"name": "Torterra",
@@ -1864,6 +2912,29 @@
 			"Speed": 100
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/staraptor.png"
+	},
+	{
+		"name": "Staraptor-Mega",
+		"nameFr": "Méga-Étouraptor",
+		"dexNumber": 398,
+		"types": [
+			"Fighting",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Contrary"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 140,
+			"Defense": 100,
+			"Sp. Attack": 60,
+			"Sp. Defense": 90,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/staraptor-mega.png",
+		"item": "Staraptite"
 	},
 	{
 		"name": "Luxray",
@@ -1981,6 +3052,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lopunny.png"
 	},
 	{
+		"name": "Lopunny-Mega",
+		"nameFr": "Méga-Lockpin",
+		"dexNumber": 428,
+		"types": [
+			"Normal",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Scrappy"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 136,
+			"Defense": 94,
+			"Sp. Attack": 54,
+			"Sp. Defense": 96,
+			"Speed": 135
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lopunny-mega.png",
+		"item": "Lopunnite"
+	},
+	{
 		"name": "Spiritomb",
 		"nameFr": "Spiritomb",
 		"dexNumber": 442,
@@ -2027,6 +3121,51 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/garchomp.png"
 	},
 	{
+		"name": "Garchomp-Mega",
+		"nameFr": "Méga-Carchacrok",
+		"dexNumber": 445,
+		"types": [
+			"Dragon",
+			"Ground"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Sand Force"
+		],
+		"base": {
+			"HP": 108,
+			"Attack": 170,
+			"Defense": 115,
+			"Sp. Attack": 120,
+			"Sp. Defense": 95,
+			"Speed": 92
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/garchomp-mega.png",
+		"item": "Garchompite"
+	},
+	{
+		"name": "Garchomp-Mega-Z",
+		"nameFr": "Méga-Carchacrok",
+		"dexNumber": 445,
+		"types": [
+			"Dragon"
+		],
+		"form": "Mega-Z",
+		"abilities": [
+			"Sand Force"
+		],
+		"base": {
+			"HP": 108,
+			"Attack": 130,
+			"Defense": 85,
+			"Sp. Attack": 141,
+			"Sp. Defense": 85,
+			"Speed": 151
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/garchomp-megaz.png",
+		"item": "Garchompite Z"
+	},
+	{
 		"name": "Lucario",
 		"nameFr": "Lucario",
 		"dexNumber": 448,
@@ -2049,6 +3188,52 @@
 			"Speed": 90
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lucario.png"
+	},
+	{
+		"name": "Lucario-Mega",
+		"nameFr": "Méga-Lucario",
+		"dexNumber": 448,
+		"types": [
+			"Fighting",
+			"Steel"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Adaptability"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 145,
+			"Defense": 88,
+			"Sp. Attack": 140,
+			"Sp. Defense": 70,
+			"Speed": 112
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lucario-mega.png",
+		"item": "Lucarionite"
+	},
+	{
+		"name": "Lucario-Mega-Z",
+		"nameFr": "Méga-Lucario",
+		"dexNumber": 448,
+		"types": [
+			"Fighting",
+			"Steel"
+		],
+		"form": "Mega-Z",
+		"abilities": [
+			"Adaptability"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 100,
+			"Defense": 70,
+			"Sp. Attack": 164,
+			"Sp. Defense": 70,
+			"Speed": 151
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/lucario-megaz.png",
+		"item": "Lucarionite Z"
 	},
 	{
 		"name": "Hippowdon",
@@ -2118,6 +3303,29 @@
 			"Speed": 60
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/abomasnow.png"
+	},
+	{
+		"name": "Abomasnow-Mega",
+		"nameFr": "Méga-Blizzaroi",
+		"dexNumber": 460,
+		"types": [
+			"Grass",
+			"Ice"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Snow Warning"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 132,
+			"Defense": 105,
+			"Sp. Attack": 132,
+			"Sp. Defense": 105,
+			"Speed": 30
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/abomasnow-mega.png",
+		"item": "Abomasite"
 	},
 	{
 		"name": "Weavile",
@@ -2283,6 +3491,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gallade.png"
 	},
 	{
+		"name": "Gallade-Mega",
+		"nameFr": "Méga-Gallame",
+		"dexNumber": 475,
+		"types": [
+			"Psychic",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Inner Focus"
+		],
+		"base": {
+			"HP": 68,
+			"Attack": 165,
+			"Defense": 95,
+			"Sp. Attack": 65,
+			"Sp. Defense": 115,
+			"Speed": 110
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/gallade-mega.png",
+		"item": "Galladite"
+	},
+	{
 		"name": "Froslass",
 		"nameFr": "Momartik",
 		"dexNumber": 478,
@@ -2304,6 +3535,29 @@
 			"Speed": 110
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/froslass.png"
+	},
+	{
+		"name": "Froslass-Mega",
+		"nameFr": "Méga-Momartik",
+		"dexNumber": 478,
+		"types": [
+			"Ice",
+			"Ghost"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Snow Warning"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 80,
+			"Defense": 70,
+			"Sp. Attack": 140,
+			"Sp. Defense": 100,
+			"Speed": 120
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/froslass-mega.png",
+		"item": "Froslassite"
 	},
 	{
 		"name": "Rotom",
@@ -2481,6 +3735,29 @@
 			"Speed": 65
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/emboar.png"
+	},
+	{
+		"name": "Emboar-Mega",
+		"nameFr": "Méga-Roitiflam",
+		"dexNumber": 500,
+		"types": [
+			"Fire",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Mold Breaker"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 148,
+			"Defense": 75,
+			"Sp. Attack": 110,
+			"Sp. Defense": 110,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/emboar-mega.png",
+		"item": "Emboarite"
 	},
 	{
 		"name": "Hisuian Samurott",
@@ -2687,6 +3964,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/excadrill.png"
 	},
 	{
+		"name": "Excadrill-Mega",
+		"nameFr": "Méga-Minotaupe",
+		"dexNumber": 530,
+		"types": [
+			"Ground",
+			"Steel"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Piercing Drill"
+		],
+		"base": {
+			"HP": 110,
+			"Attack": 165,
+			"Defense": 100,
+			"Sp. Attack": 65,
+			"Sp. Defense": 65,
+			"Speed": 103
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/excadrill-mega.png",
+		"item": "Excadrite"
+	},
+	{
 		"name": "Audino",
 		"nameFr": "Nanméouïe",
 		"dexNumber": 531,
@@ -2708,6 +4008,29 @@
 			"Speed": 50
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/audino.png"
+	},
+	{
+		"name": "Audino-Mega",
+		"nameFr": "Méga-Nanméouïe",
+		"dexNumber": 531,
+		"types": [
+			"Normal",
+			"Fairy"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Healer"
+		],
+		"base": {
+			"HP": 103,
+			"Attack": 60,
+			"Defense": 126,
+			"Sp. Attack": 80,
+			"Sp. Defense": 126,
+			"Speed": 50
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/audino-mega.png",
+		"item": "Audinite"
 	},
 	{
 		"name": "Conkeldurr",
@@ -2755,6 +4078,29 @@
 			"Speed": 112
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scolipede.png"
+	},
+	{
+		"name": "Scolipede-Mega",
+		"nameFr": "Méga-Brutapode",
+		"dexNumber": 545,
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Shell Armor"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 140,
+			"Defense": 149,
+			"Sp. Attack": 75,
+			"Sp. Defense": 99,
+			"Speed": 62
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scolipede-mega.png",
+		"item": "Scolipite"
 	},
 	{
 		"name": "Whimsicott",
@@ -2827,6 +4173,29 @@
 			"Speed": 58
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scrafty.png"
+	},
+	{
+		"name": "Scrafty-Mega",
+		"nameFr": "Méga-Baggaïd",
+		"dexNumber": 560,
+		"types": [
+			"Dark",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Intimidate"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 130,
+			"Defense": 135,
+			"Sp. Attack": 55,
+			"Sp. Defense": 135,
+			"Speed": 68
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scrafty-mega.png",
+		"item": "Scraftinite"
 	},
 	{
 		"name": "Cofagrigus",
@@ -3006,6 +4375,28 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/eelektross.png"
 	},
 	{
+		"name": "Eelektross-Mega",
+		"nameFr": "Méga-Ohmassacre",
+		"dexNumber": 604,
+		"types": [
+			"Electric"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Eelevate"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 145,
+			"Defense": 80,
+			"Sp. Attack": 135,
+			"Sp. Defense": 90,
+			"Speed": 80
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/eelektross-mega.png",
+		"item": "Eelektrossite"
+	},
+	{
 		"name": "Chandelure",
 		"nameFr": "Lugulabre",
 		"dexNumber": 609,
@@ -3028,6 +4419,29 @@
 			"Speed": 80
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chandelure.png"
+	},
+	{
+		"name": "Chandelure-Mega",
+		"nameFr": "Méga-Lugulabre",
+		"dexNumber": 609,
+		"types": [
+			"Ghost",
+			"Fire"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Infiltrator"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 75,
+			"Defense": 110,
+			"Sp. Attack": 175,
+			"Sp. Defense": 110,
+			"Speed": 90
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chandelure-mega.png",
+		"item": "Chandelurite"
 	},
 	{
 		"name": "Beartic",
@@ -3123,6 +4537,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/golurk.png"
 	},
 	{
+		"name": "Golurk-Mega",
+		"nameFr": "Méga-Golemastoc",
+		"dexNumber": 623,
+		"types": [
+			"Ground",
+			"Ghost"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Unseen Fist"
+		],
+		"base": {
+			"HP": 89,
+			"Attack": 159,
+			"Defense": 105,
+			"Sp. Attack": 70,
+			"Sp. Defense": 105,
+			"Speed": 55
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/golurk-mega.png",
+		"item": "Golurkite"
+	},
+	{
 		"name": "Hydreigon",
 		"nameFr": "Trioxhydre",
 		"dexNumber": 635,
@@ -3191,6 +4628,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chesnaught.png"
 	},
 	{
+		"name": "Chesnaught-Mega",
+		"nameFr": "Méga-Blindépique",
+		"dexNumber": 652,
+		"types": [
+			"Grass",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Bulletproof"
+		],
+		"base": {
+			"HP": 88,
+			"Attack": 137,
+			"Defense": 172,
+			"Sp. Attack": 74,
+			"Sp. Defense": 115,
+			"Speed": 44
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/chesnaught-mega.png",
+		"item": "Chesnaughtite"
+	},
+	{
 		"name": "Delphox",
 		"nameFr": "Goupelin",
 		"dexNumber": 655,
@@ -3212,6 +4672,29 @@
 			"Speed": 104
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/delphox.png"
+	},
+	{
+		"name": "Delphox-Mega",
+		"nameFr": "Méga-Goupelin",
+		"dexNumber": 655,
+		"types": [
+			"Fire",
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Levitate"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 69,
+			"Defense": 72,
+			"Sp. Attack": 159,
+			"Sp. Defense": 125,
+			"Speed": 134
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/delphox-mega.png",
+		"item": "Delphoxite"
 	},
 	{
 		"name": "Greninja",
@@ -3236,6 +4719,29 @@
 			"Speed": 122
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/greninja.png"
+	},
+	{
+		"name": "Greninja-Mega",
+		"nameFr": "Méga-Amphinobi",
+		"dexNumber": 658,
+		"types": [
+			"Water",
+			"Dark"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Protean"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 125,
+			"Defense": 77,
+			"Sp. Attack": 133,
+			"Sp. Defense": 81,
+			"Speed": 142
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/greninja-mega.png",
+		"item": "Greninjite"
 	},
 	{
 		"name": "Diggersby",
@@ -3333,6 +4839,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pyroar.png"
 	},
 	{
+		"name": "Pyroar-Mega",
+		"nameFr": "Méga-Némélios",
+		"dexNumber": 668,
+		"types": [
+			"Fire",
+			"Normal"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Fire Mane"
+		],
+		"base": {
+			"HP": 86,
+			"Attack": 88,
+			"Defense": 92,
+			"Sp. Attack": 129,
+			"Sp. Defense": 86,
+			"Speed": 126
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/pyroar-mega.png",
+		"item": "Pyroarite"
+	},
+	{
 		"name": "Floette",
 		"nameFr": "Floette",
 		"dexNumber": 670,
@@ -3353,6 +4882,28 @@
 			"Speed": 52
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/floette.png"
+	},
+	{
+		"name": "Floette-Mega",
+		"nameFr": "Méga-Floette",
+		"dexNumber": 670,
+		"types": [
+			"Fairy"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Fairy Aura"
+		],
+		"base": {
+			"HP": 74,
+			"Attack": 85,
+			"Defense": 87,
+			"Sp. Attack": 155,
+			"Sp. Defense": 148,
+			"Speed": 102
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/floette-mega.png",
+		"item": "Floettite"
 	},
 	{
 		"name": "Florges Red Flower",
@@ -3558,6 +5109,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/malamar.png"
 	},
 	{
+		"name": "Malamar-Mega",
+		"nameFr": "Méga-Sepiatroce",
+		"dexNumber": 687,
+		"types": [
+			"Dark",
+			"Psychic"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Contrary"
+		],
+		"base": {
+			"HP": 86,
+			"Attack": 102,
+			"Defense": 88,
+			"Sp. Attack": 98,
+			"Sp. Defense": 120,
+			"Speed": 88
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/malamar-mega.png",
+		"item": "Malamarite"
+	},
+	{
 		"name": "Barbaracle",
 		"nameFr": "Golgopathe",
 		"dexNumber": 689,
@@ -3582,6 +5156,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/barbaracle.png"
 	},
 	{
+		"name": "Barbaracle-Mega",
+		"nameFr": "Méga-Golgopathe",
+		"dexNumber": 689,
+		"types": [
+			"Rock",
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Tough Claws"
+		],
+		"base": {
+			"HP": 72,
+			"Attack": 140,
+			"Defense": 130,
+			"Sp. Attack": 64,
+			"Sp. Defense": 106,
+			"Speed": 88
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/barbaracle-mega.png",
+		"item": "Barbaracite"
+	},
+	{
 		"name": "Dragalge",
 		"nameFr": "Kravarech",
 		"dexNumber": 691,
@@ -3604,6 +5201,29 @@
 			"Speed": 44
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragalge.png"
+	},
+	{
+		"name": "Dragalge-Mega",
+		"nameFr": "Méga-Kravarech",
+		"dexNumber": 691,
+		"types": [
+			"Poison",
+			"Dragon"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Regenerator"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 85,
+			"Defense": 105,
+			"Sp. Attack": 132,
+			"Sp. Defense": 163,
+			"Speed": 44
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/dragalge-mega.png",
+		"item": "Dragalgite"
 	},
 	{
 		"name": "Clawitzer",
@@ -3741,6 +5361,29 @@
 			"Speed": 118
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"
+	},
+	{
+		"name": "Hawlucha-Mega",
+		"nameFr": "Méga-Brutalibré",
+		"dexNumber": 701,
+		"types": [
+			"Fighting",
+			"Flying"
+		],
+		"form": "Mega",
+		"abilities": [
+			"No Guard"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 137,
+			"Defense": 100,
+			"Sp. Attack": 74,
+			"Sp. Defense": 93,
+			"Speed": 118
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/hawlucha-mega.png",
+		"item": "Hawluchanite"
 	},
 	{
 		"name": "Dedenne",
@@ -4168,6 +5811,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/crabominable.png"
 	},
 	{
+		"name": "Crabominable-Mega",
+		"nameFr": "Méga-Crabominable",
+		"dexNumber": 740,
+		"types": [
+			"Fighting",
+			"Ice"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Iron Fist"
+		],
+		"base": {
+			"HP": 97,
+			"Attack": 157,
+			"Defense": 122,
+			"Sp. Attack": 62,
+			"Sp. Defense": 107,
+			"Speed": 33
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/crabominable-mega.png",
+		"item": "Crabominite"
+	},
+	{
 		"name": "Lycanroc",
 		"nameFr": "Lougaroc",
 		"dexNumber": 745,
@@ -4441,6 +6107,29 @@
 			"Speed": 36
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/drampa.png"
+	},
+	{
+		"name": "Drampa-Mega",
+		"nameFr": "Méga-Draïeul",
+		"dexNumber": 780,
+		"types": [
+			"Normal",
+			"Dragon"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Berserk"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 85,
+			"Defense": 110,
+			"Sp. Attack": 160,
+			"Sp. Defense": 116,
+			"Speed": 36
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/drampa-mega.png",
+		"item": "Drampanite"
 	},
 	{
 		"name": "Kommo-o",
@@ -4720,6 +6409,28 @@
 			"Speed": 75
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/falinks.png"
+	},
+	{
+		"name": "Falinks-Mega",
+		"nameFr": "Méga-Hexadron",
+		"dexNumber": 870,
+		"types": [
+			"Fighting"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Defiant"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 135,
+			"Defense": 135,
+			"Sp. Attack": 70,
+			"Sp. Defense": 65,
+			"Speed": 100
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/falinks-mega.png",
+		"item": "Falinksite"
 	},
 	{
 		"name": "Morpeko",
@@ -5120,6 +6831,29 @@
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scovillain.png"
 	},
 	{
+		"name": "Scovillain-Mega",
+		"nameFr": "Scovillain-Mega",
+		"dexNumber": 952,
+		"types": [
+			"Grass",
+			"Fire"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Spicy Spray"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 138,
+			"Defense": 85,
+			"Sp. Attack": 138,
+			"Sp. Defense": 85,
+			"Speed": 75
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/scovillain-mega.png",
+		"item": "Scovillainite"
+	},
+	{
 		"name": "Espathra",
 		"nameFr": "Espathra",
 		"dexNumber": 956,
@@ -5231,6 +6965,29 @@
 			"Speed": 86
 		},
 		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glimmora.png"
+	},
+	{
+		"name": "Glimmora-Mega",
+		"nameFr": "Glimmora-Mega",
+		"dexNumber": 970,
+		"types": [
+			"Rock",
+			"Poison"
+		],
+		"form": "Mega",
+		"abilities": [
+			"Adaptability"
+		],
+		"base": {
+			"HP": 83,
+			"Attack": 90,
+			"Defense": 105,
+			"Sp. Attack": 150,
+			"Sp. Defense": 96,
+			"Speed": 101
+		},
+		"thumbnail": "https://play.pokemonshowdown.com/sprites/gen5/glimmora-mega.png",
+		"item": "Glimmoranite"
 	},
 	{
 		"name": "Houndstone",

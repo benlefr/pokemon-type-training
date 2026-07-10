@@ -1,5 +1,6 @@
 import effectiveness from './effectiveness.json';
 import { TYPES_SANS_STELLAR } from './typeNames';
+import type { Pokemon } from './roster';
 
 type Chart = Record<string, Record<string, number>>;
 
@@ -127,4 +128,88 @@ export function matchupScore(
 	if (best >= 2) return 1;
 	if (best >= 1) return 0;
 	return -1;
+}
+
+/**
+ * Pour un Pokémon défenseur (1 ou 2 types), multiplicateur subi
+ * face à un type d'attaque donné.
+ */
+export function getWorstDefensiveMultiplier(defTypes: string[], atkType: string): number {
+	return getDualEffectiveness(atkType, defTypes[0], defTypes[1] ?? null);
+}
+
+/**
+ * Modificateurs défensifs "toujours actifs" liés à un talent :
+ * multiplie le multiplicateur subi contre certains types.
+ * Ex: Épaississeur (Thick Fat) réduit Feu et Glace de moitié.
+ */
+export const ABILITY_DEF_MODIFIERS: Record<string, Record<string, number>> = {
+	'Thick Fat': { Fire: 0.5, Ice: 0.5 },
+	Heatproof: { Fire: 0.5 },
+	'Water Bubble': { Fire: 0.5 },
+	Fluffy: { Fire: 2 },
+	'Purifying Salt': { Ghost: 0.5 },
+	Levitate: { Ground: 0 },
+	'Flash Fire': { Fire: 0 },
+	'Well-Baked Body': { Fire: 0 },
+	'Volt Absorb': { Electric: 0 },
+	'Lightning Rod': { Electric: 0 },
+	'Motor Drive': { Electric: 0 },
+	'Water Absorb': { Water: 0 },
+	'Storm Drain': { Water: 0 },
+	'Dry Skin': { Water: 0, Fire: 1.25 },
+	'Sap Sipper': { Grass: 0 },
+	'Earth Eater': { Ground: 0 }
+};
+
+/**
+ * Multiplicateur défensif d'un Pokémon face à un type d'attaque,
+ * en tenant compte du talent (abilities[0]) s'il modifie les faiblesses.
+ */
+export function pokemonDefMultiplier(
+	pokemon: { types: string[]; abilities: string[] },
+	atkType: string
+): number {
+	let m = getDualEffectiveness(atkType, pokemon.types[0], pokemon.types[1] ?? null);
+	const mod = ABILITY_DEF_MODIFIERS[pokemon.abilities?.[0]];
+	if (mod && atkType in mod) m *= mod[atkType];
+	return m;
+}
+
+/**
+ * Couverture offensive d'une équipe : pour chaque type défenseur,
+ * le meilleur multiplicateur que l'équipe peut infliger.
+ */
+export function teamOffensiveCoverage(team: Pokemon[]): Map<string, number> {
+	const map = new Map<string, number>();
+	for (const def of TYPES_SANS_STELLAR) {
+		let best = 0;
+		for (const mon of team) {
+			best = Math.max(best, getStrongAgainstMax(mon.types, def));
+		}
+		map.set(def, best);
+	}
+	return map;
+}
+
+/** Meilleur multiplicateur offensif des types d'un Pokémon contre un type défenseur unique. */
+function getStrongAgainstMax(atkTypes: string[], defType: string): number {
+	return Math.max(...atkTypes.map((t) => getEffectiveness(t, defType)));
+}
+
+/**
+ * Faiblesse défensive d'une équipe : pour chaque type attaquant,
+ * le meilleur multiplicateur subi par le membre qui résiste le mieux
+ * (min sur l'équipe). Si ce min est élevé, aucun membre ne résiste.
+ */
+export function teamDefensiveWeakness(team: Pokemon[]): Map<string, number> {
+	const map = new Map<string, number>();
+	for (const atk of TYPES_SANS_STELLAR) {
+		let worst = Infinity;
+		for (const mon of team) {
+			worst = Math.min(worst, pokemonDefMultiplier(mon, atk));
+		}
+		map.set(atk, team.length > 0 ? worst : 1);
+	}
+	return map;
 }

@@ -8,7 +8,8 @@
 		getStrongAgainst,
 		getResistances,
 		getImmunities,
-		getDualEffectiveness
+		getDualEffectiveness,
+		pokemonDefMultiplier
 	} from '$lib/data/typeChart';
 	import { roster, statTotal, type Pokemon } from '$lib/data/roster';
 
@@ -58,7 +59,7 @@
 	function pokemonWeaknesses(p: Pokemon) {
 		return TYPES_SANS_STELLAR.map((atk) => ({
 			type: atk,
-			mult: getDualEffectiveness(atk, p.types[0], p.types[1] ?? null)
+			mult: pokemonDefMultiplier(p, atk)
 		}))
 			.filter((m) => m.mult > 1)
 			.sort((a, b) => b.mult - a.mult);
@@ -177,6 +178,7 @@
 						{#each selectedPokemon.types as t (t)}<TypeBadge type={t} size="sm" />{/each}
 					</div>
 					<p class="abilities">Talents : {selectedPokemon.abilities.join(', ') || '—'}</p>
+					{#if selectedPokemon.item}<p class="abilities">💎 Objet : {selectedPokemon.item}</p>{/if}
 				</div>
 			</div>
 

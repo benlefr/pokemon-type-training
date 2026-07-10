@@ -1,5 +1,5 @@
 // Construit src/lib/data/roster.json à partir de :
-//  - battle_data_extract/battle_data/Singles + Doubles (liste des Pokémon/formes)
+//  - battle_data_json/battle_data/Singles + Doubles (liste des Pokémon/formes)
 //  - showdown_pokedex.json (types, stats, talents, formes)
 //  - pokedex_raw.json (noms français des espèces de base)
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
@@ -9,7 +9,7 @@ import { dirname, resolve } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
 
-const battleBase = resolve(root, 'battle_data_extract/battle_data');
+const battleBase = resolve(root, 'battle_data_json/battle_data');
 const dex = JSON.parse(readFileSync(resolve(root, 'showdown_pokedex.json'), 'utf8'));
 const puru = existsSync(resolve(root, 'pokedex_raw.json'))
 	? JSON.parse(readFileSync(resolve(root, 'pokedex_raw.json'), 'utf8'))
@@ -98,7 +98,7 @@ function findEntry(name) {
 const set = new Set();
 for (const d of ['Singles', 'Doubles']) {
 	for (const f of readdirSync(resolve(battleBase, d))) {
-		if (f.endsWith('.csv')) set.add(f.replace(/\.csv$/, ''));
+		if (f.endsWith('.json')) set.add(f.replace(/\.+json$/, '').replace(/\.$/, ''));
 	}
 }
 const names = [...set].sort();
@@ -147,6 +147,40 @@ for (const name of names) {
 		abilities: e.abilities ? Object.values(e.abilities) : [],
 		base,
 		thumbnail
+	});
+}
+
+// --- Méga-évolutions (Showdown) pour les espèces déjà présentes ---
+const basePresent = new Set(roster.filter((p) => p.form === 'Base').map((p) => toID(p.name)));
+for (const e of Object.values(dex)) {
+	if (!e.forme || !/^Mega/.test(e.forme) || !e.baseSpecies || !e.types) continue;
+	if (!basePresent.has(toID(e.baseSpecies))) continue;
+
+	const base = { HP: 0, Attack: 0, Defense: 0, 'Sp. Attack': 0, 'Sp. Defense': 0, Speed: 0 };
+	if (e.baseStats) {
+		base.HP = e.baseStats.hp;
+		base.Attack = e.baseStats.atk;
+		base.Defense = e.baseStats.def;
+		base['Sp. Attack'] = e.baseStats.spa;
+		base['Sp. Defense'] = e.baseStats.spd;
+		base.Speed = e.baseStats.spe;
+	}
+
+	const spriteId = toID(e.baseSpecies) + '-' + toID(e.forme);
+	const baseFr = frByNum[e.num];
+	const xy = /X$/.test(e.forme) ? ' X' : /Y$/.test(e.forme) ? ' Y' : '';
+	const nameFr = baseFr ? `Méga-${baseFr}${xy}` : e.name;
+
+	roster.push({
+		name: e.name,
+		nameFr,
+		dexNumber: e.num,
+		types: e.types,
+		form: e.forme,
+		abilities: e.abilities ? Object.values(e.abilities) : [],
+		base,
+		thumbnail: `https://play.pokemonshowdown.com/sprites/gen5/${spriteId}.png`,
+		item: e.requiredItem || null
 	});
 }
 

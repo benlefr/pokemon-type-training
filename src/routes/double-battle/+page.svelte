@@ -4,7 +4,8 @@
 	import {
 		getDualEffectiveness,
 		getBestOffensiveMultiplier,
-		matchupScore
+		matchupScore,
+		pokemonDefMultiplier
 	} from '$lib/data/typeChart';
 	import ScoreBar from '$lib/components/ScoreBar.svelte';
 	import DifficultyToggle from '$lib/components/DifficultyToggle.svelte';
@@ -66,9 +67,7 @@
 
 	function noDefensiveWeakness(pair: Pokemon[]): boolean {
 		return pair.every((mon) =>
-			enemies.every((enemy) =>
-				enemy.types.every((et) => getDualEffectiveness(et, mon.types[0], mon.types[1] ?? null) <= 1)
-			)
+			enemies.every((enemy) => enemy.types.every((et) => pokemonDefMultiplier(mon, et) <= 1))
 		);
 	}
 

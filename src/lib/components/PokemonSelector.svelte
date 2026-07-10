@@ -69,6 +69,7 @@
 						</span>
 					{/each}
 				</span>
+				{#if p.item}<span class="item" title={p.item}>💎 {p.item}</span>{/if}
 			</button>
 		{/each}
 	</div>
@@ -169,5 +170,13 @@
 		justify-content: center;
 		border-radius: 50%;
 		font-size: 0.75rem;
+	}
+
+	.item {
+		margin-top: 2px;
+		font-size: 0.68rem;
+		color: #f7c948;
+		text-align: center;
+		line-height: 1.1;
 	}
 </style>
