@@ -64,40 +64,55 @@
 		return selected.some((s) => s.name === p.name);
 	}
 
-	function noDefensiveWeakness(): boolean {
-		return selected.every((mon) =>
+	function noDefensiveWeakness(pair: Pokemon[]): boolean {
+		return pair.every((mon) =>
 			enemies.every((enemy) =>
 				enemy.types.every((et) => getDualEffectiveness(et, mon.types[0], mon.types[1] ?? null) <= 1)
 			)
 		);
 	}
 
-	function calculateRoundScore(): number {
+	function scorePair(pair: Pokemon[]): number {
 		let score = 0;
 
 		for (const enemy of enemies) {
 			const [t1, t2] = enemy.types;
-			score += matchupScore(selected[0].types, selected[1].types, t1, t2 ?? null);
+			score += matchupScore(pair[0].types, pair[1].types, t1, t2 ?? null);
 		}
 
 		const bothCovered = enemies.every((e) => {
 			const [t1, t2] = e.types;
 			const best = Math.max(
-				getBestOffensiveMultiplier(selected[0].types, t1, t2 ?? null),
-				getBestOffensiveMultiplier(selected[1].types, t1, t2 ?? null)
+				getBestOffensiveMultiplier(pair[0].types, t1, t2 ?? null),
+				getBestOffensiveMultiplier(pair[1].types, t1, t2 ?? null)
 			);
 			return best >= 2;
 		});
 		if (bothCovered) score += 2;
 
-		if (noDefensiveWeakness()) score += 1;
+		if (noDefensiveWeakness(pair)) score += 1;
 
 		return score;
 	}
 
+	function findBestPair(): { pair: Pokemon[]; score: number } {
+		let best: Pokemon[] = [pool[0], pool[1]];
+		let bestScore = -Infinity;
+		for (let i = 0; i < pool.length; i++) {
+			for (let j = i + 1; j < pool.length; j++) {
+				const s = scorePair([pool[i], pool[j]]);
+				if (s > bestScore) {
+					bestScore = s;
+					best = [pool[i], pool[j]];
+				}
+			}
+		}
+		return { pair: best, score: bestScore };
+	}
+
 	function validate() {
 		if (selected.length !== 2 || answered) return;
-		roundScore = calculateRoundScore();
+		roundScore = scorePair(selected);
 		totalScore += roundScore;
 		totalPossible += ROUND_MAX;
 		streak = roundScore > 0 ? streak + 1 : 0;
@@ -111,11 +126,11 @@
 		multiplier: number;
 	}
 
-	function bestAttackAgainst(enemy: Pokemon): MatchupDetail {
+	function bestAttackAgainst(pair: Pokemon[], enemy: Pokemon): MatchupDetail {
 		const [t1, t2] = enemy.types;
-		let bestType = selected[0]?.types[0] ?? '';
+		let bestType = pair[0]?.types[0] ?? '';
 		let multiplier = -1;
-		for (const mon of selected) {
+		for (const mon of pair) {
 			for (const at of mon.types) {
 				const m = getDualEffectiveness(at, t1, t2 ?? null);
 				if (m > multiplier) {
@@ -127,7 +142,17 @@
 		return { enemy, bestType, multiplier };
 	}
 
-	const details = $derived(showResult ? enemies.map(bestAttackAgainst) : []);
+	const details = $derived(showResult ? enemies.map((e) => bestAttackAgainst(selected, e)) : []);
+
+	const best = $derived(showResult ? findBestPair() : { pair: [], score: 0 });
+	const bestDetails = $derived(
+		showResult ? enemies.map((e) => bestAttackAgainst(best.pair, e)) : []
+	);
+	const isOptimal = $derived(
+		showResult &&
+			best.pair.length === 2 &&
+			selected.every((s) => best.pair.some((b) => b.name === s.name))
+	);
 
 	function multClass(m: number): 'good' | 'neutral' | 'bad' {
 		if (m >= 2) return 'good';
@@ -238,6 +263,42 @@
 						</div>
 					</div>
 				{/each}
+			</div>
+
+			<div class="optimal" class:won={isOptimal}>
+				<h4 class="opt-title">
+					{#if isOptimal}
+						✅ Meilleur choix trouvé !
+					{:else}
+						💡 Équipe la plus optimale
+					{/if}
+					<span class="opt-score">{best.score} / {ROUND_MAX}</span>
+				</h4>
+
+				<div class="opt-team">
+					{#each best.pair as mon (mon.name)}
+						<div class="opt-mon">
+							<img src={mon.thumbnail} alt={mon.name} />
+							<span class="opt-name">{mon.nameFr}</span>
+							<span class="opt-types">
+								{#each mon.types as t (t)}
+									<span class="pill" style="background: {TYPE_INFO[t]?.color}">{TYPE_INFO[t]?.emoji}</span>
+								{/each}
+							</span>
+						</div>
+					{/each}
+				</div>
+
+				<div class="opt-explain">
+					{#each bestDetails as d (d.enemy.name)}
+						<p class="opt-line">
+							<TypeBadge type={d.bestType} size="sm" placed />
+							<span class="opt-arrow">→</span>
+							<span class="opt-enemy">{d.enemy.nameFr}</span>
+							<span class="mult {multClass(d.multiplier)}">{multLabel(d.multiplier)}</span>
+						</p>
+					{/each}
+				</div>
 			</div>
 
 			<button class="next" onclick={startRound}>Round suivant</button>
@@ -463,6 +524,87 @@
 
 	.mult.bad {
 		color: var(--ko);
+	}
+
+	.optimal {
+		border-radius: 14px;
+		padding: 12px 14px;
+		background: rgba(95, 115, 255, 0.1);
+		border: 1px solid rgba(95, 115, 255, 0.35);
+		display: grid;
+		gap: 10px;
+	}
+
+	.optimal.won {
+		background: rgba(34, 197, 94, 0.12);
+		border-color: rgba(34, 197, 94, 0.45);
+	}
+
+	.opt-title {
+		margin: 0;
+		font-size: 0.95rem;
+		font-weight: 800;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 8px;
+	}
+
+	.opt-score {
+		color: var(--muted);
+		font-weight: 700;
+	}
+
+	.opt-team {
+		display: flex;
+		gap: 10px;
+	}
+
+	.opt-mon {
+		flex: 1;
+		display: grid;
+		justify-items: center;
+		gap: 2px;
+		background: var(--panel-soft);
+		border-radius: 10px;
+		padding: 8px;
+	}
+
+	.opt-mon img {
+		width: 56px;
+		height: 56px;
+		object-fit: contain;
+	}
+
+	.opt-name {
+		font-weight: 700;
+		font-size: 0.85rem;
+	}
+
+	.opt-types {
+		display: flex;
+		gap: 4px;
+	}
+
+	.opt-explain {
+		display: grid;
+		gap: 6px;
+	}
+
+	.opt-line {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 0.9rem;
+	}
+
+	.opt-arrow {
+		color: var(--muted);
+	}
+
+	.opt-enemy {
+		flex: 1;
 	}
 
 	@media (min-width: 640px) {
