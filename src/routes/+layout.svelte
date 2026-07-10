@@ -10,7 +10,8 @@
 		{ href: `${base}/`, path: '/', label: 'Accueil' },
 		{ href: `${base}/revision`, path: '/revision', label: 'Révision' },
 		{ href: `${base}/quiz`, path: '/quiz', label: 'Quiz' },
-		{ href: `${base}/double-battle`, path: '/double-battle', label: 'Double Battle' }
+		{ href: `${base}/double-battle`, path: '/double-battle', label: 'Double Battle' },
+		{ href: `${base}/team-builder`, path: '/team-builder', label: 'Team Builder' }
 	];
 
 	function isActive(path: string, routeId: string | null): boolean {

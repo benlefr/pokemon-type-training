@@ -30,6 +30,11 @@
 			<span class="card-title">Double Battle</span>
 			<span class="card-desc">Choisis 2 Pokémon pour contrer une équipe adverse.</span>
 		</a>
+		<a class="card team" href={`${base}/team-builder`}>
+			<span class="ico">🏗️</span>
+			<span class="card-title">Team Builder</span>
+			<span class="card-desc">Construis ton équipe et analyse la couverture de types.</span>
+		</a>
 	</div>
 
 	<div class="stats">
@@ -102,6 +107,10 @@
 
 	.double {
 		background: linear-gradient(145deg, #5f2330, #3a1622);
+	}
+
+	.team {
+		background: linear-gradient(145deg, #234f3a, #1a3528);
 	}
 
 	.ico {

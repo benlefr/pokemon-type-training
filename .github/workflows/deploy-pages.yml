@@ -40,14 +40,15 @@ jobs:
         run: |
           BASE=/pokemon-type-training
           rm -rf _site
-          mkdir -p _site _site/quiz _site/revision _site/double-battle
+          mkdir -p _site _site/quiz _site/revision _site/double-battle _site/team-builder
           cp -r .svelte-kit/output/client/_app _site/_app
           cp static/favicon.svg _site/favicon.svg
           cp .svelte-kit/output/prerendered/pages/index.html _site/index.html
           cp .svelte-kit/output/prerendered/pages/quiz.html _site/quiz/index.html
           cp .svelte-kit/output/prerendered/pages/revision.html _site/revision/index.html
           cp .svelte-kit/output/prerendered/pages/double-battle.html _site/double-battle/index.html
-          for f in _site/index.html _site/quiz/index.html _site/revision/index.html _site/double-battle/index.html; do
+          cp .svelte-kit/output/prerendered/pages/team-builder.html _site/team-builder/index.html
+          for f in _site/index.html _site/quiz/index.html _site/revision/index.html _site/double-battle/index.html _site/team-builder/index.html; do
             sed -i "s|\"\./|\"$BASE/|g" "$f"
             sed -i "s|new URL(\".\", location).pathname.slice(0, -1)|\"$BASE\"|g" "$f"
           done
