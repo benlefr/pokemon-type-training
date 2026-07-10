@@ -9,7 +9,8 @@
 	const links = [
 		{ href: `${base}/`, path: '/', label: 'Accueil' },
 		{ href: `${base}/revision`, path: '/revision', label: 'Révision' },
-		{ href: `${base}/quiz`, path: '/quiz', label: 'Quiz' }
+		{ href: `${base}/quiz`, path: '/quiz', label: 'Quiz' },
+		{ href: `${base}/double-battle`, path: '/double-battle', label: 'Double Battle' }
 	];
 
 	function isActive(path: string, routeId: string | null): boolean {

@@ -25,6 +25,11 @@
 			<span class="card-title">Quiz interactif</span>
 			<span class="card-desc">Glisse-dépose les types, mode single/dual, 4 modes de jeu.</span>
 		</a>
+		<a class="card double" href={`${base}/double-battle`}>
+			<span class="ico">⚔️</span>
+			<span class="card-title">Double Battle</span>
+			<span class="card-desc">Choisis 2 Pokémon pour contrer une équipe adverse.</span>
+		</a>
 	</div>
 
 	<div class="stats">
@@ -93,6 +98,10 @@
 
 	.quiz {
 		background: linear-gradient(145deg, #3a2260, #241640);
+	}
+
+	.double {
+		background: linear-gradient(145deg, #5f2330, #3a1622);
 	}
 
 	.ico {

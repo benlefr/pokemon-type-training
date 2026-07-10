@@ -96,3 +96,35 @@ export function getResistancesDual(type1: string, type2: string): Matchup[] {
 		.filter((m) => m.multiplier < 1)
 		.sort((a, b) => a.multiplier - b.multiplier);
 }
+
+/**
+ * Pour un Pokémon attaquant, calcule le meilleur multiplicateur
+ * qu'il peut infliger contre un Pokémon défenseur (1 ou 2 types).
+ */
+export function getBestOffensiveMultiplier(
+	atkTypes: string[],
+	defType1: string,
+	defType2?: string | null
+): number {
+	return Math.max(...atkTypes.map((t) => getDualEffectiveness(t, defType1, defType2)));
+}
+
+/**
+ * Évalue la qualité d'une paire offensive contre un défenseur.
+ * Retourne un score: +3 (x4), +1 (x2), 0 (x1), -1 (x0.5 ou moins)
+ */
+export function matchupScore(
+	atkTypes1: string[],
+	atkTypes2: string[],
+	defType1: string,
+	defType2?: string | null
+): number {
+	const best1 = getBestOffensiveMultiplier(atkTypes1, defType1, defType2);
+	const best2 = getBestOffensiveMultiplier(atkTypes2, defType1, defType2);
+	const best = Math.max(best1, best2);
+
+	if (best >= 4) return 3;
+	if (best >= 2) return 1;
+	if (best >= 1) return 0;
+	return -1;
+}
