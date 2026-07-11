@@ -11,7 +11,8 @@
 		{ href: `${base}/revision`, path: '/revision', label: 'Révision' },
 		{ href: `${base}/quiz`, path: '/quiz', label: 'Quiz' },
 		{ href: `${base}/double-battle`, path: '/double-battle', label: 'Double Battle' },
-		{ href: `${base}/team-builder`, path: '/team-builder', label: 'Team Builder' }
+		{ href: `${base}/team-builder`, path: '/team-builder', label: 'Team Builder' },
+		{ href: `${base}/speed-tier`, path: '/speed-tier', label: 'Speed Tier' }
 	];
 
 	function isActive(path: string, routeId: string | null): boolean {

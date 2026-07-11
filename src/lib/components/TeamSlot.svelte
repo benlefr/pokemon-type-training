@@ -6,11 +6,13 @@
 		pokemon: Pokemon | null;
 		index: number;
 		active?: boolean;
+		moves?: string[];
 		onclick: () => void;
 		onremove?: () => void;
+		onmoves?: () => void;
 	}
 
-	let { pokemon, index, active = false, onclick, onremove }: Props = $props();
+	let { pokemon, index, active = false, moves = [], onclick, onremove, onmoves }: Props = $props();
 </script>
 
 <div class="slot" class:filled={pokemon} class:active>
@@ -24,6 +26,15 @@
 					<span class="pill" style="background: {TYPE_INFO[t]?.color}">{TYPE_INFO[t]?.emoji}</span>
 				{/each}
 			</span>
+		</button>
+		<button type="button" class="moves-btn" onclick={onmoves}>
+			{#if moves.length > 0}
+				<span class="moves-list">
+					{#each moves as m (m)}<span class="move-chip">{m}</span>{/each}
+				</span>
+			{:else}
+				⚔ Attaques
+			{/if}
 		</button>
 	{:else}
 		<button type="button" class="body empty" onclick={onclick}>
@@ -73,6 +84,10 @@
 	.slot.active .body {
 		border-color: var(--accent);
 		background: rgba(95, 115, 255, 0.15);
+	}
+
+	.slot.filled .body {
+		padding-bottom: 30px;
 	}
 
 	.plus {
@@ -126,5 +141,39 @@
 		font-weight: 800;
 		line-height: 1;
 		cursor: pointer;
+	}
+
+	.moves-btn {
+		position: absolute;
+		left: 4px;
+		right: 4px;
+		bottom: 4px;
+		z-index: 2;
+		border: none;
+		border-radius: 8px;
+		background: rgba(95, 115, 255, 0.25);
+		color: var(--text);
+		font-size: 0.62rem;
+		font-weight: 700;
+		padding: 3px 4px;
+		cursor: pointer;
+	}
+
+	.moves-btn:hover {
+		background: rgba(95, 115, 255, 0.45);
+	}
+
+	.moves-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2px;
+		justify-content: center;
+	}
+
+	.move-chip {
+		background: rgba(0, 0, 0, 0.35);
+		border-radius: 4px;
+		padding: 1px 4px;
+		line-height: 1.3;
 	}
 </style>

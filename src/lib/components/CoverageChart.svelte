@@ -1,17 +1,27 @@
 <script lang="ts">
 	import type { Pokemon } from '$lib/data/roster';
 	import { TYPE_INFO, TYPES_SANS_STELLAR } from '$lib/data/typeNames';
-	import { teamOffensiveCoverage, teamDefensiveWeakness } from '$lib/data/typeChart';
+	import {
+		teamOffensiveCoverage,
+		teamDefensiveWeakness,
+		coverageFromAttackTypes
+	} from '$lib/data/typeChart';
 
 	interface Props {
 		team: Pokemon[];
 		mode: 'offensive' | 'defensive';
+		/** Si fourni (mode offensif), calcule la couverture à partir de ces types d'attaque. */
+		attackTypes?: string[] | null;
 	}
 
-	let { team, mode }: Props = $props();
+	let { team, mode, attackTypes = null }: Props = $props();
 
 	const data = $derived(
-		mode === 'offensive' ? teamOffensiveCoverage(team) : teamDefensiveWeakness(team)
+		mode === 'offensive'
+			? attackTypes
+				? coverageFromAttackTypes(attackTypes)
+				: teamOffensiveCoverage(team)
+			: teamDefensiveWeakness(team)
 	);
 
 	const cells = $derived(

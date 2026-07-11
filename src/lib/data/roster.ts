@@ -9,6 +9,12 @@ export interface BaseStats {
 	Speed: number;
 }
 
+export interface Move {
+	name: string;
+	type: string;
+	category: 'Physical' | 'Special' | 'Status';
+}
+
 export interface Pokemon {
 	name: string;
 	nameFr: string;
@@ -20,6 +26,8 @@ export interface Pokemon {
 	thumbnail: string;
 	/** Objet requis (méga-gemme) pour les méga-évolutions. */
 	item?: string | null;
+	/** Attaques les plus jouées en VGC (type et catégorie résolus). */
+	moves?: Move[];
 }
 
 /** Vrai si le Pokémon est une méga-évolution. */

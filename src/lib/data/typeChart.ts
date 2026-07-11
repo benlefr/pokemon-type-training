@@ -198,6 +198,19 @@ function getStrongAgainstMax(atkTypes: string[], defType: string): number {
 }
 
 /**
+ * Couverture offensive à partir d'un ensemble de types d'attaque :
+ * pour chaque type défenseur, le meilleur multiplicateur infligé.
+ */
+export function coverageFromAttackTypes(attackTypes: string[]): Map<string, number> {
+	const uniq = [...new Set(attackTypes)];
+	const map = new Map<string, number>();
+	for (const def of TYPES_SANS_STELLAR) {
+		map.set(def, uniq.length ? Math.max(...uniq.map((t) => getEffectiveness(t, def))) : 0);
+	}
+	return map;
+}
+
+/**
  * Faiblesse défensive d'une équipe : pour chaque type attaquant,
  * le meilleur multiplicateur subi par le membre qui résiste le mieux
  * (min sur l'équipe). Si ce min est élevé, aucun membre ne résiste.

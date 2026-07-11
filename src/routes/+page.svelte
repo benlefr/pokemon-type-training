@@ -35,6 +35,11 @@
 			<span class="card-title">Team Builder</span>
 			<span class="card-desc">Construis ton équipe et analyse la couverture de types.</span>
 		</a>
+		<a class="card speed" href={`${base}/speed-tier`}>
+			<span class="ico">⚡</span>
+			<span class="card-title">Speed Tier</span>
+			<span class="card-desc">Quel Pokémon est le plus rapide ? Devine la vitesse !</span>
+		</a>
 	</div>
 
 	<div class="stats">
@@ -111,6 +116,10 @@
 
 	.team {
 		background: linear-gradient(145deg, #234f3a, #1a3528);
+	}
+
+	.speed {
+		background: linear-gradient(145deg, #4a3f1a, #2d2710);
 	}
 
 	.ico {

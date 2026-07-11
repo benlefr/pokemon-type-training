@@ -11,6 +11,7 @@ vite.config.ts.timestamp-*
 # Sources de données transitoires (le roster/effectiveness générés sont commités dans src/lib/data)
 pokedex_raw.json
 showdown_pokedex.json
+showdown_moves.json
 battle_data.zip
 battle_data_extract/
 battle_data_json/

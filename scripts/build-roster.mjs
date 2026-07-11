@@ -1,6 +1,7 @@
 // Construit src/lib/data/roster.json à partir de :
-//  - battle_data_json/battle_data/Singles + Doubles (liste des Pokémon/formes)
+//  - battle_data_json/battle_data/Singles + Doubles (liste + attaques VGC des Pokémon/formes)
 //  - showdown_pokedex.json (types, stats, talents, formes)
+//  - showdown_moves.json (type et catégorie de chaque attaque)
 //  - pokedex_raw.json (noms français des espèces de base)
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -11,6 +12,9 @@ const root = resolve(__dirname, '..');
 
 const battleBase = resolve(root, 'battle_data_json/battle_data');
 const dex = JSON.parse(readFileSync(resolve(root, 'showdown_pokedex.json'), 'utf8'));
+const movesDex = existsSync(resolve(root, 'showdown_moves.json'))
+	? JSON.parse(readFileSync(resolve(root, 'showdown_moves.json'), 'utf8'))
+	: {};
 const puru = existsSync(resolve(root, 'pokedex_raw.json'))
 	? JSON.parse(readFileSync(resolve(root, 'pokedex_raw.json'), 'utf8'))
 	: [];
@@ -94,14 +98,44 @@ function findEntry(name) {
 	return byNorm[toID(name)] || null;
 }
 
-// Liste des noms (Singles + Doubles)
+// Index des attaques Showdown : id -> { name, type, category }
+const moveById = {};
+for (const m of Object.values(movesDex)) {
+	if (m && m.name && m.type) moveById[toID(m.name)] = { name: m.name, type: m.type, category: m.category };
+}
+
+// Liste des noms + chemin du fichier battle_data (Doubles prioritaire pour le VGC)
 const set = new Set();
-for (const d of ['Singles', 'Doubles']) {
+const fileByName = {};
+for (const d of ['Doubles', 'Singles']) {
 	for (const f of readdirSync(resolve(battleBase, d))) {
-		if (f.endsWith('.json')) set.add(f.replace(/\.+json$/, '').replace(/\.$/, ''));
+		if (!f.endsWith('.json')) continue;
+		const nm = f.replace(/\.+json$/, '').replace(/\.$/, '');
+		set.add(nm);
+		if (!fileByName[nm]) fileByName[nm] = resolve(battleBase, d, f);
 	}
 }
 const names = [...set].sort();
+
+// Attaques d'un Pokémon (top méta VGC), avec type et catégorie résolus
+function movesFor(name) {
+	const fp = fileByName[name];
+	if (!fp) return [];
+	let rows;
+	try {
+		rows = JSON.parse(readFileSync(fp, 'utf8').replace(/^\uFEFF/, ''));
+	} catch {
+		return [];
+	}
+	return rows
+		.filter((r) => r.category === 'move' && r.name)
+		.sort((a, b) => Number(a.rank) - Number(b.rank))
+		.slice(0, 8)
+		.map((r) => {
+			const md = moveById[toID(r.name)];
+			return { name: r.name, type: md?.type ?? 'Normal', category: md?.category ?? 'Status' };
+		});
+}
 
 const roster = [];
 const missing = [];
@@ -146,12 +180,15 @@ for (const name of names) {
 		form: forme || 'Base',
 		abilities: e.abilities ? Object.values(e.abilities) : [],
 		base,
-		thumbnail
+		thumbnail,
+		moves: movesFor(name)
 	});
 }
 
 // --- Méga-évolutions (Showdown) pour les espèces déjà présentes ---
-const basePresent = new Set(roster.filter((p) => p.form === 'Base').map((p) => toID(p.name)));
+const baseById = {};
+for (const p of roster) if (p.form === 'Base') baseById[toID(p.name)] = p;
+const basePresent = new Set(Object.keys(baseById));
 for (const e of Object.values(dex)) {
 	if (!e.forme || !/^Mega/.test(e.forme) || !e.baseSpecies || !e.types) continue;
 	if (!basePresent.has(toID(e.baseSpecies))) continue;
@@ -180,7 +217,8 @@ for (const e of Object.values(dex)) {
 		abilities: e.abilities ? Object.values(e.abilities) : [],
 		base,
 		thumbnail: `https://play.pokemonshowdown.com/sprites/gen5/${spriteId}.png`,
-		item: e.requiredItem || null
+		item: e.requiredItem || null,
+		moves: baseById[toID(e.baseSpecies)]?.moves ?? []
 	});
 }
 

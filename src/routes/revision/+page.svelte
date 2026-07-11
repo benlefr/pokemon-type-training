@@ -199,6 +199,17 @@
 				{/each}
 				{#if pokemonWeaknesses(selectedPokemon).length === 0}<span class="none">Aucune faiblesse</span>{/if}
 			</div>
+
+			{#if selectedPokemon.moves && selectedPokemon.moves.length > 0}
+				<h4>Attaques fréquentes (VGC)</h4>
+				<div class="moves">
+					{#each selectedPokemon.moves as mv (mv.name)}
+						<span class="move-pill" style="background: {TYPE_INFO[mv.type]?.color}">
+							{TYPE_INFO[mv.type]?.emoji} {mv.name}
+						</span>
+					{/each}
+				</div>
+			{/if}
 		</div>
 	{/if}
 </section>
@@ -442,6 +453,21 @@
 		margin: 8px 0 0;
 		color: var(--muted);
 		font-size: 0.85rem;
+	}
+
+	.moves {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+
+	.move-pill {
+		font-size: 0.78rem;
+		font-weight: 700;
+		color: #fff;
+		border-radius: 999px;
+		padding: 4px 10px;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 	}
 
 	.pd-stats {

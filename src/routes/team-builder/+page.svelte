@@ -1,21 +1,38 @@
 <script lang="ts">
 	import { roster, type Pokemon } from '$lib/data/roster';
 	import { TYPES_SANS_STELLAR } from '$lib/data/typeNames';
-	import { teamOffensiveCoverage, teamDefensiveWeakness } from '$lib/data/typeChart';
+	import { coverageFromAttackTypes, teamDefensiveWeakness } from '$lib/data/typeChart';
 	import TeamSlot from '$lib/components/TeamSlot.svelte';
 	import PokemonSelector from '$lib/components/PokemonSelector.svelte';
+	import MoveSelector from '$lib/components/MoveSelector.svelte';
 	import CoverageChart from '$lib/components/CoverageChart.svelte';
 	import SuggestionPanel from '$lib/components/SuggestionPanel.svelte';
 	import SimulatorPanel from '$lib/components/SimulatorPanel.svelte';
 
 	let team = $state<(Pokemon | null)[]>([null, null, null, null, null, null]);
+	let teamMoves = $state<string[][]>([[], [], [], [], [], []]);
 	let selectedSlot = $state<number | null>(null);
+	let moveSlot = $state<number | null>(null);
 	let activeTab = $state<'analysis' | 'simulator'>('analysis');
 
 	const filledTeam = $derived(team.filter((p): p is Pokemon => p !== null));
 
+	/** Types d'attaque offensifs actifs : attaques choisies sinon STAB (types du Pokémon). */
+	const attackTypes = $derived.by(() => {
+		const types: string[] = [];
+		team.forEach((p, i) => {
+			if (!p) return;
+			const chosen = (p.moves ?? []).filter(
+				(m) => teamMoves[i].includes(m.name) && m.category !== 'Status'
+			);
+			if (chosen.length > 0) types.push(...chosen.map((m) => m.type));
+			else types.push(...p.types);
+		});
+		return types;
+	});
+
 	const coveredCount = $derived.by(() => {
-		const off = teamOffensiveCoverage(filledTeam);
+		const off = coverageFromAttackTypes(attackTypes);
 		return TYPES_SANS_STELLAR.filter((t) => (off.get(t) ?? 0) >= 2).length;
 	});
 
@@ -31,6 +48,12 @@
 
 	function openSlot(index: number) {
 		selectedSlot = selectedSlot === index ? null : index;
+		moveSlot = null;
+	}
+
+	function openMoves(index: number) {
+		moveSlot = moveSlot === index ? null : index;
+		selectedSlot = null;
 	}
 
 	function assign(pokemon: Pokemon) {
@@ -39,12 +62,21 @@
 		if (slot === -1 || slot === null) return;
 		if (team.some((p) => p?.name === pokemon.name)) return;
 		team[slot] = pokemon;
+		teamMoves[slot] = [];
 		selectedSlot = null;
 	}
 
 	function remove(index: number) {
 		team[index] = null;
+		teamMoves[index] = [];
 		if (selectedSlot === index) selectedSlot = null;
+		if (moveSlot === index) moveSlot = null;
+	}
+
+	function toggleMove(index: number, move: string) {
+		const cur = teamMoves[index];
+		if (cur.includes(move)) teamMoves[index] = cur.filter((m) => m !== move);
+		else if (cur.length < 4) teamMoves[index] = [...cur, move];
 	}
 </script>
 
@@ -62,9 +94,11 @@
 			<TeamSlot
 				pokemon={p}
 				index={i}
-				active={selectedSlot === i}
+				active={selectedSlot === i || moveSlot === i}
+				moves={teamMoves[i]}
 				onclick={() => openSlot(i)}
 				onremove={() => remove(i)}
+				onmoves={() => openMoves(i)}
 			/>
 		{/each}
 	</div>
@@ -76,6 +110,21 @@
 				<button type="button" class="close" onclick={() => (selectedSlot = null)}>Fermer</button>
 			</div>
 			<PokemonSelector roster={availableRoster} onselect={assign} />
+		</div>
+	{/if}
+
+	{#if moveSlot !== null && team[moveSlot]}
+		{@const ms = moveSlot}
+		<div class="selector-box">
+			<div class="selector-head">
+				<span>Attaques du slot {ms + 1}</span>
+				<button type="button" class="close" onclick={() => (moveSlot = null)}>Fermer</button>
+			</div>
+			<MoveSelector
+				pokemon={team[ms]!}
+				selected={teamMoves[ms]}
+				ontoggle={(m) => toggleMove(ms, m)}
+			/>
 		</div>
 	{/if}
 
@@ -92,7 +141,8 @@
 		<div class="panels">
 			<div class="panel">
 				<h3>Couverture offensive</h3>
-				<CoverageChart team={filledTeam} mode="offensive" />
+				<p class="panel-note">Basée sur les attaques choisies (STAB par défaut).</p>
+				<CoverageChart team={filledTeam} mode="offensive" {attackTypes} />
 			</div>
 			<div class="panel">
 				<h3>Résistances défensives</h3>
@@ -230,6 +280,12 @@
 	.panel h3 {
 		margin: 0;
 		font-size: 1rem;
+	}
+
+	.panel-note {
+		margin: -4px 0 0;
+		color: var(--muted);
+		font-size: 0.8rem;
 	}
 
 	@media (min-width: 640px) {
